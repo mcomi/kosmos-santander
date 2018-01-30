@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle_down_red</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="232" height="90"></rect>
+        <filter x="-1.7%" y="-2.2%" width="103.4%" height="108.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Infonavit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-476.000000, -189.000000)">
+        <g id="Group-11" transform="translate(368.000000, 120.000000)">
+            <g id="destino">
+                <g id="Rectangle-10">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <polygon id="Triangle_down_red" fill="#EB0029" transform="translate(116.000000, 73.000000) scale(-1, -1) translate(-116.000000, -73.000000) " points="116 69 124 77 108 77"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

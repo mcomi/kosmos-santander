@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="41px" viewBox="0 0 42 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>home</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Precalificación_individual" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-379.000000, -1543.000000)">
+        <g id="domicilio-copy-2" transform="translate(99.000000, 1437.000000)">
+            <g id="Group-5-Copy-2" transform="translate(279.000000, 106.000000)">
+                <g id="home" transform="translate(1.000000, 0.000000)">
+                    <polygon id="Shape" fill="#E7ECED" fill-rule="nonzero" points="20.6491228 1.47859649 4.50877193 16.4659649 4.50877193 19.7242105 4.50877193 40.7768421 36.7894737 40.7768421 36.7894737 19.7242105 36.7894737 16.4659649"></polygon>
+                    <path d="M25.5614035,40.7768421 L15.7368421,40.7768421 L15.7368421,28.8470175 C15.7368421,26.1340351 17.9361404,23.9347368 20.6491228,23.9347368 C23.3621053,23.9347368 25.5614035,26.1340351 25.5614035,28.8470175 L25.5614035,40.7768421 Z" id="Shape" fill="#556080" fill-rule="nonzero"></path>
+                    <polyline id="Shape" stroke="#DD352E" stroke-width="2" stroke-linecap="round" points="1 19.7242105 20.6491228 1.47859649 40.2982456 19.7242105"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

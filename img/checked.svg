@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>checked</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Precalificación_aceptación" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-571.000000, -289.000000)">
+        <g id="datos-personales" transform="translate(99.000000, 214.000000)" fill="#6AC259" fill-rule="nonzero">
+            <g id="checked" transform="translate(472.000000, 75.000000)">
+                <path d="M24.980445,0 C11.1847775,0 0,11.1843091 0,24.980445 C0,38.7765808 11.1847775,49.9608899 24.980445,49.9608899 C38.7776347,49.9608899 49.9608899,38.7765808 49.9608899,24.980445 C49.9608899,11.1843091 38.7771663,0 24.980445,0 Z M20.3980094,37.8124122 L9.39859485,26.813466 L13.0647541,23.1473068 L20.3980094,30.4800937 L36.8961358,13.9814988 L40.5622951,17.6476581 L20.3980094,37.8124122 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

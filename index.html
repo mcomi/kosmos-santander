@@ -1,0 +1,371 @@
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Credenz using webpack and bootstrap">
+	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
+
+	<title>Credenz - Solicita tu Crédito</title>
+
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
+
+	<!-- Web Application Manifest -->
+	<link rel="manifest" href="manifest.json">
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="bx+">
+	<link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="bx+">
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#263238">
+
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#263238">
+</head>
+
+<body>
+	<div class="mobile-wrapper"></div>
+	<nav id="menu-mobile">
+			<span class="open-menu">
+		<button class="btn">
+			<i class="fa fa-sort-up"></i>
+		</button>
+	</span>
+			<div class="sidebar-header">
+					<span class="text-right"><a href="#" id="nav-close">X</a></span>
+					<div class="sidebar-header-logo">
+							<img src="img/logo.png" alt="">
+					</div>
+			</div>
+			<ul class="list-unstyled main-menu">
+					<!--Include your navigation here-->
+					<li><a href="analiticas.html"><span class="icon"><img src="img/icons/money.svg" class="svg svg-menu" alt=""></span><span class="menu-text">Cotizador </span></a></li>
+					<li><a href="simulador.html"><span class="icon"><img src="img/icons/steps.svg" class="svg svg-menu" alt=""></span><span class="menu-text">Pasos para crédito </span></a></li>
+					<li><a href="index.html"><span class="icon"><img src="img/icons/testimonials.svg" class="svg svg-menu" alt=""></span><span class="menu-text">Testimonios </span></a></li>
+					<li><a href="index.html"><span class="icon"><img src="img/icons/faq.svg"  class="svg svg-menu" alt=""></span><span class="menu-text">Preguntas frecuentes </span></a></li>
+					<li><a href="analiticas.html"><span class="icon"><img src="img/icons/contact.svg" class="svg svg-menu" alt=""></span><span class="menu-text">Contacto </span></a></li>
+					<li><a href="solicitudes.html"><span class="icon"><img src="img/icons/menu.svg" class="svg svg-menu" alt=""></span><span class="menu-text">Secciones </span></a></li>
+			</ul>
+	</nav>
+	<!-- <div class="navbar navbar-inverse navbar-fixed-top">
+
+
+</div> -->
+	<div class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">
+				<img src="img/Santander_logo.svg" alt="">
+				Hipoteca <span>Personal</span>
+			</a>
+			<span id="nav-expander" class="nav-expander fixed">
+				<img src="img/icons/menu.png" alt="">
+			</span>
+		</div>
+		<ul id="desktop-menu" class="nav navbar-nav">
+
+			<li class="corner-border">
+				<a href="#contacto">Continuar mi solicitud</a>
+			</li>
+		</ul>
+	</div>
+	<!-- /.container-fluid -->
+</div>
+
+	<div class="home">
+		<section id="landing-section">
+			<div class="container">
+				<!-- encabezado -->
+				<div class="row center header-section">
+					<div class="col-xs-12 col-md-6 col-md-offset-3">
+						<h4>Calculadora Santander</h4>
+
+						<span class="action">Realiza un cálculo y precalifica para tu crédito</span>
+						<button class="btn btn-red">Ir a la calculadora <icon class="fa fa-play"></icon></button>
+						<p>Tenemos 4 opciones para calcular</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-12 header-calculate-options"><a>Valor de la vivienda</a></div>
+					<div class="col-md-3 col-xs-12 header-calculate-options"><a>El monto que necesito</a></div>
+					<div class="col-md-3 col-xs-12 header-calculate-options"><a>Mi ingreso neto mensual</a></div>
+					<div class="col-md-3 col-xs-12 header-calculate-options"><a>Mi pago mensual</a></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="cotizador">
+			<div class="container">
+				<h1>Calcula tu crédito</h1>
+				<div class="row cotizador-panels">
+					<div class="col-md-7">
+
+							<div class="col-md-6 list-options">
+									<div class="option-calc col-md-12"><icon class="fa fa-play"></icon> Valor de la vivienda</div>
+									<div class="option-calc col-md-12"><icon class="fa fa-play"></icon> El monto que necesito</div>
+									<div class="option-calc col-md-12"><icon class="fa fa-play"></icon> Mi ingreso neto mensual</div>
+									<div class="option-calc col-md-12 active"><icon class="fa fa-play"></icon> Mi pago mensual</div>
+							</div>
+							<div class="col-md-6 cotizador-input">
+								<img src="img/accounting.svg" alt="">
+								<h2>¿Cuánto pagarías mensualmente?</h2>
+								<div class="form-input">
+									<input type="text" placeholder="$18,781.00">
+									<span><icon class="fa fa-plus"></icon> Agregar fovissste o infonavit</span>
+								</div>
+								<button class="btn btn-red">Calcular <icon class="fa fa-play"></icon></button>
+							</div>
+					</div>
+					<div class="col-md-5 cotizador-corner-top">
+						<div class="cotizador-results">
+
+							<div class="col-md-6">
+								<h3 class="cotizador-valor-big">$1,111,111.00</h3>
+								<span class="cotizador-big-title">Valor de la vivienda</span>
+								<h4 class="cotizador-valor-md">$1,000,000.00</h4>
+								<span class="cotizador-md-title">Monto de Crédito</span>
+							</div>
+							<div class="col-md-6">
+								<h3 class="cotizador-valor-big">$10,281</h3>
+								<span class="cotizador-big-title">Pago Mensual Total</span>
+								<h4 class="cotizador-valor-md">$23,589</h4>
+								<span class="cotizador-md-title">Ingreso neto requerido</span>
+							</div>
+							<div class="col-md-12">
+								<div class="col-md-5">
+									<h4 class="cotizador-valor-md">90%</h4>
+									<span class="cotizador-md-title">Desembolso inicial</span>
+								</div>
+								<div class="col-md-2">
+									<h4 class="cotizador-valor-md">10.94%</h4>
+									<span class="cotizador-md-title">Tasa</span>
+								</div>
+								<div class="col-md-5">
+									<h4 class="cotizador-valor-md">90%</h4>
+									<span class="cotizador-md-title">Financiamiento</span>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<p>Tu plazo es:</p>
+								<div class="col-md-3">
+									<div class="plazo-selection">
+										<input type="radio" id="5" value="5" name="plazo">
+										<label for="5"><span>5</span></label>
+									</div>
+									<p class="radio-year-label">años</p>
+								</div>
+								<div class="col-md-3">
+									<div class="plazo-selection">
+										<input type="radio" id="10" value="10" name="plazo">
+										<label for="10"><span>10 </span></label>
+									</div>
+									<p class="radio-year-label">años</p>
+								</div>
+								<div class="col-md-3">
+									<div class="plazo-selection">
+										<input type="radio" id="15" value="15" name="plazo">
+										<label for="15"><span>15 </span></label>
+									</div>
+									<p class="radio-year-label">años</p>
+								</div>
+								<div class="col-md-3">
+									<div class="plazo-selection">
+										<input type="radio" id="20" value="20" name="plazo">
+										<label for="20"><span>20 </span></label>
+									</div>
+									<p class="radio-year-label">años</p>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<button class="btn btn-red btn-small">Solicitar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="testimonials">
+			<div class="section-header">
+				<h1>Testimonios</h1>
+				<div class="testimonial-panels">
+            <div class="testimonial-panel testimonial-panel1">
+							<div></div>
+							<div>
+								<p>Mi novia y yo tenemos un hogar seguro, ahora estamos pensando en un bebe</p>
+								<span>-Adquisición</span>
+							</div>
+							<div>
+								<img src="img/logo_white.svg" alt="">
+							</div>
+            </div>
+            <div class="testimonial-panel testimonial-panel2">
+							<div></div>
+							<div>
+								<p>Vivo en una casa nueva y mis ingresos me permiten mostrarla a mis invitados</p>
+								<span>-Remodelación</span>
+							</div>
+							<div>
+								<img src="img/logo_white.svg" alt="">
+							</div>
+            </div>
+            <div class="testimonial-panel testimonial-panel3">
+							<div></div>
+							<div>
+								<p>Reduje mi plazo y mis pagos se hicieron fijos, ya no vivo en la angustia</p>
+								<span>-Liquidez</span>
+							</div>
+							<div>
+								<img src="img/logo_white.svg" alt="">
+							</div>
+            </div>
+            <div class="testimonial-panel testimonial-panel4">
+							<div></div>
+							<div>
+								<p>Un familiar me platico de los beneficios santander y acepte ganar </p>
+								<span>-Cambio de hipoteca</span>
+							</div>
+							<div>
+								<img src="img/logo_white.svg" alt="">
+							</div>
+            </div>
+
+        </div>
+			</div>
+
+		</section>
+
+		<section class="proceso">
+			<h1>Proceso para <span>Precalificar</span></h1>
+			<div class="container">
+				<!-- <div class="row"> -->
+					<div class="col-md-4">
+						<div class="step-panel">
+							<div class="step-icon">
+								<span>
+									<img src="img/light-bulb.svg" alt="">
+								</span>
+							</div>
+							<p>Elige tu opción de <br>precalificación</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="step-panel">
+							<div class="step-icon">
+								<span>
+									<img src="img/commission.svg" alt="">
+								</span>
+							</div>
+							<p>Consulta tu <br>resultado</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="step-panel">
+							<div class="step-icon">
+								<span>
+									<img src="img/deal.svg" alt="">
+								</span>
+							</div>
+							<p>Disfruta <br>tu crédito</p>
+						</div>
+					</div>
+				<!-- </div> -->
+			</div>
+		</section>
+
+
+
+
+	<footer id="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row sidebar">
+					<div class="col-xs-12 col-sm-3 col-md-3">
+						<div class="question-contact">
+							<p>¿Tienes dudas? <br>llámanos</p>
+						</div>
+
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+							<div class="tel">
+								<span>0000-0000</span>
+								<p>CDMX y zona metropolitana</p>
+							</div>
+					</div>
+					<!-- .newsletter -->
+					<div class="col-xs-12 col-sm-5 col-md-5">
+						<div class="tel">
+							<span>00000-0000-0000</span>
+							<p>Del interior de la república y zona metropolitana</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- .footer-top -->
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="copyright col-xs-12 col-sm-3 col-md-3">
+						<img src="img/logo_white.svg" alt="">
+					</div>
+					<div class="phone-cont col-xs-6 col-sm-8 col-md-8">
+
+							<div class="text-footer-bottom">© Derechos Reservados 2017, Banco Santander (México) S.A. Institución de Banca Múñtiple, Grupo Financiero Santander</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- .footer-bottom -->
+	</footer>
+
+
+
+	<script src="libs/jquery.js"></script>
+	<script src="libs/bootstrap.js"></script>
+	<script src="libs/jquery.navgoco.min.js"></script>
+	<script src="libs/bootstrap-datepicker.min.js"></script>
+	<script src="libs/bootstrap-datepicker.es.min.js"></script>
+	<script src="libs/bootstrap-editable.min.js"></script>
+	<script src="libs/bootstrap-slider.js"></script>
+	<script src="libs/cleave.min.js"></script>
+	<script src="libs/cleave-phone.mx.js"></script>
+	<script src="libs/swiper.min.js"></script>
+	<script src="libs/dropzone.min.js"></script>
+	<script src="libs/typed.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/es.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+	<script src="js/index.js"></script>
+	<script src="js/home.js"></script>
+
+
+</body>
+
+</html>
