@@ -524,6 +524,66 @@ li.corner-border a:after {
   border-bottom: 1px solid #EB0029;
   border-right: 1px solid #EB0029; }
 
+.modal-dialog {
+  width: 50%;
+  margin-left: 0;
+  background: #ffffff; }
+
+.modal-content {
+  background: #ffffff;
+  height: 60%;
+  border-radius: 0;
+  font-family: 'Ubuntu', sans-serif; }
+
+.modal-header {
+  border: 0; }
+
+.modal-header .close {
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: -40px;
+  font-size: 44px;
+  font-weight: 100;
+  color: #EB0029;
+  opacity: 1; }
+
+.modal .panel .panel-body img {
+  margin: 0 auto; }
+
+.modal .form-group {
+  padding-top: 40px;
+  font-size: 11px; }
+
+.modal .form-group input {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #EB0029;
+  outline: none;
+  -webkit-appearance: none;
+  font-size: 11px;
+  text-align: center;
+  color: #a6a6a6;
+  width: 100%;
+  text-align: left;
+  box-shadow: none; }
+
+.modal .form-group select.form-control {
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #EB0029;
+  box-shadow: none;
+  -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+  background-position: calc(100% - 23px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+  background-size: 8px 8px, 8px 8px;
+  background-repeat: no-repeat;
+  font-size: 12px;
+  color: #4E6E82; }
+
+.modal .btn {
+  margin-top: 50px; }
+
 body {
   font-family: 'Gotham';
   background-color: #fff;
@@ -591,6 +651,35 @@ body {
   letter-spacing: 0;
   line-height: 18px;
   margin-top: 28px; }
+
+.scrollmenu {
+  text-transform: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
+
+.scrollmenu a {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 20px;
+  text-decoration: none;
+  color: #4E6E82;
+  font-size: 14px; }
+
+.scrollmenu .fa {
+  color: #EB0029;
+  opacity: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+.scrollmenu a.active {
+  color: #121212; }
+
+.scrollmenu a.active .fa {
+  opacity: 1; }
 
 /* importamos responsive al final */
 /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -928,8 +1017,7 @@ body {
   .panel-heading a:hover {
     color: #333; }
   .modal-dialog {
-    width: 87%;
-    margin-left: 10%; }
+    margin: 60px auto; }
   .only-mobile {
     display: none; }
   .only-desktop {
