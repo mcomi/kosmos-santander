@@ -60,7 +60,7 @@
 		<ul id="desktop-menu" class="nav navbar-nav">
 
 			<li class="corner-border">
-				<a href="#contacto">Continuar mi solicitud</a>
+				<a data-toggle="modal" data-target="#modalConsultaFolio">Continuar mi solicitud</a>
 			</li>
 		</ul>
 	</div>
@@ -172,7 +172,7 @@
 								</div>
 							</div>
 							<div class="col-md-12">
-								<button class="btn btn-red btn-small">Solicitar</button>
+								<a href="precalificador.html" class="btn btn-red btn-small">Solicitar</a>
 							</div>
 						</div>
 					</div>
@@ -192,7 +192,7 @@
 								<span>-Adquisición</span>
 							</div>
 							<div>
-								<img src="img/logo_white.svg" alt="">
+								<img src="img/logoSantander_white.svg" alt="">
 							</div>
             </div>
             <div class="testimonial-panel testimonial-panel2">
@@ -202,7 +202,7 @@
 								<span>-Remodelación</span>
 							</div>
 							<div>
-								<img src="img/logo_white.svg" alt="">
+								<img src="img/logoSantander_white.svg" alt="">
 							</div>
             </div>
             <div class="testimonial-panel testimonial-panel3">
@@ -212,7 +212,7 @@
 								<span>-Liquidez</span>
 							</div>
 							<div>
-								<img src="img/logo_white.svg" alt="">
+								<img src="img/logoSantander_white.svg" alt="">
 							</div>
             </div>
             <div class="testimonial-panel testimonial-panel4">
@@ -222,7 +222,7 @@
 								<span>-Cambio de hipoteca</span>
 							</div>
 							<div>
-								<img src="img/logo_white.svg" alt="">
+								<img src="img/logoSantander_white.svg" alt="">
 							</div>
             </div>
 
@@ -269,6 +269,7 @@
 			</div>
 		</section>
 
+		<!-- modal fovissste/infonavit -->
 		<div class="modal" id="modalFovissste" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -309,6 +310,76 @@
 			</div>
 		</div>
 
+	<!--modal consulta folio -->
+	<div class="modal" id="modalConsultaFolio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-folio" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+				</div>
+				<div class="modal-body">
+
+
+							<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+								<div class="corner-border">
+									<span id="modal-folio-titulo">Continuar mi solicitud</span>
+								</div>
+							</div>
+
+
+
+					<div class="col-xs-12 col-md-8 col-md-offset-2">
+						<div id="ingresa-folio" class="modal-folio-width">
+
+							<div class="form-group col-xs-12 col-md-12">
+								<label for="folio">Ingresa tu número de folio</label>
+								<input type="tel" class="form-control validate input-infonavit" id="folio" placeholder="12345678">
+								<span class="input-success"></span>
+								<span class="input-error"></span>
+							</div>
+							<div class="col-xs-12 text-center">
+								<button class="btn btn-red btn-small btn-block">Ver mi estatus</button>
+								<a id="olvide-folio-link" class="olvide-folio">Olvide mi folio</a>
+
+							</div>
+						</div>
+						<div id="olvide-folio" class="modal-folio-width hidden">
+							<div class="text-center">
+								<p>Ingresa tu número celular, te enviaremos un sms para continuar el proceso</p>
+							</div>
+
+							<div class="form-group col-xs-12 col-md-12">
+								<label for="cel">Ingresa tu número celular</label>
+								<input type="tel" class="form-control validate" id="cel" placeholder="5512345678">
+								<span class="input-success"></span>
+								<span class="input-error"></span>
+								<button id="btn-solicita-sms" class="btn btn-red btn-small btn-block">Solicitar sms</button>
+							</div>
+
+						</div>
+
+						<div id="input-sms-code" class="col-xs-12 text-center">
+							<p>Ingresa el código sms</p>
+							<div class="col-xs-12 col-md-12 code-submit">
+								<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+								<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+								<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+								<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+
+							</div>
+						</div>
+
+						<div class="modal-folio-width text-center">
+							<button id="btn-verifica-sms" class="btn btn-red btn-small btn-block">Ver mi status</button>
+							<img src="img/Santander_logo.svg" alt="">
+							<p>Hipoteca <span>Personal</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<footer id="footer">
 		<div class="footer-top">

@@ -42,9 +42,18 @@ function changeValuesForOption (option) {
 const linksOptions = document.querySelectorAll('.scrollmenu a');
 linksOptions.forEach(option => option.addEventListener('click', toggleActive));
 
-function toggleActive() {  
+function toggleActive() {
   linksOptions.forEach(option => {
     if(option.classList.contains('active')) option.classList.remove('active')
   });
   this.classList.add('active')
 }
+
+// modal folio
+var olvideFolioLink = document.getElementById('olvide-folio-link');
+var tituloModal = document.getElementById('modal-folio-titulo');
+olvideFolioLink.addEventListener('click', function(){
+  tituloModal.innerHTML = 'Olvide mi folio';
+  document.getElementById('ingresa-folio').classList.add('hidden');
+  document.getElementById('olvide-folio').classList.remove('hidden');
+})
