@@ -76,7 +76,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 padding-20">
             <div class="scrollmenu">
               <a href="#" data-type="precalificacion">Precalificación <br><icon class="fa fa-play"></icon></a>
               <a href="#" data-type="generales">Datos Generales <br><icon class="fa fa-play"></icon></a>
@@ -92,32 +92,32 @@
             <div class="row">
               <div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="nombre">Ingresa tu nombre</label>
-									<input type="tel" class="form-control validate input-infonavit" id="nombre" placeholder="Nombre">
+									<label for="curp">CURP</label>
+									<input type="text" class="form-control validate" id="curp" placeholder="DEXM830239QW3">
+									<span class="input-success">DEXM830239QW3</span>
+									<span class="input-error"></span>
+								</div>
+							</div>
+							<div class="col-md-3 col-xs-12">
+								<div class="form-group col-xs-12">
+									<label for="nombre">Nombre</label>
+									<input type="text" class="form-control validate" id="nombre" placeholder="">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
 							</div>
 							<div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="correo">Ingresa tu correo electrónico</label>
-									<input type="tel" class="form-control validate input-infonavit" id="correo" placeholder="juan@gmail.com">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-							<div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="celular">Ingresa tu celular</label>
-									<input type="tel" class="form-control validate input-infonavit" id="celular" placeholder="55 0000 0000">
+									<label for="ap-p">Apellido paterno</label>
+									<input type="text" class="form-control validate" id="ap-p" placeholder="">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
 							</div>
               <div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="celular">Ingresa tu celular</label>
-									<input type="tel" class="form-control validate input-infonavit" id="celular" placeholder="55 0000 0000">
+									<label for="ap-m">Apellido materno</label>
+									<input type="text" class="form-control validate" id="ap-m" placeholder="">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
@@ -126,32 +126,35 @@
             <div class="row">
               <div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="nombre">Ingresa tu nombre</label>
-									<input type="tel" class="form-control validate input-infonavit" id="nombre" placeholder="Nombre">
+									<label for="sexo">Sexo</label>
+									<select class="form-control validate" id="sexo" placeholder="">
+									<option value="m" selected>Masculino</option>
+									<option value="f">Femenino</option>
+								</select>
+								</div>
+							</div>
+							<div class="col-md-3 col-xs-12">
+								<div class="form-group col-xs-12">
+									<label for="correo">Fecha de nacimiento</label>
+									<input type="tel" class="form-control validate input-infonavit" id="correo" placeholder="Día/Mes/Año">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
 							</div>
 							<div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="correo">Ingresa tu correo electrónico</label>
-									<input type="tel" class="form-control validate input-infonavit" id="correo" placeholder="juan@gmail.com">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-							<div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="celular">Ingresa tu celular</label>
-									<input type="tel" class="form-control validate input-infonavit" id="celular" placeholder="55 0000 0000">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
+									<label for="ciudad">Ciudad</label>
+									<select class="form-control validate" id="ciudad" placeholder="">
+									<option value="cdmx" selected>CDMX</option>
+									<option value="opcion2">Querétaro</option>
+									<option value="opcion3">Aguscalientes</option>
+								</select>
 								</div>
 							</div>
               <div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="celular">Ingresa tu celular</label>
-									<input type="tel" class="form-control validate input-infonavit" id="celular" placeholder="55 0000 0000">
+									<label for="rfc">RFC</label>
+									<input type="text" class="form-control validate" id="rfc" placeholder="">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
@@ -160,50 +163,56 @@
             <div class="row">
               <div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="nombre">Ingresa tu nombre</label>
-									<input type="tel" class="form-control validate input-infonavit" id="nombre" placeholder="Nombre">
+									<label for="edo-civil">Estado civil</label>
+									<select class="form-control validate" id="edo-civil" placeholder="">
+									<option value="cofinavit" selected>Casado</option>
+									<option value="opcion2">Soltero</option>
+									<option value="opcion3">Opcion 3</option>
+								</select>
+								</div>
+							</div>
+							<div class="col-md-3 col-xs-12">
+								<div class="form-group col-xs-12">
+									<label for="dependientes">Dependientes económicos</label>
+									<input type="tel" class="form-control validate" id="dependientes" placeholder="">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
 							</div>
 							<div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="correo">Ingresa tu correo electrónico</label>
-									<input type="tel" class="form-control validate input-infonavit" id="correo" placeholder="juan@gmail.com">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-							<div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="celular">Ingresa tu celular</label>
-									<input type="tel" class="form-control validate input-infonavit" id="celular" placeholder="55 0000 0000">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
+									<label for="regimen">Régimen fiscal</label>
+									<select class="form-control validate" id="regimen" placeholder="">
+									<option value="fisica" selected>Persona física</option>
+									<option value="moral">Persona moral</option>
+									<option value="opcion3">Opcion 3</option>
+								</select>
 								</div>
 							</div>
               <div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="celular">Ingresa tu celular</label>
-									<input type="tel" class="form-control validate input-infonavit" id="celular" placeholder="55 0000 0000">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
+									<label for="actividad">Actividad específica</label>
+									<select class="form-control validate" id="actividad" placeholder="">
+									<option value="asalariado" selected>Asalariado</option>
+									<option value="opcion2">Opcion 2</option>
+									<option value="opcion3">Opcion 3</option>
+								</select>
 								</div>
 							</div>
             </div>
             <div class="row">
               <div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="nombre">Ingresa tu nombre</label>
-									<input type="tel" class="form-control validate input-infonavit" id="nombre" placeholder="Nombre">
+									<label for="ingresos-m">Ingresos mensuales</label>
+									<input type="text" class="form-control validate" id="ingresos-m" placeholder="">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
 							</div>
 							<div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="correo">Ingresa tu correo electrónico</label>
-									<input type="tel" class="form-control validate input-infonavit" id="correo" placeholder="juan@gmail.com">
+									<label for="correo">¿Cuánto tiempo llevas en tu empleo?</label>
+									<input type="tel" class="form-control validate" id="correo" placeholder="Años">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
@@ -216,32 +225,32 @@
             <div class="row">
               <div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="nombre">Ingresa tu nombre</label>
-									<input type="tel" class="form-control validate input-infonavit" id="nombre" placeholder="Nombre">
+									<label for="calle">Calle</label>
+									<input type="text" class="form-control validate" id="calle" placeholder="">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
 							</div>
 							<div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="correo">Ingresa tu correo electrónico</label>
-									<input type="tel" class="form-control validate input-infonavit" id="correo" placeholder="juan@gmail.com">
+									<label for="num-int">Número interior</label>
+									<input type="text" class="form-control validate" id="num-int" placeholder="">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
 							</div>
 							<div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="celular">Ingresa tu celular</label>
-									<input type="tel" class="form-control validate input-infonavit" id="celular" placeholder="55 0000 0000">
+									<label for="num-ext">Número exterior</label>
+									<input type="tel" class="form-control validate" id="num-ext" placeholder="">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
 							</div>
               <div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="celular">Ingresa tu celular</label>
-									<input type="tel" class="form-control validate input-infonavit" id="celular" placeholder="55 0000 0000">
+									<label for="cp">Código postal</label>
+									<input type="tel" class="form-control validate" id="cp" placeholder="">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
@@ -250,24 +259,24 @@
             <div class="row">
               <div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="nombre">Ingresa tu nombre</label>
-									<input type="tel" class="form-control validate input-infonavit" id="nombre" placeholder="Nombre">
+									<label for="colonia">Colonia</label>
+									<input type="text" class="form-control validate input-infonavit" id="colonia" placeholder="">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
 							</div>
 							<div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="correo">Ingresa tu correo electrónico</label>
-									<input type="tel" class="form-control validate input-infonavit" id="correo" placeholder="juan@gmail.com">
+									<label for="delegacion">Delegación/municipio</label>
+									<input type="text" class="form-control validate input-infonavit" id="delegacion" placeholder="">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
 							</div>
               <div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="celular">Ingresa tu celular</label>
-									<input type="tel" class="form-control validate input-infonavit" id="celular" placeholder="55 0000 0000">
+									<label for="estado">Estado</label>
+									<input type="text" class="form-control validate input-infonavit" id="estado" placeholder="">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
@@ -275,19 +284,153 @@
             </div>
             <hr>
             <div class="col-md-12">
-              <h4>¿Participa una segunda persona? </h4>
+              <h4>¿Participa una segunda persona?
 							<div class="segunda-persona-radio-inputs-container">
 
 								<div class="radio-input-solicitud">
-									<input type="radio" id="no" value="no" name="segunda-persona">
-									<label for="segunda-persona"><span>No </span></label>
+									<input type="radio" id="no-sp" value="no-sp" name="segunda-persona">
+									<label for="no-sp"><span>No </span></label>
 								</div>
 								<div class="radio-input-solicitud">
-									<input type="radio" id="si" value="si" name="segunda-persona">
-									<label for="segunda-persona"><span>Si </span></label>
+									<input type="radio" id="si-sp" value="si-sp" name="segunda-persona">
+									<label for="si-sp"><span>Si </span></label>
 								</div>
-							</div>
+							</div></h4>
             </div>
+						<div id="segunda-persona" class="hidden">
+							<div class="col-md-12">
+	              <h4>Datos personales del participante</h4>
+	            </div>
+	            <div class="row">
+	              <div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="curp-sp">CURP</label>
+										<input type="text" class="form-control validate" id="curp-sp" placeholder="">
+										<span class="input-success">DEXM830239QW3</span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="nombre-sp">Nombre</label>
+										<input type="text" class="form-control validate" id="nombre-sp" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="ap-p-sp">Apellido paterno</label>
+										<input type="text" class="form-control validate" id="ap-p-sp" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+	              <div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="ap-m-sp">Apellido materno</label>
+										<input type="text" class="form-control validate" id="ap-m-sp" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+	            </div>
+	            <div class="row">
+	              <div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="sexo-sp">Sexo</label>
+										<select class="form-control validate" id="sexo-sp" placeholder="">
+										<option value="m" selected>Masculino</option>
+										<option value="f">Femenino</option>
+									</select>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="fecha-nac-sp">Fecha de nacimiento</label>
+										<input type="text" class="form-control validate input-infonavit" id="fecha-nac-sp" placeholder="Día/Mes/Año">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="ciudad-sp">Ciudad</label>
+										<select class="form-control validate" id="ciudad-sp" placeholder="">
+										<option value="cdmx" selected>CDMX</option>
+										<option value="opcion2">Querétaro</option>
+										<option value="opcion3">Aguscalientes</option>
+									</select>
+									</div>
+								</div>
+	              <div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="rfc-sp">RFC</label>
+										<input type="text" class="form-control validate" id="rfc-sp" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+	            </div>
+	            <div class="row">
+	              <div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="edo-civil-sp">Estado civil</label>
+										<select class="form-control validate" id="edo-civil-sp" placeholder="">
+										<option value="cofinavit" selected>Casado</option>
+										<option value="opcion2">Soltero</option>
+										<option value="opcion3">Opcion 3</option>
+									</select>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="dependientes-sp">Dependientes económicos</label>
+										<input type="tel" class="form-control validate" id="dependientes-sp" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="regimen-sp">Régimen fiscal</label>
+										<select class="form-control validate" id="regimen-sp" placeholder="">
+										<option value="fisica" selected>Persona física</option>
+										<option value="moral">Persona moral</option>
+										<option value="opcion3">Opcion 3</option>
+									</select>
+									</div>
+								</div>
+	              <div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="actividad-sp">Actividad específica</label>
+										<select class="form-control validate" id="actividad-sp" placeholder="">
+										<option value="asalariado" selected>Asalariado</option>
+										<option value="opcion2">Opcion 2</option>
+										<option value="opcion3">Opcion 3</option>
+									</select>
+									</div>
+								</div>
+	            </div>
+	            <div class="row">
+	              <div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="ingresos-m-sp">Ingresos mensuales</label>
+										<input type="text" class="form-control validate" id="ingresos-m-sp" placeholder="">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-12">
+									<div class="form-group col-xs-12">
+										<label for="tiempo-empleo-sp">¿Cuánto tiempo llevas en tu empleo?</label>
+										<input type="tel" class="form-control validate" id="tiempo-empleo-sp" placeholder="Años">
+										<span class="input-success"></span>
+										<span class="input-error"></span>
+									</div>
+								</div>
+	            </div>
+						</div>
             <hr>
             <div class="col-md-12 historial-crediticio">
               <h4>Historial crediticio del solicitante</h4>
@@ -295,36 +438,36 @@
                 <img src="img/races.svg"/>
                 <p>Tiene un crédito automotriz desde hace 2 años</p>
 								<div class="radio-input-solicitud">
-                  <input type="radio" id="no" value="no" name="credito-auto">
-                  <label for="no"><span>No </span></label>
+                  <input type="radio" id="no-ca" value="no-ca" name="credito-auto">
+                  <label for="no-ca"><span>No </span></label>
                 </div>
                 <div class="radio-input-solicitud">
-                  <input type="radio" id="si" value="si" name="credito-auto">
-                  <label for="si"><span>Si </span></label>
+                  <input type="radio" id="si-ca" value="si-ca" name="credito-auto">
+                  <label for="si-ca"><span>Si </span></label>
                 </div>
               </div>
               <div class="col-md-3 col-xs-12">
                 <img src="img/home.svg"/>
                 <p>Tiene un crédito hipotecario desde hace 2 años</p>
 								<div class="radio-input-solicitud">
-                  <input type="radio" id="no" value="no" name="credito-casa">
-                  <label for="no"><span>No </span></label>
+                  <input type="radio" id="no-cc" value="no-cc" name="credito-casa">
+                  <label for="no-cc"><span>No </span></label>
                 </div>
                 <div class="radio-input-solicitud">
-                  <input type="radio" id="si" value="si" name="credito-casa">
-                  <label for="si"><span>Si </span></label>
+                  <input type="radio" id="si-cc" value="si-cc" name="credito-casa">
+                  <label for="si-cc"><span>Si </span></label>
                 </div>
               </div>
               <div class="col-md-3 col-xs-12">
                 <img src="img/credit-card.svg"/>
                 <p>¿Tiene o tuvo una tarjeta de crédito en los últimos 2 años?</p>
 								<div class="radio-input-solicitud">
-                  <input type="radio" id="no" value="no" name="tarjeta-credito">
-                  <label for="no"><span>No </span></label>
+                  <input type="radio" id="no-tc" value="no-tc" name="tarjeta-credito">
+                  <label for="no-tc"><span>No </span></label>
                 </div>
                 <div class="radio-input-solicitud">
-                  <input type="radio" id="si" value="si" name="tarjeta-credito">
-                  <label for="si"><span>Si </span></label>
+                  <input type="radio" id="si-tc" value="si-tc" name="tarjeta-credito">
+                  <label for="si-tc"><span>Si </span></label>
                 </div>
               </div>
               <div class="col-md-3 col-xs-12">
@@ -380,7 +523,7 @@
 					<div class="copyright col-xs-12 col-sm-3 col-md-3">
 						<img src="img/logo_white.svg" alt="">
 					</div>
-					<div class="phone-cont col-xs-6 col-sm-8 col-md-8">
+					<div class="phone-cont col-xs-12 col-sm-8 col-md-8">
 
 							<div class="text-footer-bottom">© Derechos Reservados 2017, Banco Santander (México) S.A. Institución de Banca Múñtiple, Grupo Financiero Santander</div>
 
