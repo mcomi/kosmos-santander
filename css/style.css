@@ -373,7 +373,7 @@ div.corner-border span:after {
 .cotizador-results {
   background: #FFFFFF;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  min-height: 360px;
+  min-height: 545px;
   text-align: center; }
 
 input[type=radio] {
@@ -969,7 +969,8 @@ input[type=radio] {
   width: 100%; }
 
 .modal-folio img {
-  padding-top: 30px; }
+  padding-top: 30px;
+  height: 100px; }
 
 #olvide-folio p {
   font-family: 'Ubuntu', sans-serif;
@@ -997,7 +998,8 @@ input[type=radio] {
   margin: 0 5px; }
 
 .modal-folio-width img {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  height: 100px; }
 
 #input-sms-code {
   margin: 35px 0px;
@@ -1126,6 +1128,13 @@ body {
   position: relative;
   margin: 0;
   min-height: 100%; }
+
+.navbar-brand > img {
+  height: 50px; }
+
+.navbar-default {
+  background: transparent;
+  border: 0; }
 
 .status {
   padding-top: 80px;
@@ -1430,7 +1439,9 @@ body {
   .precalificador-section {
     padding-top: 60px; }
   #landing-section {
-    height: auto; }
+    height: auto;
+    margin-top: -85px;
+    padding-top: 85px; }
   #footer {
     position: relative; }
   .panel-precalificador {
@@ -1448,6 +1459,8 @@ body {
     height: 80px; } }
 
 @media (min-width: 801px) {
+  .cotizador-results {
+    min-height: 360px; }
   .navbar-nav {
     float: right; }
   .navbar-brand {
