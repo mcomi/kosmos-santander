@@ -51,7 +51,7 @@
 		<div class="navbar-header">
 			<a class="navbar-brand" href="#">
 				<img src="img/logo.png" alt="">
-				
+
 			</a>
 			<span id="nav-expander" class="nav-expander fixed">
 				<img src="img/icons/menu.png" alt="">
@@ -94,7 +94,54 @@
 					</div>
 					<div id="ofertas" class="row">
 						<div class="col-md-8 col-md-offset-2 col-xs-12">
-
+							<div class="col-md-6 col-xs-12">
+								<div class="form-group col-xs-12 col-md-10">
+									<label for="valor-vivienda">Modificar valor de vivienda</label>
+									<input type="tel" class="form-control validate" id="valor-vivienda" placeholder="55 0000 0000">
+									<span class="input-success"></span>
+									<span class="input-error"></span>
+								</div>
+								<div class="form-group col-xs-12 col-md-10">
+									<label for="monto-credito">Modificar monto de crédito</label>
+									<input type="tel" class="form-control validate" id="monto-credito" placeholder="55 0000 0000">
+									<span class="input-success"></span>
+									<span class="input-error"></span>
+								</div>
+								<div class="col-md-12 modifica-montos">
+									<p>Modificar plazo:</p>
+									<div class="col-md-3 col-xs-3">
+										<div class="plazo-selection">
+											<input type="radio" id="5" value="5" name="cambio-plazo">
+											<label for="5"><span>5</span></label>
+										</div>
+										<p class="radio-year-label">años</p>
+									</div>
+									<div class="col-md-3 col-xs-3">
+										<div class="plazo-selection">
+											<input type="radio" id="10" value="10" name="cambio-plazo">
+											<label for="10"><span>10 </span></label>
+										</div>
+										<p class="radio-year-label">años</p>
+									</div>
+									<div class="col-md-3 col-xs-3">
+										<div class="plazo-selection">
+											<input type="radio" id="15" value="15" name="cambio-plazo">
+											<label for="15"><span>15 </span></label>
+										</div>
+										<p class="radio-year-label">años</p>
+									</div>
+									<div class="col-md-3 col-xs-3">
+										<div class="plazo-selection">
+											<input type="radio" id="20" value="20" name="cambio-plazo">
+											<label for="20"><span>20 </span></label>
+										</div>
+										<p class="radio-year-label">años</p>
+									</div>
+								</div>
+								<div class="col-md-12 text-left">
+									<a href="#" class="btn btn-red">Seleccionar ese monto <icon class="fa fa-play"></icon></a>
+								</div>
+							</div>
 							<div class="col-md-6 col-xs-12">
 								<div class="ofertas-corner-top active">
 
@@ -107,8 +154,20 @@
 											<span class="cotizador-md-title">Monto de Crédito</span>
 											<h4 class="cotizador-valor-md">90%</h4>
 											<span class="cotizador-md-title">Desembolso inicial</span>
-											<h4 class="cotizador-valor-md">10.94%</h4>
-											<span class="cotizador-md-title">Tasa</span>
+											<div class="col-md-6 margin-16">
+
+												<h4 class="cotizador-valor-md">10.94%</h4>
+												<span class="cotizador-md-title">Tasa</span>
+											</div>
+											<div class="col-md-6 margin-16">
+
+												<h4 class="cotizador-valor-md">14%</h4>
+												<span class="cotizador-md-title">CAT</span>
+											</div>
+											<h4 class="cotizador-valor-md">$2,000.00</h4>
+											<span class="cotizador-md-title">Seguro de vida</span>
+											<h4 class="cotizador-valor-md">$2,000.00</h4>
+											<span class="cotizador-md-title">Seguro de daños</span>
 										</div>
 										<div class="col-md-6 col-xs-12">
 											<h3 class="cotizador-valor-big">$10,281</h3>
@@ -124,192 +183,54 @@
 												</div>
 												<p class="radio-year-label">años</p>
 											</div>
+											<h4 class="cotizador-valor-md">10%</h4>
+											<span class="cotizador-md-title">Comisión apertura</span>
+											<h4 class="cotizador-valor-md">$2,000.00</h4>
+											<span class="cotizador-md-title">pago mensual infonavit</span>
 										</div>
 
 
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-xs-12">
-								<div class="ofertas-corner-top">
-
-									<div class="propuesta-elegir">
-
-										<div class="col-md-6 col-xs-12">
-											<h3 class="cotizador-valor-big">$1,111,111.00</h3>
-											<span class="cotizador-big-title">Valor de la vivienda</span>
-											<h4 class="cotizador-valor-md">$1,000,000.00</h4>
-											<span class="cotizador-md-title">Monto de Crédito</span>
-											<h4 class="cotizador-valor-md">90%</h4>
-											<span class="cotizador-md-title">Desembolso inicial</span>
-											<h4 class="cotizador-valor-md">10.94%</h4>
-											<span class="cotizador-md-title">Tasa</span>
-										</div>
-										<div class="col-md-6 col-xs-12">
-											<h3 class="cotizador-valor-big">$10,281</h3>
-											<span class="cotizador-big-title">Pago Mensual Total</span>
-											<h4 class="cotizador-valor-md">$23,589</h4>
-											<span class="cotizador-md-title">Ingreso neto requerido</span>
-											<h4 class="cotizador-valor-md">90%</h4>
-											<span class="cotizador-md-title">Financiamiento</span>
-											<div class="col-md-12 col-xs-12">
-												<div class="plazo-selection">
-													<input type="radio" id="5" value="5" name="plazo">
-													<label for="5"><span>5</span></label>
-												</div>
-												<p class="radio-year-label">años</p>
-											</div>
-										</div>
-
-
-									</div>
-								</div>
+							<div class="col-md-12 text-right">
+								<a href="#" class="red">Ver tabla de amortización</a>
 							</div>
-							<div class="col-md-6 col-xs-12">
-								<div class="ofertas-corner-top">
-
-									<div class="propuesta-elegir">
-
-										<div class="col-md-6 col-xs-12">
-											<h3 class="cotizador-valor-big">$1,111,111.00</h3>
-											<span class="cotizador-big-title">Valor de la vivienda</span>
-											<h4 class="cotizador-valor-md">$1,000,000.00</h4>
-											<span class="cotizador-md-title">Monto de Crédito</span>
-											<h4 class="cotizador-valor-md">90%</h4>
-											<span class="cotizador-md-title">Desembolso inicial</span>
-											<h4 class="cotizador-valor-md">10.94%</h4>
-											<span class="cotizador-md-title">Tasa</span>
-										</div>
-										<div class="col-md-6 col-xs-12">
-											<h3 class="cotizador-valor-big">$10,281</h3>
-											<span class="cotizador-big-title">Pago Mensual Total</span>
-											<h4 class="cotizador-valor-md">$23,589</h4>
-											<span class="cotizador-md-title">Ingreso neto requerido</span>
-											<h4 class="cotizador-valor-md">90%</h4>
-											<span class="cotizador-md-title">Financiamiento</span>
-											<div class="col-md-12 col-xs-12">
-												<div class="plazo-selection">
-													<input type="radio" id="5" value="5" name="plazo">
-													<label for="5"><span>5</span></label>
-												</div>
-												<p class="radio-year-label">años</p>
-											</div>
-										</div>
-
-
-									</div>
-								</div>
+							<div class="col-md-12">
+								<p class="executive">
+									Un ejecutivo te contactará  para orientarte sobre los siguientes pasos y concluir tu
+									trámite  O puedes dirigirte a una sucursal con tu número de folio y terminar tu solicitud.
+								</p>
 							</div>
-							<div class="col-md-6 col-xs-12">
-								<div class="ofertas-corner-top">
-
-									<div class="propuesta-elegir">
-
-										<div class="col-md-6 col-xs-12">
-											<h3 class="cotizador-valor-big">$1,111,111.00</h3>
-											<span class="cotizador-big-title">Valor de la vivienda</span>
-											<h4 class="cotizador-valor-md">$1,000,000.00</h4>
-											<span class="cotizador-md-title">Monto de Crédito</span>
-											<h4 class="cotizador-valor-md">90%</h4>
-											<span class="cotizador-md-title">Desembolso inicial</span>
-											<h4 class="cotizador-valor-md">10.94%</h4>
-											<span class="cotizador-md-title">Tasa</span>
-										</div>
-										<div class="col-md-6 col-xs-12">
-											<h3 class="cotizador-valor-big">$10,281</h3>
-											<span class="cotizador-big-title">Pago Mensual Total</span>
-											<h4 class="cotizador-valor-md">$23,589</h4>
-											<span class="cotizador-md-title">Ingreso neto requerido</span>
-											<h4 class="cotizador-valor-md">90%</h4>
-											<span class="cotizador-md-title">Financiamiento</span>
-											<div class="col-md-12 col-xs-12">
-												<div class="plazo-selection">
-													<input type="radio" id="5" value="5" name="plazo">
-													<label for="5"><span>5</span></label>
-												</div>
-												<p class="radio-year-label">años</p>
-											</div>
-										</div>
-
-
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-xs-12">
-								<div class="ofertas-corner-top">
-
-									<div class="propuesta-elegir">
-
-										<div class="col-md-6 col-xs-12">
-											<h3 class="cotizador-valor-big">$1,111,111.00</h3>
-											<span class="cotizador-big-title">Valor de la vivienda</span>
-											<h4 class="cotizador-valor-md">$1,000,000.00</h4>
-											<span class="cotizador-md-title">Monto de Crédito</span>
-											<h4 class="cotizador-valor-md">90%</h4>
-											<span class="cotizador-md-title">Desembolso inicial</span>
-											<h4 class="cotizador-valor-md">10.94%</h4>
-											<span class="cotizador-md-title">Tasa</span>
-										</div>
-										<div class="col-md-6 col-xs-12">
-											<h3 class="cotizador-valor-big">$10,281</h3>
-											<span class="cotizador-big-title">Pago Mensual Total</span>
-											<h4 class="cotizador-valor-md">$23,589</h4>
-											<span class="cotizador-md-title">Ingreso neto requerido</span>
-											<h4 class="cotizador-valor-md">90%</h4>
-											<span class="cotizador-md-title">Financiamiento</span>
-											<div class="col-md-12 col-xs-12">
-												<div class="plazo-selection">
-													<input type="radio" id="5" value="5" name="plazo">
-													<label for="5"><span>5</span></label>
-												</div>
-												<p class="radio-year-label">años</p>
-											</div>
-										</div>
-
-
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-xs-12">
-								<div class="ofertas-corner-top">
-
-									<div class="propuesta-elegir">
-
-										<div class="col-md-6 col-xs-12">
-											<h3 class="cotizador-valor-big">$1,111,111.00</h3>
-											<span class="cotizador-big-title">Valor de la vivienda</span>
-											<h4 class="cotizador-valor-md">$1,000,000.00</h4>
-											<span class="cotizador-md-title">Monto de Crédito</span>
-											<h4 class="cotizador-valor-md">90%</h4>
-											<span class="cotizador-md-title">Desembolso inicial</span>
-											<h4 class="cotizador-valor-md">10.94%</h4>
-											<span class="cotizador-md-title">Tasa</span>
-										</div>
-										<div class="col-md-6 col-xs-12">
-											<h3 class="cotizador-valor-big">$10,281</h3>
-											<span class="cotizador-big-title">Pago Mensual Total</span>
-											<h4 class="cotizador-valor-md">$23,589</h4>
-											<span class="cotizador-md-title">Ingreso neto requerido</span>
-											<h4 class="cotizador-valor-md">90%</h4>
-											<span class="cotizador-md-title">Financiamiento</span>
-											<div class="col-md-12 col-xs-12">
-												<div class="plazo-selection">
-													<input type="radio" id="5" value="5" name="plazo">
-													<label for="5"><span>5</span></label>
-												</div>
-												<p class="radio-year-label">años</p>
-											</div>
-										</div>
-
-
-									</div>
-								</div>
+							<col-md-6 class="col-xs-12">
+								<a href="#" class="red">
+									<i class="fa fa-map-marker"></i>  Busca una sucursal
+								</a>
+							</col-md-6>
+							<col-md-6 class="col-xs-12 text-right">
+								<a href="#" class="btn btn-red btn-small">Continuar en línea <icon class="fa fa-play"></icon></a>
+							</col-md-6>
+							<div class="col-md-12">
+									<ul class="terminos-condiciones">
+										<li>
+											1. 	La información contenida en la presente precalificación es únicamente para efectos informativos y en ningún momento constituirá una oferta vinculante y/o obligación a cargo de Banco Santander (México), S.A.
+										</li>
+										<li>
+											2. 	La aprobación final del crédito dependerá de manera enunciativa, más no limitativa, de la comprobación de los datos y documentos proporcionados o que se llegue a solicitar, estado civil, aceptación de la aseguradora, y del resultado de la investigación del historial crediticio del solicitante en las sociedades de información crediticia, así como de la situación legal y física del inmueble a adquirir.
+										</li>
+										<li>
+											3. 	Banco Santander (México), S.A., se reserva el derecho de autorizar el crédito conforme a las políticas vigentes para la institución al momento de presentar la solicitud de crédito.
+										</li>
+									</ul>
 							</div>
 						</div>
 					</div>
         </div>
       </div>
     </section>
+
+
+
 
 	<footer id="footer">
 		<div class="footer-top">

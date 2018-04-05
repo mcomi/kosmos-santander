@@ -874,6 +874,88 @@ input[type=radio] {
     position: absolute;
     margin-bottom: 20px; }
 
+.modifica-montos label:before {
+  display: block;
+  content: "";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  border-top: 1px solid #DADADA;
+  border-left: 1px solid #DADADA; }
+
+.modifica-montos label:after {
+  display: block;
+  content: "";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: -10px;
+  right: 35px;
+  border-top: 1px solid #DADADA;
+  border-right: 1px solid #DADADA; }
+
+.modifica-montos input:checked + label:before {
+  border-top: 1px solid #EB0029;
+  border-left: 1px solid #EB0029; }
+
+.modifica-montos input:checked + label:after {
+  border-top: 1px solid #EB0029;
+  border-right: 1px solid #EB0029; }
+
+.modifica-montos label span:before {
+  display: block;
+  content: "";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  bottom: 42px;
+  left: 0;
+  border-bottom: 1px solid #DADADA;
+  border-left: 1px solid #DADADA; }
+
+.modifica-montos label span:after {
+  display: block;
+  content: "";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  bottom: 42px;
+  right: 35px;
+  border-bottom: 1px solid #DADADA;
+  border-right: 1px solid #DADADA; }
+
+.modifica-montos input:checked + label span:before {
+  border-bottom: 1px solid #EB0029;
+  border-left: 1px solid #EB0029; }
+
+.modifica-montos input:checked + label span:after {
+  border-bottom: 1px solid #EB0029;
+  border-right: 1px solid #EB0029; }
+
+.modifica-montos p {
+  padding: 10px 0; }
+
+.margin-16 {
+  margin: 16px 0px; }
+
+p.executive {
+  padding-top: 25px;
+  font-size: 22px;
+  font-family: 'Ubuntu';
+  font-weight: 300; }
+
+ul.terminos-condiciones {
+  padding: 0;
+  list-style-type: none;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 12px;
+  color: #4E4044;
+  letter-spacing: 0;
+  line-height: 20px; }
+
 .modal-dialog {
   width: 50%;
   margin: 60px auto; }
@@ -1394,6 +1476,17 @@ body {
   .option-calc {
     height: 50px;
     padding: 18px 16px; }
+  .input-sms-code {
+    width: 120%;
+    margin-left: -20px; }
+  .scrollmenu a {
+    display: none; }
+  .scrollmenu a.active {
+    display: block; }
+  .propuesta-elegir label span:before {
+    left: 122px; }
+  .propuesta-elegir label span:after {
+    right: 121px; }
   .list-options {
     padding-left: 0; }
   .cotizador-panels {
