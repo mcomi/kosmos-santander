@@ -46,10 +46,10 @@ span.action {
   border-bottom: 1px solid #EB0029; }
 
 .cotizador-big-title {
-  font-size: 14px;
+  font-size: 13px;
   color: #121212;
   letter-spacing: 0;
-  line-height: 20px; }
+  line-height: 13px; }
 
 .cotizador-valor-md {
   font-family: 'Gotham';
@@ -729,6 +729,9 @@ input[type=radio] {
   color: #4E6E82;
   letter-spacing: 0;
   padding: 0 0 15px 0; }
+
+.propuesta-elegir h3 {
+  line-height: 12px; }
 
 .ofertas-corner-top.active .propuesta-elegir {
   color: #121212;
@@ -1447,8 +1450,15 @@ body {
   margin-left: 10px; }
 
 .status-panel {
-  margin-top: 35px;
-  margin-bottom: 35px; }
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.status-panel h2 {
+  font-size: 25px;
+  margin: 3px; }
+
+.padding-5 {
+  padding: 5px 0; }
 
 table {
   font-size: 14px;
