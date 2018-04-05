@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="8px" height="16px" viewBox="0 0 8 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
     <title>Triangle_right_red</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -11,17 +11,19 @@
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
     </defs>
-    <g id="Home_valor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-154.000000, -975.000000)">
-        <g id="opciones" transform="translate(136.000000, 940.000000)">
-            <g id="destino">
-                <g id="Rectangle-10">
-                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home_valor" transform="translate(-154.000000, -933.000000)">
+            <g id="opciones" transform="translate(136.000000, 898.000000)">
+                <g id="destino">
+                    <g id="Rectangle-10">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <text id="Valor-de-la-vivienda" font-family="Ubuntu-Regular, Ubuntu" font-size="14" font-weight="normal" line-spacing="20" fill="#121212">
+                        <tspan x="88.562" y="47">Valor de la vivienda</tspan>
+                    </text>
+                    <polygon id="Triangle_right_red" fill="#EB0029" transform="translate(22.000000, 43.000000) scale(1, -1) rotate(90.000000) translate(-22.000000, -43.000000) " points="22 39 30 47 14 47"></polygon>
                 </g>
-                <text id="Valor-de-la-vivienda" font-family="Ubuntu-Regular, Ubuntu" font-size="14" font-weight="normal" line-spacing="20" fill="#121212">
-                    <tspan x="88.562" y="47">Valor de la vivienda</tspan>
-                </text>
-                <polygon id="Triangle_right_red" fill="#EB0029" transform="translate(22.000000, 43.000000) scale(1, -1) rotate(90.000000) translate(-22.000000, -43.000000) " points="22 39 30 47 14 47"></polygon>
             </g>
         </g>
     </g>

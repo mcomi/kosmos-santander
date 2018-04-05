@@ -1,5 +1,3 @@
-
-
 $( "input[name='segunda-persona']").click(function(){
   if($(this).val() == 'si-sp'){
     $('#segunda-persona').removeClass('hidden')
@@ -35,6 +33,14 @@ function toggleActive() {
     if(option.classList.contains('active')) option.classList.remove('active')
   });
   this.classList.add('active')
+  if(this.dataset.type == 'precalificacion') {
+    $('#datos-precalificacion').removeClass('hidden')
+    $('#generales').addClass('hidden')
+  }
+  if(this.dataset.type == 'generales') {
+    $('#datos-precalificacion').addClass('hidden')
+    $('#generales').removeClass('hidden')
+  }
 }
 
 // valida

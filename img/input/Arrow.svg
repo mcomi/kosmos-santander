@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="12px" height="8px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
     <title>input/Arrow</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Precalificación_individual" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-802.000000, -689.000000)">
-        <g id="datos-personales" transform="translate(99.000000, 332.000000)">
-            <g transform="translate(36.000000, 40.000000)" id="Input/Text/Active">
-                <g transform="translate(481.000000, 285.000000)">
-                    <g id="input/Background/Blue" transform="translate(1.000000, 20.000000)" stroke="#EB0029" stroke-linecap="square">
-                        <path d="M0,31 L208,31" id="Line"></path>
-                    </g>
-                    <g transform="translate(8.000000, 28.000000)" fill="#4E6E82" font-family="Ubuntu-Regular, Ubuntu" font-size="12" font-weight="normal" line-spacing="16">
-                        <text>
-                            <tspan x="0" y="10">Persona física</tspan>
-                        </text>
-                    </g>
-                    <g id="input/Arrow" transform="translate(186.000000, 33.000000)" stroke="#4E6E82" stroke-linecap="square">
-                        <path d="M6,4.94558441 L11.0262523,0.3 L11.3508349,5.77315973e-15 L12,0.6 L11.6754174,0.9 L6.48209643,5.7 L6.15751387,6 L6,5.85441559 L5.84248613,6 L5.51790357,5.7 L0.324582563,0.9 L-1.13686838e-13,0.6 L0.649165125,0 L0.973747688,0.3 L6,4.94558441 Z" id="Combined-Shape"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Precalificación_individual" transform="translate(-802.000000, -689.000000)">
+            <g id="datos-personales" transform="translate(99.000000, 332.000000)">
+                <g transform="translate(36.000000, 40.000000)" id="Input/Text/Active">
+                    <g transform="translate(481.000000, 285.000000)">
+                        <g id="input/Background/Blue" transform="translate(1.000000, 20.000000)" stroke="#EB0029" stroke-linecap="square">
+                            <path d="M0,31 L208,31" id="Line"></path>
+                        </g>
+                        <g transform="translate(8.000000, 28.000000)" fill="#4E6E82" font-family="Ubuntu-Regular, Ubuntu" font-size="12" font-weight="normal" line-spacing="16">
+                            <text>
+                                <tspan x="0" y="10">Persona física</tspan>
+                            </text>
+                        </g>
+                        <g id="input/Arrow" transform="translate(186.000000, 33.000000)" stroke="#4E6E82" stroke-linecap="square">
+                            <path d="M6,4.94558441 L11.0262523,0.3 L11.3508349,5.77315973e-15 L12,0.6 L11.6754174,0.9 L6.48209643,5.7 L6.15751387,6 L6,5.85441559 L5.84248613,6 L5.51790357,5.7 L0.324582563,0.9 L-1.13686838e-13,0.6 L0.649165125,0 L0.973747688,0.3 L6,4.94558441 Z" id="Combined-Shape"></path>
+                        </g>
                     </g>
                 </g>
             </g>

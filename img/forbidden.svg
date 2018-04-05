@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
     <title>forbidden</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Precalificación_rechazo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-571.000000, -289.000000)">
-        <g id="datos-personales" transform="translate(99.000000, 251.000000)" fill-rule="nonzero">
-            <g id="forbidden" transform="translate(472.000000, 38.000000)">
-                <circle id="Oval" fill="#E84849" cx="24.9964135" cy="24.9964135" r="24.9964135"></circle>
-                <path d="M45.3159283,25.9314346 C45.3159283,27.70327 43.8787975,29.1399789 42.107384,29.1399789 L7.88291139,29.1399789 C6.11107595,29.1399789 4.67394515,27.70327 4.67394515,25.9314346 L4.67394515,24.0598101 C4.67394515,22.2879747 6.11107595,20.8512658 7.88291139,20.8512658 L42.107384,20.8512658 C43.8787975,20.8512658 45.3159283,22.2879747 45.3159283,24.0598101 L45.3159283,25.9314346 Z" id="Shape" fill="#F4F5F5"></path>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Precalificación_rechazo" transform="translate(-571.000000, -289.000000)" fill-rule="nonzero">
+            <g id="datos-personales" transform="translate(99.000000, 251.000000)">
+                <g id="forbidden" transform="translate(472.000000, 38.000000)">
+                    <circle id="Oval" fill="#E84849" cx="24.9964135" cy="24.9964135" r="24.9964135"></circle>
+                    <path d="M45.3159283,25.9314346 C45.3159283,27.70327 43.8787975,29.1399789 42.107384,29.1399789 L7.88291139,29.1399789 C6.11107595,29.1399789 4.67394515,27.70327 4.67394515,25.9314346 L4.67394515,24.0598101 C4.67394515,22.2879747 6.11107595,20.8512658 7.88291139,20.8512658 L42.107384,20.8512658 C43.8787975,20.8512658 45.3159283,22.2879747 45.3159283,24.0598101 L45.3159283,25.9314346 Z" id="Shape" fill="#F4F5F5"></path>
+                </g>
             </g>
         </g>
     </g>

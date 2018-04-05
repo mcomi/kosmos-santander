@@ -78,416 +78,532 @@
         <div class="row">
           <div class="col-md-12 padding-20">
             <div class="scrollmenu">
-              <a href="#" data-type="precalificacion">Precalificación <br><icon class="fa fa-play"></icon></a>
-              <a href="#" data-type="generales">Datos Generales <br><icon class="fa fa-play"></icon></a>
-              <a href="#" data-type="clinicos">Datos clínicos <br><icon class="fa fa-play"></icon></a>
-              <a href="#" data-type="documentos">Carga de Documentos <br><icon class="fa fa-play"></icon></a>
+              <a href="#" id="link_precalificacion" data-type="precalificacion" class="active">Precalificación <br><icon class="fa fa-play"></icon></a>
+              <a href="#" id="link_generales" data-type="generales">Datos Generales <br><icon class="fa fa-play"></icon></a>
+              <a href="#" id="link_clinicos" data-type="clinicos">Datos clínicos <br><icon class="fa fa-play"></icon></a>
+              <a href="#" id="link_documentos" data-type="documentos">Carga de Documentos <br><icon class="fa fa-play"></icon></a>
             </div>
             <h2>Tu número de folio es: <span>12345678</span></h2>
+						<span class="subtitle-info">Con este número podrás consultar tu solicitud en cualquier momento.</span>
           </div>
-          <div id="datos-precalificacion">
-            <div class="col-md-12">
-              <h4>Datos personales</h4>
-            </div>
-            <div class="row">
-              <div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="curp">CURP</label>
-									<input type="text" class="form-control validate" id="curp" placeholder="DEXM830239QW3">
-									<span class="input-success">DEXM830239QW3</span>
-									<span class="input-error"></span>
+				</div>
+				<div id="precalificacion" class="row">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default active">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#datos-personales" aria-expanded="true" aria-controls="datos-personales">
+										<span>Datos personales</span>
+										<span class="text-right">
+											<img src="img/minus-squared-button.svg" alt="">
+										</span>
+									</a>
+								</h4>
+							</div>
+							<div id="datos-personales" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+								<div class="panel-body">
+
+									<div class="row">
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="curp">CURP</label>
+												<input type="text" class="form-control validate" id="curp" placeholder="DEXM830239QW3">
+												<span class="input-success">DEXM830239QW3</span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="nombre">Nombre</label>
+												<input type="text" class="form-control validate" id="nombre" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="ap-p">Apellido paterno</label>
+												<input type="text" class="form-control validate" id="ap-p" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="ap-m">Apellido materno</label>
+												<input type="text" class="form-control validate" id="ap-m" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="sexo">Sexo</label>
+												<select class="form-control validate" id="sexo" placeholder="">
+													<option value="m" selected>Masculino</option>
+													<option value="f">Femenino</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="correo">Fecha de nacimiento</label>
+												<input type="tel" class="form-control validate input-infonavit" id="correo" placeholder="Día/Mes/Año">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="ciudad">Ciudad</label>
+												<select class="form-control validate" id="ciudad" placeholder="">
+													<option value="cdmx" selected>CDMX</option>
+													<option value="opcion2">Querétaro</option>
+													<option value="opcion3">Aguscalientes</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="rfc">RFC</label>
+												<input type="text" class="form-control validate" id="rfc" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="edo-civil">Estado civil</label>
+												<select class="form-control validate" id="edo-civil" placeholder="">
+													<option value="cofinavit" selected>Casado</option>
+													<option value="opcion2">Soltero</option>
+													<option value="opcion3">Opcion 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="dependientes">Dependientes económicos</label>
+												<input type="tel" class="form-control validate" id="dependientes" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="regimen">Régimen fiscal</label>
+												<select class="form-control validate" id="regimen" placeholder="">
+													<option value="fisica" selected>Persona física</option>
+													<option value="moral">Persona moral</option>
+													<option value="opcion3">Opcion 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="actividad">Actividad específica</label>
+												<select class="form-control validate" id="actividad" placeholder="">
+													<option value="asalariado" selected>Asalariado</option>
+													<option value="opcion2">Opcion 2</option>
+													<option value="opcion3">Opcion 3</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="ingresos-m">Ingresos mensuales</label>
+												<input type="text" class="form-control validate" id="ingresos-m" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="correo">¿Cuánto tiempo llevas en tu empleo?</label>
+												<input type="tel" class="form-control validate" id="correo" placeholder="Años">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#domicilio" aria-expanded="true" aria-controls="domicilio">
+										<span>Domicilio</span>
+										<span class="text-right">
+											<img src="img/add-square-button.svg" alt="">
+										</span>
+									</a>
+								</h4>
+							</div>
+							<div id="domicilio" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+
+								<div class="panel-body">
+									<div class="row">
+			              <div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="calle">Calle</label>
+												<input type="text" class="form-control validate" id="calle" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="num-int">Número interior</label>
+												<input type="text" class="form-control validate" id="num-int" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="num-ext">Número exterior</label>
+												<input type="tel" class="form-control validate" id="num-ext" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+			              <div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="cp">Código postal</label>
+												<input type="tel" class="form-control validate" id="cp" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+			            </div>
+			            <div class="row">
+			              <div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="colonia">Colonia</label>
+												<input type="text" class="form-control validate input-infonavit" id="colonia" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="delegacion">Delegación/municipio</label>
+												<input type="text" class="form-control validate input-infonavit" id="delegacion" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+			              <div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="estado">Estado</label>
+												<input type="text" class="form-control validate input-infonavit" id="estado" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+			            </div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+
+										<span>¿Participa una segunda persona?</span>
+										<div class="segunda-persona-radio-inputs-container">
+
+											<div class="radio-input-solicitud">
+												<input type="radio" id="no-sp" value="no-sp" name="segunda-persona">
+												<label for="no-sp"><span>No </span></label>
+											</div>
+											<div class="radio-input-solicitud">
+												<input type="radio" id="si-sp" value="si-sp" name="segunda-persona">
+												<label for="si-sp"><span>Si </span></label>
+											</div>
+										</div>
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#segunda-persona" aria-expanded="true" aria-controls="segunda-persona">
+										<span class="text-right">
+											<img src="img/add-square-button.svg" alt="">
+										</span>
+									</a>
+								</h4>
+							</div>
+							<div id="segunda-persona" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+
+								<div class="panel-body">
+									<div id="co-acreditado" class="hidden">
+										<div class="col-md-12">
+				              <h4>Datos personales del participante</h4>
+				            </div>
+				            <div class="row">
+				              <div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="curp-sp">CURP</label>
+													<input type="text" class="form-control validate" id="curp-sp" placeholder="">
+													<span class="input-success">DEXM830239QW3</span>
+													<span class="input-error"></span>
+												</div>
+											</div>
+											<div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="nombre-sp">Nombre</label>
+													<input type="text" class="form-control validate" id="nombre-sp" placeholder="">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+											</div>
+											<div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="ap-p-sp">Apellido paterno</label>
+													<input type="text" class="form-control validate" id="ap-p-sp" placeholder="">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+											</div>
+				              <div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="ap-m-sp">Apellido materno</label>
+													<input type="text" class="form-control validate" id="ap-m-sp" placeholder="">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+											</div>
+				            </div>
+				            <div class="row">
+				              <div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="sexo-sp">Sexo</label>
+													<select class="form-control validate" id="sexo-sp" placeholder="">
+													<option value="m" selected>Masculino</option>
+													<option value="f">Femenino</option>
+												</select>
+												</div>
+											</div>
+											<div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="fecha-nac-sp">Fecha de nacimiento</label>
+													<input type="text" class="form-control validate input-infonavit" id="fecha-nac-sp" placeholder="Día/Mes/Año">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+											</div>
+											<div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="ciudad-sp">Ciudad</label>
+													<select class="form-control validate" id="ciudad-sp" placeholder="">
+													<option value="cdmx" selected>CDMX</option>
+													<option value="opcion2">Querétaro</option>
+													<option value="opcion3">Aguscalientes</option>
+												</select>
+												</div>
+											</div>
+				              <div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="rfc-sp">RFC</label>
+													<input type="text" class="form-control validate" id="rfc-sp" placeholder="">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+											</div>
+				            </div>
+				            <div class="row">
+				              <div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="edo-civil-sp">Estado civil</label>
+													<select class="form-control validate" id="edo-civil-sp" placeholder="">
+													<option value="cofinavit" selected>Casado</option>
+													<option value="opcion2">Soltero</option>
+													<option value="opcion3">Opcion 3</option>
+												</select>
+												</div>
+											</div>
+											<div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="dependientes-sp">Dependientes económicos</label>
+													<input type="tel" class="form-control validate" id="dependientes-sp" placeholder="">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+											</div>
+											<div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="regimen-sp">Régimen fiscal</label>
+													<select class="form-control validate" id="regimen-sp" placeholder="">
+													<option value="fisica" selected>Persona física</option>
+													<option value="moral">Persona moral</option>
+													<option value="opcion3">Opcion 3</option>
+												</select>
+												</div>
+											</div>
+				              <div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="actividad-sp">Actividad específica</label>
+													<select class="form-control validate" id="actividad-sp" placeholder="">
+													<option value="asalariado" selected>Asalariado</option>
+													<option value="opcion2">Opcion 2</option>
+													<option value="opcion3">Opcion 3</option>
+												</select>
+												</div>
+											</div>
+				            </div>
+				            <div class="row">
+				              <div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="ingresos-m-sp">Ingresos mensuales</label>
+													<input type="text" class="form-control validate" id="ingresos-m-sp" placeholder="">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+											</div>
+											<div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="tiempo-empleo-sp">¿Cuánto tiempo llevas en tu empleo?</label>
+													<input type="tel" class="form-control validate" id="tiempo-empleo-sp" placeholder="Años">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+											</div>
+				            </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default active">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#historial" aria-expanded="true" aria-controls="historial">
+										<span>Historial crediticio del solicitante</span>
+										<span class="text-right">
+											<img src="img/add-square-button.svg" alt="">
+										</span>
+									</a>
+								</h4>
+							</div>
+							<div id="historial" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+
+								<div class="panel-body">
+									<div class="col-md-12 historial-crediticio">
+			              <div class="col-md-3 col-xs-12">
+			                <img src="img/car.svg"/>
+			                <p>Tiene un crédito automotriz desde hace 2 años</p>
+											<div class="radio-input-solicitud">
+			                  <input type="radio" id="no-ca" value="no-ca" name="credito-auto">
+			                  <label for="no-ca"><span>No </span></label>
+			                </div>
+			                <div class="radio-input-solicitud">
+			                  <input type="radio" id="si-ca" value="si-ca" name="credito-auto">
+			                  <label for="si-ca"><span>Si </span></label>
+			                </div>
+			              </div>
+			              <div class="col-md-3 col-xs-12">
+			                <img src="img/home.svg"/>
+			                <p>Tiene un crédito hipotecario desde hace 2 años</p>
+											<div class="radio-input-solicitud">
+			                  <input type="radio" id="no-cc" value="no-cc" name="credito-casa">
+			                  <label for="no-cc"><span>No </span></label>
+			                </div>
+			                <div class="radio-input-solicitud">
+			                  <input type="radio" id="si-cc" value="si-cc" name="credito-casa">
+			                  <label for="si-cc"><span>Si </span></label>
+			                </div>
+			              </div>
+			              <div class="col-md-3 col-xs-12">
+			                <img src="img/Credit_card.svg"/>
+			                <p>¿Tiene o tuvo una tarjeta de crédito en los últimos 2 años?</p>
+											<div class="radio-input-solicitud">
+			                  <input type="radio" id="no-tc" value="no-tc" name="tarjeta-credito">
+			                  <label for="no-tc"><span>No </span></label>
+			                </div>
+			                <div class="radio-input-solicitud">
+			                  <input type="radio" id="si-tc" value="si-tc" name="tarjeta-credito">
+			                  <label for="si-tc"><span>Si </span></label>
+			                </div>
+			              </div>
+			              <div class="col-md-3 col-xs-12">
+			                <div class="form-group col-xs-12">
+												<label for="digitos-tarjeta">Digite los útimos 4 números</label>
+												<input type="tel" class="form-control validate input-infonavit" id="digitos-tarjeta" placeholder="1234">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+			              </div>
+										<div class="col-md-12">
+											<div class="squaredThree">
+												<input type="checkbox" value="avisoprivacidad" id="aviso-privacidad-checkbox" name="check" />
+												<label for="aviso-privacidad-checkbox">  </label>
+												<div>
+													Hoy siendo el 2 de abril de 2018 , ¿autoriza a Banco Santander México, S.A.,
+													Institución de Banca Múltiple, Grupo Financiero Santander, a consultar sus antecedentes crediticios por
+													única ocasión ante las Sociedades de Información Crediticia que estime conveniente, declarando que conoce
+													la naturaleza, alcance y uso que se hará de tal información?
+												</div>
+											</div>
+
+										</div>
+			            </div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+          <div class="text-center">
+            <button id="btnCalculaOfertas" class="btn btn-red btn-small">Continuar <icon class="fa fa-play"></icon></button>
+          </div>
+          </div>
+					<div id="generales" class="hidden">
+						<div class="col-md-12">
+							<div class="col-md-3 col-xs-12">
+                <img src="img/home.svg"/>
+                <p>¿Ya sabes que inmueble vas a comprar?</p>
+								<div class="radio-input-solicitud">
+                  <input type="radio" id="no-se" value="no-se" name="inmueble-comprar">
+                  <label for="no-se"><span>No </span></label>
+                </div>
+                <div class="radio-input-solicitud">
+                  <input type="radio" id="si-se" value="si-se" name="inmueble-comprar">
+                  <label for="si-se"><span>Si </span></label>
+                </div>
+              </div>
 							<div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="nombre">Nombre</label>
-									<input type="text" class="form-control validate" id="nombre" placeholder="">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-							<div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="ap-p">Apellido paterno</label>
-									<input type="text" class="form-control validate" id="ap-p" placeholder="">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-              <div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="ap-m">Apellido materno</label>
-									<input type="text" class="form-control validate" id="ap-m" placeholder="">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="sexo">Sexo</label>
-									<select class="form-control validate" id="sexo" placeholder="">
-									<option value="m" selected>Masculino</option>
-									<option value="f">Femenino</option>
-								</select>
-								</div>
-							</div>
-							<div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="correo">Fecha de nacimiento</label>
-									<input type="tel" class="form-control validate input-infonavit" id="correo" placeholder="Día/Mes/Año">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-							<div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="ciudad">Ciudad</label>
-									<select class="form-control validate" id="ciudad" placeholder="">
-									<option value="cdmx" selected>CDMX</option>
-									<option value="opcion2">Querétaro</option>
-									<option value="opcion3">Aguscalientes</option>
-								</select>
-								</div>
-							</div>
-              <div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="rfc">RFC</label>
-									<input type="text" class="form-control validate" id="rfc" placeholder="">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="edo-civil">Estado civil</label>
-									<select class="form-control validate" id="edo-civil" placeholder="">
-									<option value="cofinavit" selected>Casado</option>
-									<option value="opcion2">Soltero</option>
-									<option value="opcion3">Opcion 3</option>
-								</select>
-								</div>
-							</div>
-							<div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="dependientes">Dependientes económicos</label>
-									<input type="tel" class="form-control validate" id="dependientes" placeholder="">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-							<div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="regimen">Régimen fiscal</label>
-									<select class="form-control validate" id="regimen" placeholder="">
-									<option value="fisica" selected>Persona física</option>
-									<option value="moral">Persona moral</option>
-									<option value="opcion3">Opcion 3</option>
-								</select>
-								</div>
-							</div>
-              <div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="actividad">Actividad específica</label>
-									<select class="form-control validate" id="actividad" placeholder="">
-									<option value="asalariado" selected>Asalariado</option>
+									<label for="lugar-inmueble">¿Dónde buscas tu inmueble?</label>
+									<select class="form-control validate" id="lugar-inmueble" placeholder="">
+									<option value="asalariado" selected>CDMX</option>
 									<option value="opcion2">Opcion 2</option>
 									<option value="opcion3">Opcion 3</option>
 								</select>
 								</div>
 							</div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="ingresos-m">Ingresos mensuales</label>
-									<input type="text" class="form-control validate" id="ingresos-m" placeholder="">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
 							<div class="col-md-3 col-xs-12">
 								<div class="form-group col-xs-12">
-									<label for="correo">¿Cuánto tiempo llevas en tu empleo?</label>
-									<input type="tel" class="form-control validate" id="correo" placeholder="Años">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
+									<label for="cuando-comprar">¿Cuándo planeas comprarlo?</label>
+									<select class="form-control validate" id="cuando-comprar" placeholder="">
+									<option value="asalariado" selected>10-12 meses</option>
+									<option value="opcion2">Opcion 2</option>
+									<option value="opcion3">Opcion 3</option>
+								</select>
 								</div>
 							</div>
-            </div>
-            <hr>
-            <div class="col-md-12">
-              <h4>Domicilio</h4>
-            </div>
-            <div class="row">
-              <div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="calle">Calle</label>
-									<input type="text" class="form-control validate" id="calle" placeholder="">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-							<div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="num-int">Número interior</label>
-									<input type="text" class="form-control validate" id="num-int" placeholder="">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-							<div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="num-ext">Número exterior</label>
-									<input type="tel" class="form-control validate" id="num-ext" placeholder="">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-              <div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="cp">Código postal</label>
-									<input type="tel" class="form-control validate" id="cp" placeholder="">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="colonia">Colonia</label>
-									<input type="text" class="form-control validate input-infonavit" id="colonia" placeholder="">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-							<div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="delegacion">Delegación/municipio</label>
-									<input type="text" class="form-control validate input-infonavit" id="delegacion" placeholder="">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-              <div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="estado">Estado</label>
-									<input type="text" class="form-control validate input-infonavit" id="estado" placeholder="">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-							</div>
-            </div>
-            <hr>
-            <div class="col-md-12">
-              <h4>¿Participa una segunda persona?
-							<div class="segunda-persona-radio-inputs-container">
-
-								<div class="radio-input-solicitud">
-									<input type="radio" id="no-sp" value="no-sp" name="segunda-persona">
-									<label for="no-sp"><span>No </span></label>
-								</div>
-								<div class="radio-input-solicitud">
-									<input type="radio" id="si-sp" value="si-sp" name="segunda-persona">
-									<label for="si-sp"><span>Si </span></label>
-								</div>
-							</div></h4>
-            </div>
-						<div id="segunda-persona" class="hidden">
-							<div class="col-md-12">
-	              <h4>Datos personales del participante</h4>
-	            </div>
-	            <div class="row">
-	              <div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="curp-sp">CURP</label>
-										<input type="text" class="form-control validate" id="curp-sp" placeholder="">
-										<span class="input-success">DEXM830239QW3</span>
-										<span class="input-error"></span>
-									</div>
-								</div>
-								<div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="nombre-sp">Nombre</label>
-										<input type="text" class="form-control validate" id="nombre-sp" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-								</div>
-								<div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="ap-p-sp">Apellido paterno</label>
-										<input type="text" class="form-control validate" id="ap-p-sp" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-								</div>
-	              <div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="ap-m-sp">Apellido materno</label>
-										<input type="text" class="form-control validate" id="ap-m-sp" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-								</div>
-	            </div>
-	            <div class="row">
-	              <div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="sexo-sp">Sexo</label>
-										<select class="form-control validate" id="sexo-sp" placeholder="">
-										<option value="m" selected>Masculino</option>
-										<option value="f">Femenino</option>
-									</select>
-									</div>
-								</div>
-								<div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="fecha-nac-sp">Fecha de nacimiento</label>
-										<input type="text" class="form-control validate input-infonavit" id="fecha-nac-sp" placeholder="Día/Mes/Año">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-								</div>
-								<div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="ciudad-sp">Ciudad</label>
-										<select class="form-control validate" id="ciudad-sp" placeholder="">
-										<option value="cdmx" selected>CDMX</option>
-										<option value="opcion2">Querétaro</option>
-										<option value="opcion3">Aguscalientes</option>
-									</select>
-									</div>
-								</div>
-	              <div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="rfc-sp">RFC</label>
-										<input type="text" class="form-control validate" id="rfc-sp" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-								</div>
-	            </div>
-	            <div class="row">
-	              <div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="edo-civil-sp">Estado civil</label>
-										<select class="form-control validate" id="edo-civil-sp" placeholder="">
-										<option value="cofinavit" selected>Casado</option>
-										<option value="opcion2">Soltero</option>
-										<option value="opcion3">Opcion 3</option>
-									</select>
-									</div>
-								</div>
-								<div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="dependientes-sp">Dependientes económicos</label>
-										<input type="tel" class="form-control validate" id="dependientes-sp" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-								</div>
-								<div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="regimen-sp">Régimen fiscal</label>
-										<select class="form-control validate" id="regimen-sp" placeholder="">
-										<option value="fisica" selected>Persona física</option>
-										<option value="moral">Persona moral</option>
-										<option value="opcion3">Opcion 3</option>
-									</select>
-									</div>
-								</div>
-	              <div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="actividad-sp">Actividad específica</label>
-										<select class="form-control validate" id="actividad-sp" placeholder="">
-										<option value="asalariado" selected>Asalariado</option>
-										<option value="opcion2">Opcion 2</option>
-										<option value="opcion3">Opcion 3</option>
-									</select>
-									</div>
-								</div>
-	            </div>
-	            <div class="row">
-	              <div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="ingresos-m-sp">Ingresos mensuales</label>
-										<input type="text" class="form-control validate" id="ingresos-m-sp" placeholder="">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-								</div>
-								<div class="col-md-3 col-xs-12">
-									<div class="form-group col-xs-12">
-										<label for="tiempo-empleo-sp">¿Cuánto tiempo llevas en tu empleo?</label>
-										<input type="tel" class="form-control validate" id="tiempo-empleo-sp" placeholder="Años">
-										<span class="input-success"></span>
-										<span class="input-error"></span>
-									</div>
-								</div>
-	            </div>
 						</div>
-            <hr>
-            <div class="col-md-12 historial-crediticio">
-              <h4>Historial crediticio del solicitante</h4>
-              <div class="col-md-3 col-xs-12">
-                <img src="img/races.svg"/>
-                <p>Tiene un crédito automotriz desde hace 2 años</p>
-								<div class="radio-input-solicitud">
-                  <input type="radio" id="no-ca" value="no-ca" name="credito-auto">
-                  <label for="no-ca"><span>No </span></label>
-                </div>
-                <div class="radio-input-solicitud">
-                  <input type="radio" id="si-ca" value="si-ca" name="credito-auto">
-                  <label for="si-ca"><span>Si </span></label>
-                </div>
-              </div>
-              <div class="col-md-3 col-xs-12">
-                <img src="img/home.svg"/>
-                <p>Tiene un crédito hipotecario desde hace 2 años</p>
-								<div class="radio-input-solicitud">
-                  <input type="radio" id="no-cc" value="no-cc" name="credito-casa">
-                  <label for="no-cc"><span>No </span></label>
-                </div>
-                <div class="radio-input-solicitud">
-                  <input type="radio" id="si-cc" value="si-cc" name="credito-casa">
-                  <label for="si-cc"><span>Si </span></label>
-                </div>
-              </div>
-              <div class="col-md-3 col-xs-12">
-                <img src="img/credit-card.svg"/>
-                <p>¿Tiene o tuvo una tarjeta de crédito en los últimos 2 años?</p>
-								<div class="radio-input-solicitud">
-                  <input type="radio" id="no-tc" value="no-tc" name="tarjeta-credito">
-                  <label for="no-tc"><span>No </span></label>
-                </div>
-                <div class="radio-input-solicitud">
-                  <input type="radio" id="si-tc" value="si-tc" name="tarjeta-credito">
-                  <label for="si-tc"><span>Si </span></label>
-                </div>
-              </div>
-              <div class="col-md-3 col-xs-12">
-                <div class="form-group col-xs-12">
-									<label for="digitos-tarjeta">Digite los útimos 4 números</label>
-									<input type="tel" class="form-control validate input-infonavit" id="digitos-tarjeta" placeholder="1234">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-              </div>
-            </div>
-            <hr>
-            <div class="text-center">
-              <button class="btn btn-red">Continuar <icon class="fa fa-play"></icon></button>
-            </div>
-          </div>
+					</div>
         </div>
       </div>
     </section>
-
+	<div class="loading-background">
+		<div class="loading-message">
+			<img src="img/loading.svg" alt="">
+			<h2>Espera un momento</h2>
+			<p>Estamos generando tus ofertas de crédito</p>
+		</div>
+	</div>
 	<footer id="footer">
 		<div class="footer-top">
 			<div class="container">

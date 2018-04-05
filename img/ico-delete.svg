@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
     <title>ico-delete</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Carga_docs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-707.000000, -604.000000)" opacity="0.8">
-        <g id="datos-personales" transform="translate(99.000000, 332.000000)">
-            <g id="Group-4" transform="translate(357.000000, 177.000000)">
-                <g id="Group-3-Copy" transform="translate(22.000000, 92.000000)">
-                    <g id="ico-delete" transform="translate(229.000000, 3.000000)">
-                        <rect id="Rectangle-3" fill="#EB0029" x="0" y="3" width="17" height="2"></rect>
-                        <rect id="Rectangle-4" fill="#EB0029" x="3" y="0" width="11" height="3"></rect>
-                        <rect id="Rectangle-5" fill="#EB0029" x="2" y="6" width="14" height="11"></rect>
-                        <rect id="Rectangle-6" fill="#FFFFFF" x="5" y="8" width="2" height="8"></rect>
-                        <rect id="Rectangle-7" fill="#FFFFFF" x="10" y="8" width="2" height="8"></rect>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.8">
+        <g id="Carga_docs" transform="translate(-707.000000, -604.000000)">
+            <g id="datos-personales" transform="translate(99.000000, 332.000000)">
+                <g id="Group-4" transform="translate(357.000000, 177.000000)">
+                    <g id="Group-3-Copy" transform="translate(22.000000, 92.000000)">
+                        <g id="ico-delete" transform="translate(229.000000, 3.000000)">
+                            <rect id="Rectangle-3" fill="#EB0029" x="0" y="3" width="17" height="2"></rect>
+                            <rect id="Rectangle-4" fill="#EB0029" x="3" y="0" width="11" height="3"></rect>
+                            <rect id="Rectangle-5" fill="#EB0029" x="2" y="6" width="14" height="11"></rect>
+                            <rect id="Rectangle-6" fill="#FFFFFF" x="5" y="8" width="2" height="8"></rect>
+                            <rect id="Rectangle-7" fill="#FFFFFF" x="10" y="8" width="2" height="8"></rect>
+                        </g>
                     </g>
                 </g>
             </g>

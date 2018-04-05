@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="38px" viewBox="0 0 57 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Credit_card</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.00049875 0.0726925926 56.571075 0.0726925926 56.571075 37.9995074 0.00049875 37.9995074"></polygon>
+        <polygon id="path-3" points="0.000492592593 0.0724814815 37.7506778 0.0724814815 37.7506778 37.9991556 0.000492592593 37.9991556"></polygon>
+        <polygon id="path-5" points="0 38 57 38 57 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Precalificación_individual" transform="translate(-617.000000, -1545.000000)">
+            <g id="domicilio-copy-2" transform="translate(99.000000, 1437.000000)">
+                <g id="Group-5" transform="translate(518.000000, 108.000000)">
+                    <g id="Credit_card">
+                        <g id="Group-3">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M50.2395862,37.9995074 L6.33177375,37.9995074 C2.84123625,37.9995074 0.00049875,35.1952481 0.00049875,31.7463963 L0.00049875,6.3251 C0.00049875,2.87695185 2.84123625,0.0726925926 6.33177375,0.0726925926 L50.2395862,0.0726925926 C53.7308362,0.0726925926 56.5715737,2.87695185 56.5715737,6.3251 L56.5715737,31.7463963 C56.5715737,35.1952481 53.7308362,37.9995074 50.2395862,37.9995074" id="Fill-1" fill="#E20714" mask="url(#mask-2)"></path>
+                        </g>
+                        <g id="Group-6">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Clip-5"></g>
+                            <path d="M6.2536037,0.0723407407 C2.80545556,0.0723407407 0.000492592593,2.8773037 0.000492592593,6.32545185 L0.000492592593,31.7467481 C0.000492592593,35.1941926 2.80545556,37.9991556 6.2536037,37.9991556 L15.8535296,37.9991556 L37.7506778,0.0723407407 L6.2536037,0.0723407407 Z" id="Fill-4" fill="#E7412C" mask="url(#mask-4)"></path>
+                        </g>
+                        <path d="M3.22206787,2.72331816 C3.22206787,1.74270781 3.50625124,0.818748946 4,0 C1.63762651,0.969819592 0,3.01938965 0,5.39403136 L0,8 L3.22206787,8 L3.22206787,2.72331816 Z" id="Fill-7" fill="#EC694B"></path>
+                        <path d="M0,17 L0,31.7275294 C0,35.1856471 2.77126304,38 6.17798378,38 L9,38 C5.59327926,38 2.82201622,35.1856471 2.82201622,31.7275294 L2.82201622,17 L0,17 Z" id="Fill-9" fill="#EC694B"></path>
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="Clip-12"></g>
+                        <polygon id="Fill-11" fill="#4D597C" mask="url(#mask-6)" points="3 17 57 17 57 9 3 9"></polygon>
+                        <polygon id="Fill-13" fill="#797D9A" mask="url(#mask-6)" points="0 17 3 17 3 9 0 9"></polygon>
+                        <polygon id="Fill-14" fill="#4D597C" mask="url(#mask-6)" points="3 17 57 17 57 9 3 9"></polygon>
+                        <polygon id="Fill-15" fill="#556082" mask="url(#mask-6)" points="33 9 3 9 3 17 28.3251551 17"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

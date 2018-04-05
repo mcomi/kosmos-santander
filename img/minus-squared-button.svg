@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>minus-squared-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Precalificación_compartida" transform="translate(-1050.000000, -350.000000)" fill="#4E6E82" fill-rule="nonzero">
+            <g id="datos-personales" transform="translate(99.000000, 332.000000)">
+                <g id="minus-squared-button" transform="translate(951.000000, 18.000000)">
+                    <path d="M28.7176964,32 L3.28230357,32 C1.47241226,32 0,30.5280797 0,28.7176964 L0,3.28230357 C0,1.47241226 1.47241226,0 3.28230357,0 L28.7181884,0 C30.5280797,0 32,1.47241226 32,3.28230357 L32,28.7176964 C31.999508,30.5280797 30.5280797,32 28.7176964,32 Z M3.28230357,1.64115178 C2.37711193,1.64115178 1.64115178,2.37711193 1.64115178,3.28230357 L1.64115178,28.7176964 C1.64115178,29.6228881 2.37711193,30.3588482 3.28230357,30.3588482 L28.7181884,30.3588482 C29.6228881,30.3588482 30.3588482,29.6228881 30.3588482,28.7176964 L30.3588482,3.28230357 C30.3588482,2.37711193 29.6228881,1.64115178 28.7181884,1.64115178 L3.28230357,1.64115178 Z" id="Shape"></path>
+                    <rect id="Rectangle-path" x="8" y="15" width="15" height="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

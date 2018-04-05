@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>add-square-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Precalificación_individual_1.1" transform="translate(-1050.000000, -350.000000)" fill="#4E6E82" fill-rule="nonzero">
+            <g id="datos-personales" transform="translate(99.000000, 332.000000)">
+                <g id="add-square-button" transform="translate(951.000000, 18.000000)">
+                    <path d="M28.3030303,31.5379394 L3.23490909,31.5379394 C1.45163636,31.5379394 0,30.0872727 0,28.3030303 L0,3.23490909 C0,1.45115152 1.45163636,0 3.23490909,0 L28.3030303,0 C30.0872727,0 31.5374545,1.45115152 31.5374545,3.23490909 L31.5374545,28.3030303 C31.5374545,30.0872727 30.0872727,31.5379394 28.3030303,31.5379394 Z M3.23490909,1.61745455 C2.34278788,1.61745455 1.61745455,2.34278788 1.61745455,3.23490909 L1.61745455,28.3030303 C1.61745455,29.1951515 2.34278788,29.9204848 3.23490909,29.9204848 L28.3030303,29.9204848 C29.1951515,29.9204848 29.9204848,29.1951515 29.9204848,28.3030303 L29.9204848,3.23490909 C29.9204848,2.34278788 29.1951515,1.61745455 28.3030303,1.61745455 L3.23490909,1.61745455 Z" id="Shape"></path>
+                    <rect id="Rectangle-path" x="8.42424242" y="14.5556364" width="14.6904242" height="2.42618182"></rect>
+                    <rect id="Rectangle-path" x="14.5556364" y="8.42375758" width="2.42618182" height="14.6904242"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="125px" height="128px" viewBox="0 0 125 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>loading</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Loading" transform="translate(-540.000000, -298.000000)" fill="#EB0029" fill-rule="nonzero">
+            <g id="loading" transform="translate(540.888889, 298.000000)">
+                <circle id="Oval" cx="64.9167407" cy="14.9534074" r="14.9534074"></circle>
+                <circle id="Oval" cx="64.9167407" cy="118.875222" r="8.97107407"></circle>
+                <circle id="Oval" cx="28.1736667" cy="30.1688148" r="13.459037"></circle>
+                <circle id="Oval" cx="101.659815" cy="103.650111" r="7.4767037"></circle>
+                <circle id="Oval" cx="12.9534074" cy="66.9167407" r="11.9598148"></circle>
+                <circle id="Oval" cx="116.875222" cy="66.9118889" r="5.97748148"></circle>
+                <path d="M20.7745926,96.2607407 C16.6844815,100.350852 16.6844815,106.968778 20.7745926,111.058889 C24.8598519,115.149 31.4874815,115.149 35.5727407,111.058889 C39.6628519,106.968778 39.6628519,100.350852 35.5727407,96.2607407 C31.4874815,92.1657778 24.8647037,92.126963 20.7745926,96.2607407 Z" id="Shape"></path>
+                <circle id="Oval" cx="101.654963" cy="30.1688148" r="4.48311111"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
