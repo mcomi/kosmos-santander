@@ -730,7 +730,7 @@ input[type=radio] {
   letter-spacing: 0;
   padding: 0 0 15px 0; }
 
-.propuesta-elegir h3 {
+.propuesta-elegir h3, .propuesta-elegir h4 {
   line-height: 12px; }
 
 .ofertas-corner-top.active .propuesta-elegir {
@@ -895,7 +895,7 @@ input[type=radio] {
   height: 17px;
   position: absolute;
   top: -10px;
-  right: 35px;
+  right: 58px;
   border-top: 1px solid #DADADA;
   border-right: 1px solid #DADADA; }
 
@@ -925,7 +925,7 @@ input[type=radio] {
   height: 17px;
   position: absolute;
   bottom: 42px;
-  right: 35px;
+  right: 58px;
   border-bottom: 1px solid #DADADA;
   border-right: 1px solid #DADADA; }
 
@@ -1317,7 +1317,7 @@ body {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 20px;
+  padding: 8px;
   text-decoration: none;
   color: #4E6E82;
   font-size: 14px;
