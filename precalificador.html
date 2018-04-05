@@ -50,8 +50,8 @@
 	<div class="container">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="#">
-				<img src="img/Santander_logo.svg" alt="">
-				Hipoteca <span>Personal</span>
+				<img src="img/logo.png" alt="">
+
 			</a>
 			<span id="nav-expander" class="nav-expander fixed">
 				<img src="img/icons/menu.png" alt="">
@@ -111,8 +111,24 @@
 								</div>
 							</div>
 							<div class="col-md-12 text-center">
-								<button class="btn btn-red btn-small">Solicitar código SMS</button>
-								<div id="input-sms-code" class="col-xs-12 text-center">
+								<button id="btn-solicita-sms" class="btn btn-red btn-small-center">Solicitar código SMS</button>
+								<div id="loader-phone-message" class="row hidden">
+									<div class="sk-folding-cube">
+										<div class="sk-cube1 sk-cube"></div>
+										<div class="sk-cube2 sk-cube"></div>
+										<div class="sk-cube4 sk-cube"></div>
+										<div class="sk-cube3 sk-cube"></div>
+
+									</div>
+									<div class="center">
+										<span>Enviando código a celular</span>
+									</div>
+								</div>
+								<div id="phone-message-alert" class="alert alert-info alert-dismissible hidden" role="alert">
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<i class="fa fa-info-circle"></i> Hemos enviado un código a tu celular
+								</div>
+								<div class="col-xs-12 text-center input-sms-code hidden">
 									<p>Ingresa el código sms</p>
 									<div class="col-xs-12 col-md-12 code-submit">
 										<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
@@ -121,12 +137,22 @@
 										<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
 
 									</div>
-								</div>
+									<div class="col-md-10 col-md-offset-1 text-center">
+										<div class="squaredThree">
+											<input type="checkbox" value="avisoprivacidad" id="aviso-privacidad-checkbox" name="check" />
+											<label for="aviso-privacidad-checkbox">  </label>
+											<div>
+														Confirmo que he leído y acepto el contenido de <a href="">Aviso de Privacidad</a> del Grupo Financiero Santander México
 
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 text-center">
+										<a href="solicitud.html" class="btn btn-red btn-small">Continuar <icon class="fa fa-play"></icon></a>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-12 text-center">
-								<a href="solicitud.html" class="btn btn-red">Continuar <icon class="fa fa-play"></icon></a>
-							</div>
+
 						</div>
 						</div>
 				</div>
@@ -166,7 +192,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="copyright col-xs-12 col-sm-3 col-md-3">
-						<img src="img/logo_white.svg" alt="">
+						<img src="img/logo_white.png" alt="">
 					</div>
 					<div class="phone-cont col-xs-12 col-sm-8 col-md-8">
 
@@ -198,8 +224,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/es.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
-	<script src="js/index.js"></script>
-	<script src="js/home.js"></script>
+	<script src="js/precalificador.js"></script>
 
 
 </body>

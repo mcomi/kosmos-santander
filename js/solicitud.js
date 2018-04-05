@@ -40,6 +40,7 @@ function toggleActive() {
   if(this.dataset.type == 'generales') {
     $('#datos-precalificacion').addClass('hidden')
     $('#generales').removeClass('hidden')
+
   }
 }
 
@@ -124,21 +125,23 @@ function toggleChevron(e) {
 
 $('.panel-default').on('show.bs.collapse', function() {
   $(this).addClass('active');
-  $(this).find('.panel-heading').find("i").toggleClass('fa-minus fa-plus');
+  $(this).find('.panel-heading').find("img").attr("src","img/minus-squared-button.svg");
 });
 
 $('.panel-default').on('hide.bs.collapse', function() {
   $(this).removeClass('active');
-  $(this).find('.panel-heading').find("i").toggleClass('fa-minus fa-plus');
+  $(this).find('.panel-heading').find("img").attr("src","img/add-square-button.svg");
 });
 // evento cuando elige co-acreditado
 
-$("input[name='inc_acreditado']").click(function() {
-  if ($(this).prop('value') == 'si') {
-    $('#co-acreditado-form').removeClass('hidden');
+$("input[name='segunda-persona']").click(function() {
+  if ($(this).prop('value') == 'si-sp') {
+    $('#co-acreditado').removeClass('hidden');
+    $(this).closest('.panel-heading').siblings('.collapse').collapse('show');
   } else {
-    if (!$('#co-acreditado-form').hasClass('hidden')) {
-      $('#co-acreditado-form').addClass('hidden');
+    if (!$('#co-acreditado').hasClass('hidden')) {
+      $('#co-acreditado').addClass('hidden');
+      $(this).closest('.panel-heading').siblings('.collapse').collapse('hide');
     }
   }
 });
@@ -178,21 +181,15 @@ if ($('#celular').exists()) {
   });
 }
 
-//  manejar las 2 diferentes formas para el tipo de validacion de buro
-var menuHistorial = $('#historial a');
-menuHistorial.each(function() {
-  let menuItem = $(this)
-  menuItem.click(function() {
-    let consulta = menuItem.data('consulta')
-    if (consulta == 'tradicional') {
-      $('#consulta-tradicional').removeClass('hidden')
-      $('#consulta-autenticada').addClass('hidden')
-    } else {
-      $('#consulta-autenticada').removeClass('hidden')
-      $('#consulta-tradicional').addClass('hidden')
-    }
-  })
-
+$('#btnCalculaOfertas').click(function(){
+  $('.loading-background').show('slow')
+  setTimeout(function(){
+    $('#precalificacion').addClass('hidden')
+    $('#generales').removeClass('hidden')
+    $('.loading-background').hide('slow')
+    $('#link_precalificacion').removeClass('active');
+    $('#link_generales').addClass('active');
+  }, 2500)
 })
 
 $("input[name='tarjeta_credito']").click(function() {
