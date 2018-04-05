@@ -1122,6 +1122,18 @@ ul.terminos-condiciones {
   font-family: 'Gotham';
   font-size: 18px; }
 
+.modal-dialog.modal-tabla-amortizacion {
+  width: 100%;
+  margin: 0; }
+
+.modal-tabla-amortizacion .modal-content {
+  width: 100%;
+  height: auto;
+  background: #fff; }
+
+.modal-tabla-amortizacion .modal-content .modal-body img {
+  height: 60px; }
+
 .sk-folding-cube {
   margin: 20px auto;
   width: 40px;
@@ -1437,6 +1449,16 @@ body {
 .status-panel {
   margin-top: 35px;
   margin-bottom: 35px; }
+
+table {
+  font-size: 14px;
+  color: #121212; }
+
+table > thead > tr > th {
+  padding: 15px 0 !important; }
+
+table > tbody > tr > th {
+  padding: 15px 0 !important; }
 
 /* importamos responsive al final */
 /* tablet, landscape iPad, lo-res laptops ands desktops */
