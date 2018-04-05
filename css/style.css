@@ -1129,6 +1129,14 @@ body {
   margin: 0;
   min-height: 100%; }
 
+.navbar {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+  height: 80px; }
+
 .navbar-brand > img {
   height: 50px; }
 
@@ -1353,13 +1361,6 @@ body {
 @media (min-width: 1115px) {
   span.nav-expander {
     display: none; }
-  .navbar {
-    position: absolute;
-    width: 100%;
-    background-color: transparent;
-    box-shadow: none;
-    border: 0;
-    height: 80px; }
   #landing-section {
     background-size: 100%; }
   #landing-section.just-header {
@@ -1450,8 +1451,7 @@ body {
     position: relative; }
   #landing-section {
     height: auto;
-    margin-top: -85px;
-    padding-top: 85px; }
+    padding-top: 60px; }
   #footer {
     position: relative; }
   .panel-precalificador {
