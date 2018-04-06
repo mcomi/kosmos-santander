@@ -51,7 +51,7 @@
 		<div class="navbar-header">
 			<a class="navbar-brand" href="#">
 				<img src="img/logo.png" alt="">
-				
+
 			</a>
 			<span id="nav-expander" class="nav-expander fixed">
 				<img src="img/icons/menu.png" alt="">
@@ -559,41 +559,410 @@
           </div>
           </div>
 					<div id="generales" class="hidden">
-						<div class="col-md-12">
-							<div class="col-md-3 col-xs-12">
-                <img src="img/home.svg"/>
-                <p>¿Ya sabes que inmueble vas a comprar?</p>
-								<div class="radio-input-solicitud">
-                  <input type="radio" id="no-se" value="no-se" name="inmueble-comprar">
-                  <label for="no-se"><span>No </span></label>
-                </div>
-                <div class="radio-input-solicitud">
-                  <input type="radio" id="si-se" value="si-se" name="inmueble-comprar">
-                  <label for="si-se"><span>Si </span></label>
-                </div>
-              </div>
-							<div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="lugar-inmueble">¿Dónde buscas tu inmueble?</label>
-									<select class="form-control validate" id="lugar-inmueble" placeholder="">
-									<option value="asalariado" selected>CDMX</option>
-									<option value="opcion2">Opcion 2</option>
-									<option value="opcion3">Opcion 3</option>
-								</select>
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default active">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#datos-inmueble" aria-expanded="true" aria-controls="datos-inmueble">
+											<span>Datos del inmueble</span>
+											<span class="text-right">
+												<img src="img/minus-squared-button.svg" alt="">
+											</span>
+										</a>
+									</h4>
+								</div>
+								<div id="datos-inmueble" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+									<div class="panel-body">
+										<div class="col-md-12">
+											<div class="col-md-3 col-xs-12">
+				                <img src="img/home.svg"/>
+				                <p>¿Ya sabes que inmueble vas a comprar?</p>
+												<div class="radio-input-solicitud">
+				                  <input type="radio" id="no-se" value="no-se" name="inmueble-comprar">
+				                  <label for="no-se"><span>No </span></label>
+				                </div>
+				                <div class="radio-input-solicitud">
+				                  <input type="radio" id="si-se" value="si-se" name="inmueble-comprar">
+				                  <label for="si-se"><span>Si </span></label>
+				                </div>
+				              </div>
+											<div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="lugar-inmueble">¿Dónde buscas tu inmueble?</label>
+													<select class="form-control validate" id="lugar-inmueble" placeholder="">
+													<option value="asalariado" selected>CDMX</option>
+													<option value="opcion2">Opcion 2</option>
+													<option value="opcion3">Opcion 3</option>
+												</select>
+												</div>
+											</div>
+											<div class="col-md-3 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="cuando-comprar">¿Cuándo planeas comprarlo?</label>
+													<select class="form-control validate" id="cuando-comprar" placeholder="">
+													<option value="asalariado" selected>10-12 meses</option>
+													<option value="opcion2">Opcion 2</option>
+													<option value="opcion3">Opcion 3</option>
+												</select>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-3 col-xs-12">
-								<div class="form-group col-xs-12">
-									<label for="cuando-comprar">¿Cuándo planeas comprarlo?</label>
-									<select class="form-control validate" id="cuando-comprar" placeholder="">
-									<option value="asalariado" selected>10-12 meses</option>
-									<option value="opcion2">Opcion 2</option>
-									<option value="opcion3">Opcion 3</option>
-								</select>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#datos-patrimoniales" aria-expanded="true" aria-controls="datos-patrimoniales">
+											<span>Datos patrimoniales</span>
+											<span class="text-right">
+												<img src="img/minus-squared-button.svg" alt="">
+											</span>
+										</a>
+									</h4>
+								</div>
+								<div id="datos-patrimoniales" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+
+									<div class="panel-body">
+										<div class="row">
+										 <div class="col-md-3 col-xs-12">
+											 <div class="form-group col-xs-12">
+												 <label for="escolaridad">Escolaridad</label>
+												 <select class="form-control validate" id="escolaridad" placeholder="">
+												 <option value="" selected>Licenciatura</option>
+												 <option value="opcion2">Opcion 2</option>
+												 <option value="opcion3">Opcion 3</option>
+											 </select>
+											 </div>
+										 </div>
+										 <div class="col-md-3 col-xs-12">
+											 <div class="form-group col-xs-12">
+												 <label for="tipo-vivienda">Vives en</label>
+												 <select class="form-control validate" id="tipo-vivienda" placeholder="">
+												 <option value="" selected>Casa propia</option>
+												 <option value="opcion2">Opcion 2</option>
+												 <option value="opcion3">Opcion 3</option>
+											 </select>
+											 </div>
+										 </div>
+										 <div class="col-md-3 col-xs-12">
+											 <div class="form-group col-xs-12">
+												 <label for="tiempo-vivienda">¿Cuánto tiempo tienes de vivir ahí?</label>
+												 <input type="text" class="form-control validate" id="tiempo-vivienda" placeholder="">
+												 <span class="input-success"></span>
+												 <span class="input-error"></span>
+											 </div>
+										 </div>
+										 <div class="col-md-3 col-xs-12">
+											 <div class="form-group col-xs-12">
+												 <label for="valor-vivienda">Valor de la vivienda actual</label>
+												 <input type="text" class="form-control validate" id="valor-vivienda" placeholder="">
+												 <span class="input-success"></span>
+												 <span class="input-error"></span>
+											 </div>
+										 </div>
+									 </div>
+									 <div class="row">
+										 <div class="col-md-3 col-xs-12">
+ 											<div class="form-group col-xs-12">
+ 												<label for="valor-otras-viviendas">Valor de otros inmuebles tuyos</label>
+ 												<input type="text" class="form-control validate" id="valor-otras-viviendas" placeholder="">
+ 												<span class="input-success"></span>
+ 												<span class="input-error"></span>
+ 											</div>
+ 										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="valor-autos">Valor de tus automóviles</label>
+												<input type="text" class="form-control validate" id="valor-autos" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="valor-otros-inmuebles">Valor de otros bienes inmuebles</label>
+												<input type="text" class="form-control validate" id="valor-otros-inmuebles" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="lugar-atencion">¿Te gustaría ser atendido cerca de?</label>
+												<select class="form-control validate" id="lugar-atencion" placeholder="">
+												<option value="" selected>Trabajo</option>
+												<option value="opcion2">Opcion 2</option>
+												<option value="opcion3">Opcion 3</option>
+											</select>
+											</div>
+										</div>
+									 </div>
+									</div>
+								</div>
+
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#datos-laborales" aria-expanded="true" aria-controls="datos-laborales">
+											<span>Datos laborales</span>
+											<span class="text-right">
+												<img src="img/minus-squared-button.svg" alt="">
+											</span>
+										</a>
+									</h4>
+								</div>
+								<div id="datos-laborales" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+
+									<div class="panel-body">
+										<div class="row">
+
+										 <div class="col-md-3 col-xs-12">
+											 <div class="form-group col-xs-12">
+												 <label for="calle-trabajo">Calle</label>
+												 <input type="text" class="form-control validate" id="calle-trabajo" placeholder="">
+												 <span class="input-success"></span>
+												 <span class="input-error"></span>
+											 </div>
+										 </div>
+										 <div class="col-md-3 col-xs-12">
+											 <div class="form-group col-xs-12">
+												 <label for="num-ext-trabajo">Número exterior</label>
+												 <input type="text" class="form-control validate" id="num-ext-trabajo" placeholder="">
+												 <span class="input-success"></span>
+												 <span class="input-error"></span>
+											 </div>
+										 </div>
+										 <div class="col-md-3 col-xs-12">
+											 <div class="form-group col-xs-12">
+												 <label for="num-int-trabajo">Múmero interior</label>
+												 <input type="text" class="form-control validate" id="num-int-trabajo" placeholder="">
+												 <span class="input-success"></span>
+												 <span class="input-error"></span>
+											 </div>
+										 </div>
+										 <div class="col-md-3 col-xs-12">
+											 <div class="form-group col-xs-12">
+												 <label for="cp-trabajo">Código postal</label>
+												 <input type="text" class="form-control validate" id="cp-trabajo" placeholder="">
+												 <span class="input-success"></span>
+												 <span class="input-error"></span>
+											 </div>
+										 </div>
+									 </div>
+									 <div class="row">
+										 <div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="colonia-trabajo">Colonia</label>
+												<input type="text" class="form-control validate" id="colonia-trabajo" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="delegacion-trabajo">Delgación/municipio</label>
+												<input type="text" class="form-control validate" id="delegacion-trabajo" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="estado-trabajo">Estado</label>
+												<input type="text" class="form-control validate" id="estado-trabajo" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="giro-empresa">Giro de la empresa</label>
+												<select class="form-control validate" id="giro-empresa" placeholder="">
+												<option value="" selected>Bancario</option>
+												<option value="opcion2">Opcion 2</option>
+												<option value="opcion3">Opcion 3</option>
+											</select>
+											</div>
+										</div>
+									 </div>
+									 <div class="row">
+
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="departamento">Departamento</label>
+												<input type="text" class="form-control validate" id="departamento" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="Puesto">Puesto</label>
+												<input type="text" class="form-control validate" id="Puesto" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="fecha-ingreso">Fecha de ingreso</label>
+												<input type="text" class="form-control validate" id="fecha-ingreso" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+										<div class="col-md-3 col-xs-12">
+											<div class="form-group col-xs-12">
+												<label for="telefono-trabajo">Teléfono</label>
+												<input type="text" class="form-control validate" id="telefono-trabajo" placeholder="">
+												<span class="input-success"></span>
+												<span class="input-error"></span>
+											</div>
+										</div>
+
+									 </div>
+									 <div class="row">
+										 <div class="col-md-12">
+ 											<div class="form-group col-md-12">
+ 												<label for="telefono-trabajo">Describa las funciones que realiza</label>
+ 												<textarea class="form-control" rows="8"></textarea>
+ 											</div>
+ 										</div>
+									 </div>
+									 <div class="row">
+										 <div class="col-md-3 col-xs-12">
+ 											<div class="form-group col-xs-12">
+ 												<label for="empleo-anterior">Empleo anterior</label>
+ 												<input type="text" class="form-control validate" id="empleo-anterior" placeholder="">
+ 												<span class="input-success"></span>
+ 												<span class="input-error"></span>
+ 											</div>
+ 										</div>
+ 										<div class="col-md-3 col-xs-12">
+ 											<div class="form-group col-xs-12">
+ 												<label for="fecha-ingreso-empleo-anterior">Fecha de ingreso</label>
+ 												<input type="text" class="form-control validate" id="fecha-ingreso-empleo-anterior" placeholder="">
+ 												<span class="input-success"></span>
+ 												<span class="input-error"></span>
+ 											</div>
+ 										</div>
+ 										<div class="col-md-3 col-xs-12">
+ 											<div class="form-group col-xs-12">
+ 												<label for="fecha-baja-empleo-anterior">Fecha de baja</label>
+ 												<input type="text" class="form-control validate" id="fecha-baja-empleo-anterior" placeholder="">
+ 												<span class="input-success"></span>
+ 												<span class="input-error"></span>
+ 											</div>
+ 										</div>
+									 </div>
+									 <div class="row">
+										 <div class="col-md-12">
+											 <div class="form-group col-md-12">
+												 <label for="causas-baja">Explica la causa de separación</label>
+												 <textarea class="form-control" rows="1"></textarea>
+											 </div>
+										 </div>
+									 </div>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#datos-bancarios" aria-expanded="true" aria-controls="datos-bancarios">
+											<span>Datos bancarios</span>
+											<span class="text-right">
+												<img src="img/minus-squared-button.svg" alt="">
+											</span>
+										</a>
+									</h4>
+								</div>
+								<div id="datos-bancarios" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+
+									<div class="panel-body">
+										<div class="col-md-12">
+											<div class="row">
+												<div class="col-md-3 col-xs-12">
+	  											<div class="form-group col-xs-12">
+	  												<label for="saldo-cheques">Saldo en cheques en otros bancos</label>
+	  												<input type="text" class="form-control validate" id="saldo-cheques" placeholder="">
+	  												<span class="input-success"></span>
+	  												<span class="input-error"></span>
+	  											</div>
+	  										</div>
+												<div class="col-md-3 col-xs-12">
+	  											<div class="form-group col-xs-12">
+	  												<label for="saldo-cheques-santander">Saldo en cheques Santander</label>
+	  												<input type="text" class="form-control validate" id="saldo-cheques-santander" placeholder="">
+	  												<span class="input-success"></span>
+	  												<span class="input-error"></span>
+	  											</div>
+	  										</div>
+												<div class="col-md-3 col-xs-12">
+	  											<div class="form-group col-xs-12">
+	  												<label for="saldo-inversiones">Saldo en inversiones Santander</label>
+	  												<input type="text" class="form-control validate" id="saldo-inversiones" placeholder="">
+	  												<span class="input-success"></span>
+	  												<span class="input-error"></span>
+	  											</div>
+	  										</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+
+
+
+
+					<div id="clinicos" class="hidden">
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default active">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#clinicos" aria-expanded="true" aria-controls="clinicos">
+											<span>Datos personales</span>
+											<span class="text-right">
+												<img src="img/minus-squared-button.svg" alt="">
+											</span>
+										</a>
+									</h4>
+								</div>
+								<div id="clinicos" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+									<div class="panel-body">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="documentos" class="hidden">
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default active">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#documentos" aria-expanded="true" aria-controls="documentos">
+											<span>Datos personales</span>
+											<span class="text-right">
+												<img src="img/minus-squared-button.svg" alt="">
+											</span>
+										</a>
+									</h4>
+								</div>
+								<div id="documentos" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+									<div class="panel-body">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
         </div>
       </div>
     </section>

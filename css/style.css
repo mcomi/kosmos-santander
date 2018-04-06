@@ -959,6 +959,9 @@ ul.terminos-condiciones {
   letter-spacing: 0;
   line-height: 20px; }
 
+textarea.form-control {
+  border: 1px solid #EB0029; }
+
 .modal-dialog {
   width: 50%;
   margin: 60px auto; }
