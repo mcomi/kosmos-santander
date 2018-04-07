@@ -184,7 +184,7 @@ if ($('#celular').exists()) {
 $('#btnCalculaOfertas').click(function(){
   $('.loading-background').show('slow')
   setTimeout(function(){
-    window.location.href = window.location.origin+'/aceptacion.html';
+    window.location.href = window.location.origin+'/kosmos-santander/aceptacion.html';
   }, 2500)
 })
 
