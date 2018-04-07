@@ -184,13 +184,16 @@ if ($('#celular').exists()) {
 $('#btnCalculaOfertas').click(function(){
   $('.loading-background').show('slow')
   setTimeout(function(){
-    $('#precalificacion').addClass('hidden')
-    $('#generales').removeClass('hidden')
-    $('.loading-background').hide('slow')
-    $('#link_precalificacion').removeClass('active');
-    $('#link_generales').addClass('active');
+    window.location.href = window.location.origin+'/aceptacion.html';
   }, 2500)
 })
+
+if(window.location.href.indexOf("#generales") > -1) {
+  $('#precalificacion').addClass('hidden')
+  $('#generales').removeClass('hidden')
+  $('#link_precalificacion').removeClass('active');
+  $('#link_generales').addClass('active');
+    }
 
 $("input[name='tarjeta_credito']").click(function() {
   if ($(this).prop('value') == 'si') {
