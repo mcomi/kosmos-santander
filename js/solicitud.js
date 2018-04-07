@@ -184,7 +184,7 @@ if ($('#celular').exists()) {
 $('#btnCalculaOfertas').click(function(){
   $('.loading-background').show('slow')
   setTimeout(function(){
-    window.location.href = window.location.origin+'/kosmos-santander/aceptacion.html';
+    window.location.href = window.location.origin+'/aceptacion.html';
   }, 2500)
 })
 
@@ -194,6 +194,20 @@ if(window.location.href.indexOf("#generales") > -1) {
   $('#link_precalificacion').removeClass('active');
   $('#link_generales').addClass('active');
     }
+
+  $('#btnPasaDatosClinicos').click(function(){
+    $('#generales').addClass('hidden')
+    $('#clinicos').removeClass('hidden')
+    $('#link_generales').removeClass('active');
+    $('#link_clinicos').addClass('active');
+  })
+
+  $('#btnPasaCargaDocumentos').click(function(){
+    $('#clinicos').addClass('hidden')
+    $('#documentos').removeClass('hidden')
+    $('#link_clinicos').removeClass('active');
+    $('#link_documentos').addClass('active');
+  })
 
 $("input[name='tarjeta_credito']").click(function() {
   if ($(this).prop('value') == 'si') {
