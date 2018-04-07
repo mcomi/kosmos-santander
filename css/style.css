@@ -966,6 +966,12 @@ ul.terminos-condiciones {
 textarea.form-control {
   border: 1px solid #EB0029; }
 
+.antecedentes {
+  margin: 25px 0px; }
+
+.margin-form-desktop {
+  margin-top: 38px; }
+
 .modal-dialog {
   width: 50%;
   margin: 60px auto; }
@@ -1693,6 +1699,10 @@ table > tbody > tr > th {
 @media (max-width: 436px) {
   .modifica-montos label span:after {
     right: 32px; }
+  .margin-form-mobile {
+    margin-bottom: 15px; }
+  .margin-form-desktop {
+    margin-top: 0; }
   .header-section {
     padding-top: 90px; }
   .header-calculate-options {
