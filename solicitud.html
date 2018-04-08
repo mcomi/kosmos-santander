@@ -36,6 +36,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.dm-uploader.min.css">
 
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
 	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
@@ -1625,21 +1626,199 @@
 							<div class="panel panel-default active">
 								<div class="panel-heading" role="tab" id="headingOne">
 									<h4 class="panel-title">
-										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#documentos" aria-expanded="true" aria-controls="documentos">
-											<span>Datos personales</span>
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#comprobante-domicilio" aria-expanded="true" aria-controls="comprobante-domicilio">
+											<span>Comprobante de domicilio</span>
 											<span class="text-right">
 												<img src="img/minus-squared-button.svg" alt="">
 											</span>
 										</a>
 									</h4>
 								</div>
-								<div id="documentos" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div id="comprobante-domicilio" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 
 									<div class="panel-body">
+										<div class="row">
+											<div class="col-md-12">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, architecto facere. Dicta delectus laudantium sequi, reprehenderit natus nostrum nulla voluptate! Rem aliquam consectetur commodi dicta quidem unde ipsam enim perferendis.</p>
+											</div>
+							        <div class="col-md-4 col-sm-12 margin-form-mobile">
+												<div class="corner-border-dropzone">
+
+													<!-- Our markup, the important part here! -->
+													<div id="drag-and-drop-comprobante" class="dm-uploader p-5">
+														<img src="img/upload.svg" alt="">
+														<h3 class="mb-5 mt-5 text-muted">Arrastra tus archivos</h3>
+
+														<div class="btn btn-red btn-small-center">
+															<span>Cargar archivos</span>
+															<input name="comprobante" type="file" title='Click to add Files' />
+														</div>
+													</div><!-- /uploader -->
+												</div>
+
+
+							        </div>
+							        <div class="col-md-4 col-sm-12 margin-form-mobile">
+							          <div class="card h-100">
+
+
+							            <ul class="list-unstyled p-2 d-flex flex-column col" id="filesComprobante">
+							              <li class="text-muted text-center empty">No hay archivos.</li>
+							            </ul>
+							          </div>
+							        </div>
+							      </div><!-- /file list -->
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default active">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#comprobantes-ingreso" aria-expanded="true" aria-controls="comprobantes-ingreso">
+											<span>Comprobantes de ingresos</span>
+											<span class="text-right">
+												<img src="img/minus-squared-button.svg" alt="">
+											</span>
+										</a>
+									</h4>
+								</div>
+								<div id="comprobantes-ingreso" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-md-12">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, architecto facere. Dicta delectus laudantium sequi, reprehenderit natus nostrum nulla voluptate! Rem aliquam consectetur commodi dicta quidem unde ipsam enim perferendis.</p>
+											</div>
+							        <div class="col-md-4 col-sm-12 margin-form-mobile">
+												<div class="corner-border-dropzone">
+
+													<!-- Our markup, the important part here! -->
+													<div id="drag-and-drop-ingresos" class="dm-uploader p-5">
+														<img src="img/upload.svg" alt="">
+														<h3 class="mb-5 mt-5 text-muted">Arrastra tus archivos</h3>
+
+														<div class="btn btn-red btn-small-center">
+															<span>Cargar archivos</span>
+															<input name="ingresos" type="file" title='Click to add Files' />
+														</div>
+													</div><!-- /uploader -->
+												</div>
+
+
+							        </div>
+							        <div class="col-md-4 col-sm-12 margin-form-mobile">
+							          <div class="card h-100">
+
+
+							            <ul class="list-unstyled p-2 d-flex flex-column col" id="filesIngresos">
+							              <li class="text-muted text-center empty">No hay archivos.</li>
+							            </ul>
+							          </div>
+							        </div>
+							      </div><!-- /file list -->
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default active">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#identificacion" aria-expanded="true" aria-controls="identificacion">
+											<span>Identificación</span>
+											<span class="text-right">
+												<img src="img/minus-squared-button.svg" alt="">
+											</span>
+										</a>
+									</h4>
+								</div>
+								<div id="identificacion" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-md-12">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, architecto facere. Dicta delectus laudantium sequi, reprehenderit natus nostrum nulla voluptate! Rem aliquam consectetur commodi dicta quidem unde ipsam enim perferendis.</p>
+											</div>
+							        <div class="col-md-4 col-sm-12 margin-form-mobile">
+												<div class="corner-border-dropzone">
+
+													<!-- Our markup, the important part here! -->
+													<div id="drag-and-drop-id" class="dm-uploader p-5">
+														<img src="img/upload.svg" alt="">
+														<h3 class="mb-5 mt-5 text-muted">Arrastra tus archivos</h3>
+
+														<div class="btn btn-red btn-small-center">
+															<span>Cargar archivos</span>
+															<input name="identificacion" type="file" title='Click to add Files' />
+														</div>
+													</div><!-- /uploader -->
+												</div>
+
+
+							        </div>
+							        <div class="col-md-4 col-sm-12 margin-form-mobile">
+							          <div class="card h-100">
+
+
+							            <ul class="list-unstyled p-2 d-flex flex-column col" id="filesId">
+							              <li class="text-muted text-center empty">No hay archivos.</li>
+							            </ul>
+							          </div>
+							        </div>
+							      </div><!-- /file list -->
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default active">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#actas" aria-expanded="true" aria-controls="actas">
+											<span>Actas</span>
+											<span class="text-right">
+												<img src="img/minus-squared-button.svg" alt="">
+											</span>
+										</a>
+									</h4>
+								</div>
+								<div id="actas" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-md-12">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, architecto facere. Dicta delectus laudantium sequi, reprehenderit natus nostrum nulla voluptate! Rem aliquam consectetur commodi dicta quidem unde ipsam enim perferendis.</p>
+											</div>
+							        <div class="col-md-4 col-sm-12 margin-form-mobile">
+												<div class="corner-border-dropzone">
+
+													<!-- Our markup, the important part here! -->
+													<div id="drag-and-drop-actas" class="dm-uploader p-5">
+														<img src="img/upload.svg" alt="">
+														<h3 class="mb-5 mt-5 text-muted">Arrastra tus archivos</h3>
+
+														<div class="btn btn-red btn-small-center">
+															<span>Cargar archivos</span>
+															<input name="actas" type="file" title='Click to add Files' />
+														</div>
+													</div><!-- /uploader -->
+												</div>
+
+
+							        </div>
+							        <div class="col-md-4 col-sm-12 margin-form-mobile">
+							          <div class="card h-100">
+
+
+							            <ul class="list-unstyled p-2 d-flex flex-column col" id="filesActas">
+							              <li class="text-muted text-center empty">No hay archivos.</li>
+							            </ul>
+							          </div>
+							        </div>
+							      </div><!-- /file list -->
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="text-center">
+	            <button id="btnTerminaSolicitud" class="btn btn-red btn-small">Continuar <icon class="fa fa-play"></icon></button>
+	          </div>
 					</div>
 
         </div>
@@ -1720,19 +1899,26 @@
 	<script src="libs/jquery.navgoco.min.js"></script>
 	<script src="libs/bootstrap-datepicker.min.js"></script>
 	<script src="libs/bootstrap-datepicker.es.min.js"></script>
-	<script src="libs/bootstrap-editable.min.js"></script>
-	<script src="libs/bootstrap-slider.js"></script>
-	<script src="libs/cleave.min.js"></script>
-	<script src="libs/cleave-phone.mx.js"></script>
-	<script src="libs/swiper.min.js"></script>
-	<script src="libs/dropzone.min.js"></script>
-	<script src="libs/typed.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/es.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-
+	<script src="libs/jquery.dm-uploader.min.js"></script>
 	<script src="js/solicitud.js"></script>
-
+	<!-- File item template -->
+    <script type="text/html" id="files-template">
+      <li class="media">
+        <div class="media-body mb-1">
+          <p class="mb-2">
+            <img src="img/upload_short.svg" alt=""> <strong>%%filename%%</strong> <span class="text-muted"></span>
+          </p>
+          <div class="progress mb-2">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-gray"
+              role="progressbar"
+              style="width: 0%"
+              aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+          <hr class="mt-1 mb-1" />
+        </div>
+      </li>
+    </script>
 
 
 </body>

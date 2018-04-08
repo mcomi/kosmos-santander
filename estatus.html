@@ -78,64 +78,24 @@
         <div class="row">
           <div class="col-md-12 padding-5">
             <div class="scrollmenu">
-              <a href="#" data-type="precalificacion" class="active">Precalificación <icon class="fa fa-play"></icon></a>
+              <a href="#" data-type="precalificacion">Precalificación <icon class="fa fa-play"></icon></a>
               <a href="#" data-type="generales">Datos Generales <icon class="fa fa-play"></icon></a>
               <a href="#" data-type="clinicos">Datos clínicos <icon class="fa fa-play"></icon></a>
-              <a href="#" data-type="documentos">Carga de Documentos <icon class="fa fa-play"></icon></a>
+              <a href="#" data-type="documentos" class="active">Carga de Documentos <icon class="fa fa-play"></icon></a>
             </div>
 
           </div>
 
 					<div class="col-md-10 col-md-offset-1 text-center status-panel">
-						<img src="img/checked.svg" alt="">
-						<h2 class="red">¡Felicidades!</h2>
-						<p>Haz precalificado para este crédito hipotecario.</p>
+						<img src="img/clock.svg" alt="">
+						<h2 class="red">Tu solicitud está en avaluo</h2>
+						<p>Precalificaste con estos datos.</p>
 
 					</div>
-					<div id="ofertas" class="row">
+					<div class="row">
 						<div class="col-md-10 col-md-offset-1 col-xs-12">
-							<div class="col-md-6 col-xs-12">
-								<div class="form-group col-xs-12 col-md-10">
-									<label for="valor-vivienda">Modificar valor de vivienda</label>
-									<input type="tel" class="form-control validate" id="valor-vivienda" placeholder="55 0000 0000">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-								<div class="form-group col-xs-12 col-md-10">
-									<label for="monto-credito">Modificar monto de crédito</label>
-									<input type="tel" class="form-control validate" id="monto-credito" placeholder="55 0000 0000">
-									<span class="input-success"></span>
-									<span class="input-error"></span>
-								</div>
-								<div class="col-md-12 modifica-montos">
-									<p>Modificar plazo:</p>
-									<div class="col-md-3 col-xs-3">
-										<div class="plazo-selection">
-											<input type="radio" id="10" value="10" name="cambio-plazo">
-											<label for="10"><span>10 </span></label>
-										</div>
-										<p class="radio-year-label">años</p>
-									</div>
-									<div class="col-md-3 col-xs-3">
-										<div class="plazo-selection">
-											<input type="radio" id="15" value="15" name="cambio-plazo">
-											<label for="15"><span>15 </span></label>
-										</div>
-										<p class="radio-year-label">años</p>
-									</div>
-									<div class="col-md-3 col-xs-3">
-										<div class="plazo-selection">
-											<input type="radio" id="20" value="20" name="cambio-plazo">
-											<label for="20"><span>20 </span></label>
-										</div>
-										<p class="radio-year-label">años</p>
-									</div>
-								</div>
-								<div class="col-md-12 text-left">
-									<a href="#" class="btn btn-red">Seleccionar ese monto <icon class="fa fa-play"></icon></a>
-								</div>
-							</div>
-							<div class="col-md-6 col-xs-12">
+
+							<div class="col-md-6 col-xs-12 col-md-offset-3">
 								<div class="ofertas-corner-top active">
 
 									<div class="propuesta-elegir">
@@ -186,23 +146,31 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-12 text-right">
-								<a href="#" class="red" data-toggle="modal" data-target="#modal-tabla">Ver tabla de amortización</a>
-							</div>
-							<div class="col-md-12">
+
+							<div class="col-md-6 col-xs-12">
+								<div class="text-center">
+
+									<img src="img/clock.svg" alt="">
+								</div>
 								<p class="executive">
-									Un ejecutivo te contactará  para orientarte sobre los siguientes pasos y concluir tu
-									trámite  O puedes dirigirte a una sucursal con tu número de folio y terminar tu solicitud.
+									Un ejecutivo te contactará  para orientarte sobre los siguientes pasos y concluir tu trámite
 								</p>
 							</div>
-							<col-md-6 class="col-xs-12">
-								<a href="#" class="red">
-									<i class="fa fa-map-marker"></i>  Busca una sucursal
-								</a>
-							</col-md-6>
-							<col-md-6 class="col-xs-12 text-right">
-								<a href="/solicitud.html#generales" class="btn btn-red btn-small">Continuar en línea <icon class="fa fa-play"></icon></a>
-							</col-md-6>
+							<div class="col-md-6 col-xs-12">
+								<div class="text-center">
+
+									<img src="img/maps-and-flags.svg" alt="">
+								</div>
+								<p class="executive">
+									 O puedes dirigirte a una sucursal con tu número de folio y terminar tu solicitud.
+								</p>
+								<div class="text-center">
+									<a href="#" class="red">
+										<i class="fa fa-map-marker"></i>  Busca una sucursal
+									</a>
+								</div>
+							</div>
+
 							<div class="col-md-12">
 									<ul class="terminos-condiciones">
 										<li>
@@ -222,188 +190,7 @@
       </div>
     </section>
 
-		<div class="modal" id="modal-tabla" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog modal-tabla-amortizacion" role="document">
-				<div class="modal-content">
 
-					<div class="modal-body">
-						<div class="container">
-
-							<div class="col-xs-12 text-left">
-								<img src="img/logo.png" alt="">
-							</div>
-
-							<div class="col-md-12 text-center">
-								<h3>$535,000.00. 90% valido</h3>
-								<h3>CAT promedio 12.8% sin iva informativo</h3>
-								<p>Calculado al 24 de marzo de 2018. Para fines informativos y de comparación</p>
-							</div>
-
-							<div class="col-md-12">
-								<div class="col-md-6 text-left">
-									<a href="" class="red" data-dismiss="modal" aria-label="Close"><i class="fa fa-arrow-left"></i> Regresar</a>
-								</div>
-								<div class="col-md-6 text-right margin-bottom">
-									<span class="red">1-12 de 140 </span>
-									<i class="fa fa-chevron-left"></i>  <i class="fa fa-chevron-right"></i>
-								</div>
-							</div>
-							<div class="col md-12">
-								<table class="table table-responsive">
-									<thead>
-										<tr>
-											<th>Período</th>
-											<th>Intereses</th>
-											<th>Amortización</th>
-											<th>Pago de crédito</th>
-											<th>Seguro de vida</th>
-											<th>Comisión/autorización de crédto diferida</th>
-											<th>Iva de intereses</th>
-											<th>Pago total</th>
-											<th>Saldo final</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 
 	<footer id="footer">

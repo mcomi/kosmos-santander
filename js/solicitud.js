@@ -6,8 +6,7 @@ $( "input[name='segunda-persona']").click(function(){
   }
 })
 
-$('#fecha_nac').combodate();
-$('#fecha_nac_ca').combodate();
+
 
 $('#ingreso_mensual').on('change',formatCurrency)
 
@@ -209,6 +208,10 @@ if(window.location.href.indexOf("#generales") > -1) {
     $('#link_documentos').addClass('active');
   })
 
+  $('#btnTerminaSolicitud').click(function() {
+    window.location.href = window.location.origin+'/final.html';
+  })
+
 $("input[name='tarjeta_credito']").click(function() {
   if ($(this).prop('value') == 'si') {
     $('#ult_digitos_tarjeta').prop('disabled', false)
@@ -217,67 +220,348 @@ $("input[name='tarjeta_credito']").click(function() {
   }
 });
 
-/* MODAL */
+/* file uploads */
+function ui_add_log(message, color)
+{
+  var d = new Date();
 
-const panelActiveWebcam = $('#panel-webcam')
-const panelesAnexaId = $('.anexa-identificacion')
+  var dateString = (('0' + d.getHours())).slice(-2) + ':' +
+    (('0' + d.getMinutes())).slice(-2) + ':' +
+    (('0' + d.getSeconds())).slice(-2);
 
-const panelCargaSmartphone = $('.carga-smartphone')
-panelCargaSmartphone.click(function(){
-  $('#loader-smartphone').removeClass('hidden')
-  setTimeout(function(){
-    $('#loader-smartphone').addClass('hidden')
-    $('#sms-sent').removeClass('hidden')
-  },3000)
-})
+  color = (typeof color === 'undefined' ? 'muted' : color);
 
-panelActiveWebcam.click(function(){
-  $('#webcam').removeClass('hidden')
-  $('#optionsIdPhoto').addClass('hidden')
+  var template = $('#debug-template').text();
+  template = template.replace('%%date%%', dateString);
+  template = template.replace('%%message%%', message);
+  template = template.replace('%%color%%', color);
 
-  // Grab elements, create settings, etc.
-  const video = document.getElementById('video');
+  $('#debug').find('li.empty').fadeOut(); // remove the 'no messages yet'
+  $('#debug').prepend(template);
+}
 
-  // Get access to the camera!
-  if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-      // Not adding `{ audio: true }` since we only want image now
-      navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
-          video.src = window.URL.createObjectURL(stream);
-          video.play();
-      });
+// Creates a new file and add it to our list
+function ui_multi_add_file_comprobante(id, file)
+{
+  var template = $('#files-template').text();
+  template = template.replace('%%filename%%', file.name);
+
+  template = $(template);
+  template.prop('id', 'uploaderFile' + id);
+  template.data('file-id', id);
+
+  $('#filesComprobante').find('li.empty').fadeOut(); // remove the 'no files yet'
+  $('#filesComprobante').prepend(template);
+}
+
+function ui_multi_add_file_ingresos(id, file)
+{
+  var template = $('#files-template').text();
+  template = template.replace('%%filename%%', file.name);
+
+  template = $(template);
+  template.prop('id', 'uploaderFile' + id);
+  template.data('file-id', id);
+
+  $('#filesIngresos').find('li.empty').fadeOut(); // remove the 'no files yet'
+  $('#filesIngresos').prepend(template);
+}
+
+function ui_multi_add_file_id(id, file)
+{
+  var template = $('#files-template').text();
+  template = template.replace('%%filename%%', file.name);
+
+  template = $(template);
+  template.prop('id', 'uploaderFile' + id);
+  template.data('file-id', id);
+
+  $('#filesId').find('li.empty').fadeOut(); // remove the 'no files yet'
+  $('#filesId').prepend(template);
+}
+
+function ui_multi_add_file_actas(id, file)
+{
+  var template = $('#files-template').text();
+  template = template.replace('%%filename%%', file.name);
+
+  template = $(template);
+  template.prop('id', 'uploaderFile' + id);
+  template.data('file-id', id);
+
+  $('#filesActas').find('li.empty').fadeOut(); // remove the 'no files yet'
+  $('#filesActas').prepend(template);
+}
+
+// Changes the status messages on our list
+function ui_multi_update_file_status(id, status, message)
+{
+  $('#uploaderFile' + id).find('span').html(message).prop('class', 'status-upload text-' + status);
+}
+
+// Updates a file progress, depending on the parameters it may animate it or change the color.
+function ui_multi_update_file_progress(id, percent, color, active)
+{
+  color = (typeof color === 'undefined' ? false : color);
+  active = (typeof active === 'undefined' ? true : active);
+
+  var bar = $('#uploaderFile' + id).find('div.progress-bar');
+
+  bar.width(percent + '%').attr('aria-valuenow', percent);
+  bar.toggleClass('progress-bar-striped progress-bar-animated', active);
+
+  if (percent === 0){
+    bar.html('');
+  } else {
+    bar.html(percent + '%');
   }
 
-  // Elements for taking the snapshot
-  const canvas = document.getElementById('canvas');
-  const context = canvas.getContext('2d');
+  if (color !== false){
+    bar.removeClass('bg-success bg-info bg-warning bg-danger');
+    bar.addClass('bg-' + color);
+  }
+}
 
-  // Trigger photo take
-  document.getElementById("snap").addEventListener("click", function() {
-    context.drawImage(video, 0, 0, 480, 320);
-    // canvas.toDataURL() para guardar foto
+$(function(){
+  /*
+   * For the sake keeping the code clean and the examples simple this file
+   * contains only the plugin configuration & callbacks.
+   *
+   * UI functions ui_* can be located in: demo-ui.js
+   */
+  $('#drag-and-drop-comprobante').dmUploader({ //
+    url: 'https://httpstat.us/200',   // url publica para recibir un status 'ok' y ver funcionar la animacion
+    maxFileSize: 3000000, // 3 Megs
+    onDragEnter: function(){
+      // Happens when dragging something over the DnD area
+      this.addClass('active');
+    },
+    onDragLeave: function(){
+      // Happens when dragging something OUT of the DnD area
+      this.removeClass('active');
+    },
+    onInit: function(){
+      // Plugin is ready to use
+      ui_add_log('Penguin initialized :)', 'info');
+    },
+    onComplete: function(){
+      // All files in the queue are processed (success or error)
+      ui_add_log('All pending tranfers finished');
+    },
+    onNewFile: function(id, file){
+      // When a new file is added using the file selector or the DnD area
+      ui_add_log('New file added #' + id);
+      ui_multi_add_file_comprobante(id, file);
+    },
+    onBeforeUpload: function(id){
+      // about tho start uploading a file
+      ui_add_log('Starting the upload of #' + id);
+      ui_multi_update_file_status(id, 'uploading', '<img src="img/ico-close.svg" alt="">');
+      ui_multi_update_file_progress(id, 0, '', true);
+    },
+    onUploadCanceled: function(id) {
+      // Happens when a file is directly canceled by the user.
+      ui_multi_update_file_status(id, 'warning', 'Canceled by User');
+      ui_multi_update_file_progress(id, 0, 'warning', false);
+    },
+    onUploadProgress: function(id, percent){
+      // Updating file progress
+      ui_multi_update_file_progress(id, percent);
+    },
+    onUploadSuccess: function(id, data){
+      // A file was successfully uploaded
+      ui_add_log('Server Response for file #' + id + ': ' + JSON.stringify(data));
+      ui_add_log('Upload of file #' + id + ' COMPLETED', 'success');
+      ui_multi_update_file_status(id, 'success', '<img src="img/ico-delete.svg" alt="">');
+      ui_multi_update_file_progress(id, 100, 'success', false);
+    },
+    onUploadError: function(id, xhr, status, message){
+      ui_multi_update_file_status(id, 'danger', message);
+      ui_multi_update_file_progress(id, 0, 'danger', false);
+    },
+    onFallbackMode: function(){
+      // When the browser doesn't support this plugin :(
+      ui_add_log('Plugin cant be used here, running Fallback callback', 'danger');
+    },
+    onFileSizeError: function(file){
+      ui_add_log('File \'' + file.name + '\' cannot be added: size excess limit', 'danger');
+    }
   });
-})
 
-panelesAnexaId.each(function(){
-  var panel = $(this)
-  panel.click(function(){
-    $('#frente-reverso').removeClass('hidden')
-    $('#optionsIdPhoto').addClass('hidden')
+  $('#drag-and-drop-ingresos').dmUploader({ //
+    url: 'https://httpstat.us/200',  // url publica para recibir un status 'ok'
+    maxFileSize: 3000000, // 3 Megs
+    onDragEnter: function(){
+      // Happens when dragging something over the DnD area
+      this.addClass('active');
+    },
+    onDragLeave: function(){
+      // Happens when dragging something OUT of the DnD area
+      this.removeClass('active');
+    },
+    onInit: function(){
+      // Plugin is ready to use
+      ui_add_log('Penguin initialized :)', 'info');
+    },
+    onComplete: function(){
+      // All files in the queue are processed (success or error)
+      ui_add_log('All pending tranfers finished');
+    },
+    onNewFile: function(id, file){
+      // When a new file is added using the file selector or the DnD area
+      ui_add_log('New file added #' + id);
+      ui_multi_add_file_ingresos(id, file);
+    },
+    onBeforeUpload: function(id){
+      // about tho start uploading a file
+      ui_add_log('Starting the upload of #' + id);
+      ui_multi_update_file_status(id, 'uploading', '<img src="img/ico-close.svg" alt="">');
+      ui_multi_update_file_progress(id, 0, '', true);
+    },
+    onUploadCanceled: function(id) {
+      // Happens when a file is directly canceled by the user.
+      ui_multi_update_file_status(id, 'warning', 'Canceled by User');
+      ui_multi_update_file_progress(id, 0, 'warning', false);
+    },
+    onUploadProgress: function(id, percent){
+      // Updating file progress
+      ui_multi_update_file_progress(id, percent);
+    },
+    onUploadSuccess: function(id, data){
+      // A file was successfully uploaded
+      ui_add_log('Server Response for file #' + id + ': ' + JSON.stringify(data));
+      ui_add_log('Upload of file #' + id + ' COMPLETED', 'success');
+      ui_multi_update_file_status(id, 'success', '<img src="img/ico-delete.svg" alt="">');
+      ui_multi_update_file_progress(id, 100, 'success', false);
+    },
+    onUploadError: function(id, xhr, status, message){
+      ui_multi_update_file_status(id, 'danger', message);
+      ui_multi_update_file_progress(id, 0, 'danger', false);
+    },
+    onFallbackMode: function(){
+      // When the browser doesn't support this plugin :(
+      ui_add_log('Plugin cant be used here, running Fallback callback', 'danger');
+    },
+    onFileSizeError: function(file){
+      ui_add_log('File \'' + file.name + '\' cannot be added: size excess limit', 'danger');
+    }
+  });
 
-  })
-})
+  $('#drag-and-drop-id').dmUploader({ //
+    url: 'https://httpstat.us/200', // url publica para recibir un status 'ok'
+    maxFileSize: 3000000, // 3 Megs
+    onDragEnter: function(){
+      // Happens when dragging something over the DnD area
+      this.addClass('active');
+    },
+    onDragLeave: function(){
+      // Happens when dragging something OUT of the DnD area
+      this.removeClass('active');
+    },
+    onInit: function(){
+      // Plugin is ready to use
+      ui_add_log('Penguin initialized :)', 'info');
+    },
+    onComplete: function(){
+      // All files in the queue are processed (success or error)
+      ui_add_log('All pending tranfers finished');
+    },
+    onNewFile: function(id, file){
+      // When a new file is added using the file selector or the DnD area
+      ui_add_log('New file added #' + id);
+      ui_multi_add_file_id(id, file);
+    },
+    onBeforeUpload: function(id){
+      // about tho start uploading a file
+      ui_add_log('Starting the upload of #' + id);
+      ui_multi_update_file_status(id, 'uploading', '<img src="img/ico-close.svg" alt="">');
+      ui_multi_update_file_progress(id, 0, '', true);
+    },
+    onUploadCanceled: function(id) {
+      // Happens when a file is directly canceled by the user.
+      ui_multi_update_file_status(id, 'warning', 'Canceled by User');
+      ui_multi_update_file_progress(id, 0, 'warning', false);
+    },
+    onUploadProgress: function(id, percent){
+      // Updating file progress
+      ui_multi_update_file_progress(id, percent);
+    },
+    onUploadSuccess: function(id, data){
+      // A file was successfully uploaded
+      ui_add_log('Server Response for file #' + id + ': ' + JSON.stringify(data));
+      ui_add_log('Upload of file #' + id + ' COMPLETED', 'success');
+      ui_multi_update_file_status(id, 'success', '<img src="img/ico-delete.svg" alt="">');
+      ui_multi_update_file_progress(id, 100, 'success', false);
+    },
+    onUploadError: function(id, xhr, status, message){
+      ui_multi_update_file_status(id, 'danger', message);
+      ui_multi_update_file_progress(id, 0, 'danger', false);
+    },
+    onFallbackMode: function(){
+      // When the browser doesn't support this plugin :(
+      ui_add_log('Plugin cant be used here, running Fallback callback', 'danger');
+    },
+    onFileSizeError: function(file){
+      ui_add_log('File \'' + file.name + '\' cannot be added: size excess limit', 'danger');
+    }
+  });
 
-$('input[type=file]').change(function() {
-
-  $('#loader-id').removeClass('hidden') // si pasa se muestra loader
-
-  setTimeout(function() {
-    $('#loader-id').addClass('hidden')
-  }, 3000)
-})
-
-const saveImageBtn = $('#savePhotoWebcam')
-saveImageBtn.click(function() {
-  $('#optionsIdPhoto').removeClass('hidden')
-  $('#webcam').addClass('hidden')
-})
+  $('#drag-and-drop-actas').dmUploader({ //
+    url: 'https://httpstat.us/200',
+    maxFileSize: 3000000, // 3 Megs
+    onDragEnter: function(){
+      // Happens when dragging something over the DnD area
+      this.addClass('active');
+    },
+    onDragLeave: function(){
+      // Happens when dragging something OUT of the DnD area
+      this.removeClass('active');
+    },
+    onInit: function(){
+      // Plugin is ready to use
+      ui_add_log('Penguin initialized :)', 'info');
+    },
+    onComplete: function(){
+      // All files in the queue are processed (success or error)
+      ui_add_log('All pending tranfers finished');
+    },
+    onNewFile: function(id, file){
+      // When a new file is added using the file selector or the DnD area
+      ui_add_log('New file added #' + id);
+      ui_multi_add_file_actas(id, file);
+    },
+    onBeforeUpload: function(id){
+      // about tho start uploading a file
+      ui_add_log('Starting the upload of #' + id);
+      ui_multi_update_file_status(id, 'uploading', '<img src="img/ico-close.svg" alt="">');
+      ui_multi_update_file_progress(id, 0, '', true);
+    },
+    onUploadCanceled: function(id) {
+      // Happens when a file is directly canceled by the user.
+      ui_multi_update_file_status(id, 'warning', 'Canceled by User');
+      ui_multi_update_file_progress(id, 0, 'warning', false);
+    },
+    onUploadProgress: function(id, percent){
+      // Updating file progress
+      ui_multi_update_file_progress(id, percent);
+    },
+    onUploadSuccess: function(id, data){
+      // A file was successfully uploaded
+      ui_add_log('Server Response for file #' + id + ': ' + JSON.stringify(data));
+      ui_add_log('Upload of file #' + id + ' COMPLETED', 'success');
+      ui_multi_update_file_status(id, 'success', '<img src="img/ico-delete.svg" alt="">');
+      ui_multi_update_file_progress(id, 100, 'success', false);
+    },
+    onUploadError: function(id, xhr, status, message){
+      ui_multi_update_file_status(id, 'danger', message);
+      ui_multi_update_file_progress(id, 0, 'danger', false);
+    },
+    onFallbackMode: function(){
+      // When the browser doesn't support this plugin :(
+      ui_add_log('Plugin cant be used here, running Fallback callback', 'danger');
+    },
+    onFileSizeError: function(file){
+      ui_add_log('File \'' + file.name + '\' cannot be added: size excess limit', 'danger');
+    }
+  });
+});

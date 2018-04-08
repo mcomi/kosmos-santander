@@ -1395,6 +1395,62 @@ textarea.form-control {
     -webkit-transform: scale(1);
     transform: scale(1); } }
 
+.dm-uploader {
+  background: #FFFFFF;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px 0; }
+
+.corner-border-dropzone:before {
+  display: block;
+  content: "";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  border-top: 1px solid #EB0029;
+  border-left: 1px solid #EB0029; }
+
+.corner-border-dropzone:after {
+  display: block;
+  content: "";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  border-top: 1px solid #EB0029;
+  border-right: 1px solid #EB0029; }
+
+.dm-uploader:before {
+  display: block;
+  content: "";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  border-bottom: 1px solid #EB0029;
+  border-left: 1px solid #EB0029; }
+
+.dm-uploader:after {
+  display: block;
+  content: "";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  border-bottom: 1px solid #EB0029;
+  border-right: 1px solid #EB0029; }
+
+.bg-gray {
+  background-color: #4E6E82; }
+
+.status-upload {
+  float: right; }
+
 body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #fff;
