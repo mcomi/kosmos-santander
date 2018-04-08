@@ -183,7 +183,7 @@ if ($('#celular').exists()) {
 $('#btnCalculaOfertas').click(function(){
   $('.loading-background').show('slow')
   setTimeout(function(){
-    window.location.href = window.location.origin+'/aceptacion.html';
+    window.location.href = window.location.origin+'/kosmos-santander/aceptacion.html';
   }, 2500)
 })
 
@@ -209,7 +209,7 @@ if(window.location.href.indexOf("#generales") > -1) {
   })
 
   $('#btnTerminaSolicitud').click(function() {
-    window.location.href = window.location.origin+'/final.html';
+    window.location.href = window.location.origin+'/kosmos-santander/final.html';
   })
 
 $("input[name='tarjeta_credito']").click(function() {
