@@ -628,12 +628,6 @@ input[type=radio] {
     font-size: 24px;
     color: #000000;
     letter-spacing: 0; }
-  .panel-precalificador span {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
-    color: #121212;
-    letter-spacing: 0;
-    line-height: 20px; }
 
 .panel-precalificador .form-group {
   width: 100%;
@@ -1025,7 +1019,7 @@ textarea.form-control {
   box-shadow: none;
   -webkit-appearance: none;
   background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
-  background-position: calc(100% - 23px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+  background-position: calc(100% - 15px) calc(1em + 2px), calc(100% - 7px) calc(1em + 2px);
   background-size: 8px 8px, 8px 8px;
   background-repeat: no-repeat;
   font-size: 12px;
@@ -1496,7 +1490,6 @@ body {
       padding: 15px 0; }
 
 #landing-section {
-  text-align: center;
   height: 100%;
   /* Center and scale the image nicely */
   background-image: url("../img/header_bg_2.jpg");
@@ -1703,6 +1696,20 @@ table > thead > tr > th {
 table > tbody > tr > th {
   padding: 15px 0 !important; }
 
+.margin-form-desktop .input-success {
+  top: 95px; }
+
+.precalificador-container .input-success {
+  top: 90px; }
+
+.date-title {
+  font-size: 11px;
+  float: left;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700; }
+
 /* importamos responsive al final */
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width: 1115px) {
@@ -1865,7 +1872,9 @@ table > tbody > tr > th {
   .navbar-nav > li > a {
     line-height: 50px;
     font-family: 'Ubuntu', sans-serif;
-    color: #121212 !important; }
+    color: #121212 !important;
+    font-size: 16px;
+    font-weight: 800; }
   .desktop-nav-links {
     display: block; }
   #menu-mobile {
