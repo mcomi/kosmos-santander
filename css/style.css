@@ -330,7 +330,8 @@ div.corner-border span:after {
 .cotizador-input .btn {
   width: 85%; }
 
-.cotizador-corner-top:before, .ofertas-corner-top.active:before {
+.cotizador-corner-top:before,
+.ofertas-corner-top.active:before {
   display: block;
   content: "";
   width: 20px;
@@ -341,7 +342,8 @@ div.corner-border span:after {
   border-top: 1px solid #EB0029;
   border-left: 1px solid #EB0029; }
 
-.cotizador-corner-top:after, .ofertas-corner-top.active:after {
+.cotizador-corner-top:after,
+.ofertas-corner-top.active:after {
   display: block;
   content: "";
   width: 20px;
@@ -544,13 +546,13 @@ input[type=radio] {
   height: 30px; }
 
 .proceso {
-  margin-bottom: 60px; }
+  margin-bottom: 90px; }
 
 .proceso h1 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 24px;
   color: #000000;
-  padding: 40px 0 65px 0;
+  padding: 30px 0 60px 0;
   text-align: center; }
 
 .proceso h1 span {
@@ -728,14 +730,16 @@ input[type=radio] {
   letter-spacing: 0;
   padding: 0 0 15px 0; }
 
-.propuesta-elegir h3, .propuesta-elegir h4 {
+.propuesta-elegir h3,
+.propuesta-elegir h4 {
   line-height: 12px; }
 
 .ofertas-corner-top.active .propuesta-elegir {
   color: #121212;
   background: #ffffff; }
 
-.propuesta-elegir .cotizador-valor-md, .propuesta-elegir .cotizador-big-title {
+.propuesta-elegir .cotizador-valor-md,
+.propuesta-elegir .cotizador-big-title {
   color: #4E6E82 !important; }
 
 .ofertas-corner-top.active .propuesta-elegir .cotizador-valor-md {
@@ -1735,23 +1739,23 @@ table > tbody > tr > th {
     height: auto; }
   li.corner-border:before {
     top: -5px; }
-  table > thead > tr > th {
-    padding: 15px 8px !important; }
-  table > tbody > tr > th {
-    padding: 15px 8px !important; }
   li.corner-border:after {
     top: -5px; }
   li.corner-border a:before {
     bottom: -5px; }
   li.corner-border a:after {
     bottom: -5px; }
+  table > thead > tr > th {
+    padding: 15px 8px !important; }
+  table > tbody > tr > th {
+    padding: 15px 8px !important; }
   .navbar {
     min-height: 85px;
     margin-bottom: 0; }
   .modifica-montos label:after {
     right: 32px; } }
 
-@media (max-width: 321px) {
+@media (max-width: 436px) and (max-width: 321px) {
   .nav > li {
     width: 125px;
     text-align: center; }
@@ -1766,7 +1770,9 @@ table > tbody > tr > th {
     left: 0; }
   li.corner-border a:after {
     bottom: 0;
-    right: 0; }
+    right: 0; } }
+
+@media (max-width: 436px) {
   .modifica-montos label span:after {
     right: 32px; }
   .margin-form-mobile {
