@@ -8,6 +8,10 @@
   font-family: 'Gotham medium';
   src: url("../fonts/gotham-medium.eot");
   src: local("☺"), url("../fonts/gotham-medium.woff") format("woff"), url("../fonts/gotham-medium.ttf") format("truetype"), url("../fonts/gotham-medium.svg#webfont") format("svg"); }
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
 
 .navbar-brand {
   color: #121212 !important; }
@@ -1458,6 +1462,7 @@ body {
   color: #121212;
   position: relative;
   margin: 0;
+  padding-bottom: 20rem;
   min-height: 100%; }
 
 .navbar {
@@ -1506,7 +1511,10 @@ body {
 #footer {
   background: #4E6E82;
   color: #ffffff;
-  bottom: 0; }
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0; }
 
 .footer-top {
   padding: 50px 0 30px;
@@ -1972,5 +1980,3 @@ table > tbody > tr > th {
     border-bottom: 2px solid #5b56a6; }
   .scrollmenu li span {
     display: inline-block; } }
-
-/*# sourceMappingURL=style.css.map */
