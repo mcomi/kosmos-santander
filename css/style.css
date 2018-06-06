@@ -12,12 +12,7 @@ html {
   height: 100%;
   box-sizing: border-box;
 }
-body {
-  position: relative;
-  margin: 0;
-  padding-bottom: 6rem;
-  min-height: 100%;
-}
+
 .navbar-brand {
   color: #121212 !important; }
 
@@ -1467,6 +1462,7 @@ body {
   color: #121212;
   position: relative;
   margin: 0;
+  padding-bottom: 20rem;
   min-height: 100%; }
 
 .navbar {
