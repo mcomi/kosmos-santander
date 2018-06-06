@@ -199,7 +199,8 @@ div.corner-border span:after {
   letter-spacing: 0;
   line-height: 16px;
   text-align: left;
-  width: 205px; }
+  width: 205px;
+  white-space: inherit;}
 
 .btn-small {
   padding: 7px 10px;
