@@ -13,6 +13,17 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #fff;
+  color: #121212;
+  position: relative;
+  margin: 0;
+  min-height: 100%; }
+#home {
+    padding-bottom: 20rem;
+}
+
 .navbar-brand {
   color: #121212 !important; }
 
@@ -1456,15 +1467,6 @@ textarea.form-control {
 .status-upload {
   float: right; }
 
-body {
-  font-family: 'Ubuntu', sans-serif;
-  background-color: #fff;
-  color: #121212;
-  position: relative;
-  margin: 0;
-  padding-bottom: 20rem;
-  min-height: 100%; }
-
 .navbar {
   position: absolute;
   width: 100%;
@@ -1739,6 +1741,9 @@ table > tbody > tr > th {
     height: 80px; } }
 
 @media (max-width: 436px) {
+  #home {
+      padding-bottom: 0;
+  }
   .nav > li {
     position: absolute;
     display: block;
