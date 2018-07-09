@@ -8,6 +8,21 @@
   font-family: 'Gotham medium';
   src: url("../fonts/gotham-medium.eot");
   src: local("☺"), url("../fonts/gotham-medium.woff") format("woff"), url("../fonts/gotham-medium.ttf") format("truetype"), url("../fonts/gotham-medium.svg#webfont") format("svg"); }
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #fff;
+  color: #121212;
+  position: relative;
+  margin: 0;
+  min-height: 100%; }
+.home {
+    padding-bottom: 22rem;
+}
 
 @font-face {
   font-family: 'kievit';
@@ -232,7 +247,8 @@ div.corner-border span:after {
   letter-spacing: 0;
   line-height: 16px;
   text-align: left;
-  width: 205px; }
+  width: 205px;
+  white-space: inherit;}
 
 .btn-small {
   padding: 7px 10px;
@@ -1599,7 +1615,10 @@ ul.progress-percentages > li {
 #footer {
   background: #EB0029;
   color: #ffffff;
-  bottom: 0; }
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0; }
 
 .squared {
   position: relative;
@@ -2054,6 +2073,9 @@ table > tbody > tr > th {
     height: 80px; } }
 
 @media (max-width: 436px) {
+  .home {
+      padding-bottom: 0;
+  }
   .nav > li {
     position: absolute;
     display: block;
@@ -2300,5 +2322,3 @@ table > tbody > tr > th {
     border-bottom: 2px solid #5b56a6; }
   .scrollmenu li span {
     display: inline-block; } }
-
-/*# sourceMappingURL=style.css.map */
