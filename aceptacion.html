@@ -33,7 +33,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css"
+	/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -46,181 +47,263 @@
 </head>
 
 <body>
-	<div class="navbar navbar-default">
-	<div class="container">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="#">
-				<img src="img/logo.png" alt="">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
 
-			</a>
-			<span id="nav-expander" class="nav-expander fixed">
-				<img src="img/icons/menu.png" alt="">
-			</span>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li>
+						<a href="#">
+							<img src="img/logo.png" alt="">
+						</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-center">
+					<li>
+						<a href="#">Hipoteca personal</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<img src="img/client_icon.svg" alt="">
+						<a href="#">Bienvenido Juan</a>
+					</li>
+					<li class="save-auto">
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-cloud fa-stack-2x"></i>
+							<i id="saveAnimatedIcon" class="fa fa-stack-1x fa-check"></i>
+						</span>
+						Guardado automático
+					</li>
+				</ul>
+
+			</div>
 		</div>
-		<ul id="desktop-menu" class="nav navbar-nav">
-
-			<li class="corner-border">
-				<a data-toggle="modal" data-target="#modalConsultaFolio">Continuar mi solicitud</a>
-			</li>
-		</ul>
-	</div>
-	<!-- /.container-fluid -->
-</div>
+	</nav>
 
 	<div class="home">
-		<section id="landing-section" class="just-header">
 
-		</section>
+		<section>
 
-    <section>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 padding-5">
-            <div class="scrollmenu">
-              <a href="#" data-type="precalificacion" class="active">Precalificación <icon class="fa fa-play"></icon></a>
-              <a href="#" data-type="generales">Datos Generales <icon class="fa fa-play"></icon></a>
-              <a href="#" data-type="clinicos">Datos clínicos <icon class="fa fa-play"></icon></a>
-              <a href="#" data-type="documentos">Carga de Documentos <icon class="fa fa-play"></icon></a>
-            </div>
-
-          </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="scrollmenu">
+							<a href="#" id="link_precalificacion" data-type="precalificacion" class="active">1-Precalificación </a>
+							<a href="#" id="link_generales" data-type="generales">2-Datos Generales </a>
+							<a href="#" id="link_clinicos" data-type="clinicos">3-Datos clínicos </a>
+							<a href="#" id="link_documentos" data-type="documentos">4-Carga de Documentos </a>
+						</div>
+						<div class="progress" id="progress1">
+							<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+							</div>
+							<!-- <span class="progress-type">Overall Progress</span> -->
+							<!-- <span class="progress-completed">20%</span> -->
+							<ul class="progress-percentages">
+								<li>25%</li>
+								<li>50%</li>
+								<li>75%</li>
+								<li>100%</li>
+							</ul>
+						</div>
+						<div class="progress progress-steps" id="progress2">
+							<div class="progress-bar progress-bar-steps" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+							</div>
+							<!-- <span class="progress-type">Overall Progress</span> -->
+							<!-- <span class="progress-completed">20%</span> -->
+							<span class="progress-for-step">
+								haz completado el
+								<span id="step-percentage">0%</span> del paso
+								<span id="step-number">1</span>
+							</span>
+						</div>
+						<h2>
+							<img src="img/info-icon.svg" alt=""> Tu número de folio es:
+							<span>AFTSFGW</span>
+							<span class="tooltip-folio">
+								<img src="img/copy-icon.svg" alt="">
+								<span class="tooltiptext" id="myTooltip">Copiar mi folio</span>
+							</span>
+						</h2>
+						<span class="subtitle-info">Guárdalo, con este número puedes acceder a tu solicitud y terminarla en cualquier momento.</span>
+					</div>
 
 					<div class="col-md-10 col-md-offset-1 text-center status-panel">
 						<img src="img/checked.svg" alt="">
 						<h2 class="red">¡Felicidades!</h2>
-						<p>Haz precalificado para este crédito hipotecario.</p>
+						<p>Ya tienes tu hipoteca autorizada</p>
 
 					</div>
 					<div id="ofertas" class="row">
-						<div class="col-md-10 col-md-offset-1 col-xs-12">
-							<div class="col-md-6 col-xs-12">
+						<div class="col-md-8 col-md-offset-2 col-xs-12">
+							<div class="col-md-6 col-xs-12" id="tabla-modificadores">
 								<div class="form-group col-xs-12 col-md-10">
 									<label for="valor-vivienda">Modificar valor de vivienda</label>
-									<input type="tel" class="form-control validate" id="valor-vivienda" placeholder="55 0000 0000">
+									<input type="tel" class="form-control validate" id="valor-vivienda" placeholder="$1,111,000">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
 								<div class="form-group col-xs-12 col-md-10">
 									<label for="monto-credito">Modificar monto de crédito</label>
-									<input type="tel" class="form-control validate" id="monto-credito" placeholder="55 0000 0000">
+									<input type="tel" class="form-control validate" id="monto-credito" placeholder="$1,000,000">
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
-								<div class="col-md-12 modifica-montos">
-									<p>Modificar plazo:</p>
-									<div class="col-md-3 col-xs-3">
-										<div class="plazo-selection">
-											<input type="radio" id="10" value="10" name="cambio-plazo">
-											<label for="10"><span>10 </span></label>
-										</div>
-										<p class="radio-year-label">años</p>
-									</div>
-									<div class="col-md-3 col-xs-3">
-										<div class="plazo-selection">
-											<input type="radio" id="15" value="15" name="cambio-plazo">
-											<label for="15"><span>15 </span></label>
-										</div>
-										<p class="radio-year-label">años</p>
-									</div>
-									<div class="col-md-3 col-xs-3">
-										<div class="plazo-selection">
-											<input type="radio" id="20" value="20" name="cambio-plazo">
-											<label for="20"><span>20 </span></label>
-										</div>
-										<p class="radio-year-label">años</p>
-									</div>
+								<div class="form-group col-xs-12 col-md-10">
+									<label>Modificar plazo:</label>
+									<select class="form-control validate" id="plazos" placeholder="">
+										<option value="20" selected>20 años</option>
+										<option value="15">15 años</option>
+										<option value="10">10 años</option>
+									</select>
+									<span class="input-success"></span>
+									<span class="input-error"></span>
 								</div>
-								<div class="col-md-12 text-left">
-									<a href="#" class="btn btn-red">Seleccionar ese monto <icon class="fa fa-play"></icon></a>
+								<div class="form-group col-xs-12 col-md-10">
+									<label>Modificar el esquema de pagos:</label>
+									<select class="form-control validate" id="esquema" placeholder="">
+										<option value="fijos" selected>Pagos fijos</option>
+										<option value="variables">Pagos variables</option>
+									</select>
+									<span class="input-success"></span>
+									<span class="input-error"></span>
 								</div>
+
 							</div>
-							<div class="col-md-6 col-xs-12">
-								<div class="ofertas-corner-top active">
+							<div class="col-md-6 col-xs-12" id="propuesta-inicial">
 
-									<div class="propuesta-elegir">
+								<div class="propuesta-elegir">
+									<div class="text-center">
+										<img src="img/home.svg" />
+										<div id="oferta-inicial">
 
-										<div class="col-md-6 col-xs-12">
-											<h3 class="cotizador-valor-big">$1,111,111.00</h3>
-											<span class="cotizador-big-title">Valor de la vivienda</span>
-											<h4 class="cotizador-valor-md">$1,000,000.00</h4>
-											<span class="cotizador-md-title">Monto de Crédito</span>
-											<h4 class="cotizador-valor-md">90%</h4>
-											<span class="cotizador-md-title">Desembolso inicial</span>
-											<div class="col-md-6 margin-16">
-
-												<h4 class="cotizador-valor-md">10.94%</h4>
-												<span class="cotizador-md-title">Tasa</span>
-											</div>
-											<div class="col-md-6 margin-16">
-
-												<h4 class="cotizador-valor-md">14%</h4>
-												<span class="cotizador-md-title">CAT</span>
-											</div>
-											<h4 class="cotizador-valor-md">$2,000.00</h4>
-											<span class="cotizador-md-title">Seguro de vida</span>
-											<h4 class="cotizador-valor-md">$2,000.00</h4>
-											<span class="cotizador-md-title">Seguro de daños</span>
-										</div>
-										<div class="col-md-6 col-xs-12">
-											<h3 class="cotizador-valor-big">$10,281</h3>
+											<h3 id="pago-mensual" class="cotizador-valor-big"></h3>
 											<span class="cotizador-big-title">Pago Mensual Total</span>
-											<h4 class="cotizador-valor-md">$23,589</h4>
-											<span class="cotizador-md-title">Ingreso neto requerido</span>
-											<h4 class="cotizador-valor-md">90%</h4>
-											<span class="cotizador-md-title">Financiamiento</span>
-											<div class="col-md-12 col-xs-12">
-												<div class="plazo-selection">
-													<input type="radio" id="5" value="5" name="plazo">
-													<label for="5"><span>5</span></label>
-												</div>
-												<p class="radio-year-label">años</p>
+											<h4 id="tasa" class="cotizador-valor-md"></h4>
+											<span class="cotizador-md-title">Tasa</span>
+											<h4 id="cat" class="cotizador-valor-md"></h4>
+											<span class="cotizador-md-title">CAT</span>
+											<div class="col-md-12 col-xs-12 padding-20">
+
+												<button class="red btn-link" data-toggle="modal" data-target="#modal-tabla">Ver tabla de amortización</button>
+												<span class="message-small">
+													<img src="img/idea-icon.svg" alt=""> Reduciendo el plazo puedes conseguir una mejor tasa
+												</span>
 											</div>
-											<h4 class="cotizador-valor-md">10%</h4>
-											<span class="cotizador-md-title">Comisión apertura</span>
-											<h4 class="cotizador-valor-md">$2,000.00</h4>
-											<span class="cotizador-md-title">pago mensual infonavit</span>
+											<div class="col-md-12 col-xs-12">
+
+												<a href="#" id="muestra-oferta-final-btn" class="btn btn-red margin-16">Elegir este monto
+													<icon class="fa fa-play"></icon>
+												</a>
+											</div>
 										</div>
+										<div id="cambio-oferta" class="hidden">
+												<div class="col-md-12 col-xs-12">
 
-
+													<h5>Para calcular la oferta da click en calcular</h5>
+													<button id="recalcular-btn" class="btn btn-red margin-16">Calcular
+														<icon class="fa fa-play"></icon>
+													</button>
+													<span id="regresar-datos-btn" class="message-small">
+														Regresar a datos iniciales
+													</span>
+												</div>
+										</div>
 									</div>
+
 								</div>
 							</div>
-							<div class="col-md-12 text-right">
-								<a href="#" class="red" data-toggle="modal" data-target="#modal-tabla">Ver tabla de amortización</a>
+							<div class="col-md-6 col-md-offset-3 col-xs-12 hidden" id="propuesta-final">
+									<div class="propuesta-elegir">
+											<div class="text-center">
+												<img src="img/home.svg" />
+												<div>
+		
+													<h3 id="valor-vivienda-final" class="cotizador-valor-big">$1,111,123</h3>
+													<span class="cotizador-big-title">Valor de la vivienda</span>
+													<h3 id="pago-mensual-final" class="cotizador-valor-big">$10,281</h3>
+													<span class="cotizador-big-title">Pago Mensual Total</span>
+													<h3 id="monto-final" class="cotizador-valor-big">$1,000,000</h3>
+													<span class="cotizador-big-title">Monto del crédito</span>
+													<h4 id="tasa" class="cotizador-valor-md"></h4>
+													
+													<div class="col-md-4 col-xs-4">
+														<h4 id="plazo-final" class="cotizador-valor-md">20 años</h4>
+														<span class="cotizador-md-title">Plazo</span>
+													</div>
+													<div class="col-md-4 col-xs-4">
+														<h4 id="tasa-final" class="cotizador-valor-md">10.94%</h4>
+														<span class="cotizador-md-title">Tasa</span>
+													</div>
+													<div class="col-md-4 col-xs-4">
+														<h4 id="cat-final" class="cotizador-valor-md">14%</h4>
+														<span class="cotizador-md-title">CAT</span>
+													</div>
+													
+													
+													<div class="col-xs-12">
+
+														<button class="red btn-link" data-toggle="modal" data-target="#modal-tabla">Ver tabla de amortización</button>
+														<span id="editar-datos-btn" class="message-small">
+																Editar datos
+															</span>
+													</div>
+													</div>
+													
+												</div>
+												
+											</div>
+		
+										</div>
 							</div>
-							<div class="col-md-12">
+							<div class="col-xs-12 text-center">
+								<a href="/kosmos-santander/solicitud.html#generales" class="btn btn-red">Continuar en línea
+									<icon class="fa fa-play"></icon>
+								</a>
+							</div>
+
+							<div class="col-xs-12">
 								<p class="executive">
-									Un ejecutivo te contactará  para orientarte sobre los siguientes pasos y concluir tu
-									trámite  O puedes dirigirte a una sucursal con tu número de folio y terminar tu solicitud.
+									Un ejecutivo te contactará para orientarte sobre los siguientes pasos y concluir tu trámite O puedes dirigirte a una sucursal
+									con tu número de folio y terminar tu solicitud.
 								</p>
 							</div>
-							<col-md-6 class="col-xs-12">
-								<a href="#" class="red">
-									<i class="fa fa-map-marker"></i>  Busca una sucursal
+							<col-md-6 class="col-xs-12 text-center">
+								<a href="#" class="red pin-map">
+									<i class="fa fa-map-marker"></i> Busca una sucursal
 								</a>
 							</col-md-6>
-							<col-md-6 class="col-xs-12 text-right">
-								<a href="/kosmos-santander/solicitud.html#generales" class="btn btn-red btn-small">Continuar en línea <icon class="fa fa-play"></icon></a>
-							</col-md-6>
-							<div class="col-md-12">
-									<ul class="terminos-condiciones">
-										<li>
-											1. 	La información contenida en la presente precalificación es únicamente para efectos informativos y en ningún momento constituirá una oferta vinculante y/o obligación a cargo de Banco Santander (México), S.A.
-										</li>
-										<li>
-											2. 	La aprobación final del crédito dependerá de manera enunciativa, más no limitativa, de la comprobación de los datos y documentos proporcionados o que se llegue a solicitar, estado civil, aceptación de la aseguradora, y del resultado de la investigación del historial crediticio del solicitante en las sociedades de información crediticia, así como de la situación legal y física del inmueble a adquirir.
-										</li>
-										<li>
-											3. 	Banco Santander (México), S.A., se reserva el derecho de autorizar el crédito conforme a las políticas vigentes para la institución al momento de presentar la solicitud de crédito.
-										</li>
-									</ul>
+
+							<div class="col-xs-12">
+								<ul class="terminos-condiciones">
+									<li>
+										1. La información contenida en la presente precalificación es únicamente para efectos informativos y en ningún momento constituirá
+										una oferta vinculante y/o obligación a cargo de Banco Santander (México), S.A.
+									</li>
+									<li>
+										2. La aprobación final del crédito dependerá de manera enunciativa, más no limitativa, de la comprobación de los datos y
+										documentos proporcionados o que se llegue a solicitar, estado civil, aceptación de la aseguradora, y del resultado
+										de la investigación del historial crediticio del solicitante en las sociedades de información crediticia, así como
+										de la situación legal y física del inmueble a adquirir.
+									</li>
+									<li>
+										3. Banco Santander (México), S.A., se reserva el derecho de autorizar el crédito conforme a las políticas vigentes para la
+										institución al momento de presentar la solicitud de crédito.
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
-        </div>
-      </div>
-    </section>
+				</div>
+			</div>
+		</section>
 
 		<div class="modal" id="modal-tabla" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog modal-tabla-amortizacion" role="document">
@@ -241,16 +324,18 @@
 
 							<div class="col-md-12">
 								<div class="col-md-6 text-left">
-									<a href="" class="red" data-dismiss="modal" aria-label="Close"><i class="fa fa-arrow-left"></i> Regresar</a>
+									<a href="" class="red" data-dismiss="modal" aria-label="Close">
+										<i class="fa fa-arrow-left"></i> Regresar</a>
 								</div>
 								<div class="col-md-6 text-right margin-bottom">
 									<span class="red">1-12 de 140 </span>
-									<i class="fa fa-chevron-left"></i>  <i class="fa fa-chevron-right"></i>
+									<i class="fa fa-chevron-left"></i>
+									<i class="fa fa-chevron-right"></i>
 								</div>
 							</div>
 							<div class="table-responsive">
-							
-								<table class="table">
+
+								<table class="table table-striped">
 									<thead>
 										<tr>
 											<th>Período</th>
@@ -407,53 +492,54 @@
 		</div>
 
 
-	<footer id="footer">
-		<div class="footer-top">
-			<div class="container">
-				<div class="row sidebar">
-					<div class="col-xs-12 col-sm-3 col-md-3">
-						<div class="question-contact">
-							<p>¿Tienes dudas? <br>llámanos</p>
-						</div>
+		<footer id="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row sidebar">
+						<div class="col-xs-12 col-sm-3 col-md-3">
+							<div class="question-contact">
+								<p>¿Tienes dudas?
+									<br>llámanos</p>
+							</div>
 
-					</div>
-					<div class="col-xs-12 col-sm-4 col-md-4">
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4">
 							<div class="tel">
 								<span>0000-0000</span>
 								<p>CDMX y zona metropolitana</p>
 							</div>
-					</div>
-					<!-- .newsletter -->
-					<div class="col-xs-12 col-sm-5 col-md-5">
-						<div class="tel">
-							<span>00000-0000-0000</span>
-							<p>Del interior de la república y zona metropolitana</p>
+						</div>
+						<!-- .newsletter -->
+						<div class="col-xs-12 col-sm-5 col-md-5">
+							<div class="tel">
+								<span>00000-0000-0000</span>
+								<p>Del interior de la república y zona metropolitana</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- modal fovissste/infonavit-->
+			<!-- modal fovissste/infonavit-->
 
-		<!-- .footer-top -->
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="copyright col-xs-12 col-sm-3 col-md-3">
-						<img src="img/logo_white.png" alt="">
-					</div>
-					<div class="phone-cont col-xs-12 col-sm-8 col-md-8">
+			<!-- .footer-top -->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="copyright col-xs-12 col-sm-3 col-md-3">
+							<img src="img/logo_white.png" alt="">
+						</div>
+						<div class="phone-cont col-xs-12 col-sm-8 col-md-8">
 
 							<div class="text-footer-bottom">© Derechos Reservados 2017, Banco Santander (México) S.A. Institución de Banca Múñtiple, Grupo Financiero Santander</div>
 
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 	</div>
-		<!-- .footer-bottom -->
+	<!-- .footer-bottom -->
 	</footer>
-</div>
+	</div>
 
 
 
