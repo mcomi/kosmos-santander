@@ -6,6 +6,38 @@ $( "input[name='segunda-persona']").click(function(){
   }
 })
 
+$( "input[name='t-ingresos']").click(function(){
+  
+  if($(this).val() == 'asalariada'){
+    if($(this).prop('checked')){
+      $('#datos-asalariada').removeClass('hidden')
+    }else{
+      $('#datos-asalariada').addClass('hidden')
+    }
+  }
+  if($(this).val() == 'p-act-empresarial'){
+    if($(this).prop('checked')){
+      $('#datos-act-empresarial').removeClass('hidden')
+    }else{
+      $('#datos-act-empresarial').addClass('hidden')
+    }
+  }
+  if($(this).val() == 'prof-independiente'){
+    if($(this).prop('checked')){
+      $('#datos-independiente').removeClass('hidden')
+    }else{
+      $('#datos-independiente').addClass('hidden')
+    }
+  }
+  if($(this).val() == 'ingresos-cheques'){
+    if($(this).prop('checked')){
+      $('#datos-cheques').removeClass('hidden')
+    }else{
+      $('#datos-cheques').addClass('hidden')
+    }
+  }
+})
+
 
 
 $('#ingreso_mensual').on('change',formatCurrency)
@@ -137,9 +169,23 @@ $("input[name='segunda-persona']").click(function() {
   if ($(this).prop('value') == 'si-sp') {
     $('#co-acreditado').removeClass('hidden');
     $(this).closest('.panel-heading').siblings('.collapse').collapse('show');
+    $('#panel-domicilio-sp').removeClass('hidden');
   } else {
     if (!$('#co-acreditado').hasClass('hidden')) {
       $('#co-acreditado').addClass('hidden');
+      $(this).closest('.panel-heading').siblings('.collapse').collapse('hide');
+    }
+    $('#panel-domicilio-sp').addClass('hidden');
+  }
+});
+
+$("input[name='segunda-persona-domicilio']").click(function() {
+  if ($(this).prop('value') == 'no-sp-domicilio') {
+    $('#domicilio-acreditado').removeClass('hidden');
+    $(this).closest('.panel-heading').siblings('.collapse').collapse('show');
+  } else {
+    if (!$('#domicilio-acreditado').hasClass('hidden')) {
+      $('#domicilio-acreditado').addClass('hidden');
       $(this).closest('.panel-heading').siblings('.collapse').collapse('hide');
     }
   }
@@ -565,3 +611,113 @@ $(function(){
     }
   });
 });
+
+function calcularAvance(percent) {
+  var step = $('#step-number')
+  var txtStepProgress = $('#step-percentage')
+  var stepProgress = 0
+  if(percent<=25){
+    step.text(1)
+    stepProgress = percent/25*100
+    txtStepProgress.text(stepProgress+'%')
+  }
+  if(50>=percent && percent>25) {
+    step.text(2)
+    stepProgress = (percent-25)/25*100
+    txtStepProgress.text(stepProgress+'%')
+  }
+  if(75>=percent && percent>50) {
+    step.text(3)
+    stepProgress = (percent-50)/25*100
+    txtStepProgress.text(stepProgress+'%')
+  }
+  if(percent>75) {
+    step.text(4)
+    stepProgress = (percent-75)/25*100
+    txtStepProgress.text(stepProgress+'%')
+  }
+
+
+  
+  $(".progress-bar").css("width", percent + "%").attr("aria-valuenow", percent);
+  $(".progress-completed").text(percent + "%"); 
+  console.log(stepProgress)
+}
+
+function simulacion(){
+
+  setTimeout(function(){
+    calcularAvance(10)
+    setTimeout(function(){
+      calcularAvance(15)
+      setTimeout(function(){
+        calcularAvance(25)
+        setTimeout(function(){
+          calcularAvance(35)
+          setTimeout(function(){
+            calcularAvance(55)
+          },2000)
+        },2000)
+      },2000)
+    },2000)
+  },2000)
+}
+
+simulacion()
+
+$('.nav-btn').on('click', function(e) {
+  e.preventDefault()
+
+    $(this).closest('.collapse').collapse('hide')
+    console.log($(this))
+    $(this).closest('.panel').next().find('.collapse').collapse('show')
+
+
+})
+var icon = document.getElementById('saveAnimatedIcon');
+// animacion de guardado automatico
+function animateSaveIcon() {
+  icon.classList.remove('fa-check');
+  icon.classList.add('fa-refresh', 'fa-spin', 'fa-fw');
+  setTimeout(function () {
+    icon.classList.remove('fa-refresh', 'fa-spin', 'fa-fw');
+    icon.classList.add('fa-check', 'faa-vertical', 'animated');
+    setTimeout(function () {
+      icon.classList.remove('faa-vertical', 'animated');
+    }, 2000);
+  }, 3000);
+  setTimeout(function () {
+
+    if (!timeUp) animateSaveIcon();
+  }, 8000);
+}
+var timeUp = false;
+function simularTiempo() {
+
+  animateSaveIcon();
+  setTimeout(function () {
+    return timeUp = true;
+  }, 40000);
+}
+
+setTimeout(function () {
+  return simularTiempo();
+}, 3000);
+
+$('#copy-clipboard').click(function(){
+  var folio = $('#folio-value').html();
+  var hiddenClipboard = $('#_hiddenClipboard_');
+  $('body').append('<textarea style="position:absolute;top: -9999px;" id="_hiddenClipboard_"></textarea>');
+  hiddenClipboard = $('#_hiddenClipboard_');
+  hiddenClipboard.html(folio);
+  hiddenClipboard.select();
+  var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Folio copiado: " + folio;
+  document.execCommand('copy');
+})
+
+$(function () {
+  $('[data-toggle="popover"]').popover({
+    container: 'body'
+  })
+})
