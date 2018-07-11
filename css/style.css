@@ -2254,6 +2254,8 @@ table > tbody > tr > th {
     position: relative;
     margin-bottom: 0px;
     margin-left: 13px; }
+  .solicitud-container h4 {
+    font-size: 20px; }
   #landing-section {
     height: auto;
     padding-top: 60px; }
