@@ -2245,9 +2245,15 @@ table > tbody > tr > th {
     display: -ms-grid;
     display: grid; }
   .squaredThree {
-    padding-top: 45px; }
+    padding-top: 0;
+    margin: 0; }
   .squaredThree label {
-    position: relative; }
+    position: absolute; }
+  .squaredThree div {
+    display: inline;
+    position: relative;
+    margin-bottom: 0px;
+    margin-left: 13px; }
   #landing-section {
     height: auto;
     padding-top: 60px; }
