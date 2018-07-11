@@ -343,7 +343,30 @@ function ui_multi_add_file_actas(id, file)
 function ui_multi_update_file_status(id, status, message)
 {
   $('#uploaderFile' + id).find('span').html(message).prop('class', 'status-upload text-' + status);
+  $('#uploaderFile' + id).find('.delete-file-btn').attr('data-file-id', id);
+  $('#uploaderFile' + id).find('.modal-tag-btn').attr('data-file-id', id);
+  updateFileButtonsActions()
 }
+
+function updateFileButtonsActions() {
+  $('.delete-file-btn').click(function(){
+    var idFile = $(this).attr('data-file-id');
+    $('#uploaderFile' + idFile).remove()
+    // borrar archivo
+  })
+  $('.modal-tag-btn').click(function(){
+    var idFile = $(this).attr('data-file-id');
+    // usar el idFile para categorizar
+    $('#modalCategorizar').modal()
+  })
+
+  $('.btn-save-tag').click(function(){
+    $('#modalCategorizar').modal('hide')
+    // salvar categoria
+  })
+}
+
+
 
 // Updates a file progress, depending on the parameters it may animate it or change the color.
 function ui_multi_update_file_progress(id, percent, color, active)
@@ -366,15 +389,13 @@ function ui_multi_update_file_progress(id, percent, color, active)
     bar.removeClass('bg-success bg-info bg-warning bg-danger');
     bar.addClass('bg-' + color);
   }
+  if(!active){
+    $('#uploaderFile' + id).find('div.progress').hide()
+  }
 }
 
 $(function(){
-  /*
-   * For the sake keeping the code clean and the examples simple this file
-   * contains only the plugin configuration & callbacks.
-   *
-   * UI functions ui_* can be located in: demo-ui.js
-   */
+  
   $('#drag-and-drop-comprobante').dmUploader({ //
     url: 'https://httpstat.us/200',   // url publica para recibir un status 'ok' y ver funcionar la animacion
     maxFileSize: 3000000, // 3 Megs
@@ -418,7 +439,7 @@ $(function(){
       // A file was successfully uploaded
       ui_add_log('Server Response for file #' + id + ': ' + JSON.stringify(data));
       ui_add_log('Upload of file #' + id + ' COMPLETED', 'success');
-      ui_multi_update_file_status(id, 'success', '<img src="img/ico-delete.svg" alt="">');
+      ui_multi_update_file_status(id, 'success', '<button class="red btn-link delete-file-btn">Eliminar documento</button><button class="red btn-link modal-tag-btn"> <img src="img/tag-icon.svg" alt=""> Categorizar documento</button>');
       ui_multi_update_file_progress(id, 100, 'success', false);
     },
     onUploadError: function(id, xhr, status, message){
@@ -477,7 +498,7 @@ $(function(){
       // A file was successfully uploaded
       ui_add_log('Server Response for file #' + id + ': ' + JSON.stringify(data));
       ui_add_log('Upload of file #' + id + ' COMPLETED', 'success');
-      ui_multi_update_file_status(id, 'success', '<img src="img/ico-delete.svg" alt="">');
+      ui_multi_update_file_status(id, 'success', '<button class="red btn-link delete-file-btn">Eliminar documento</button><button class="red btn-link modal-tag-btn"> <img src="img/tag-icon.svg" alt=""> Categorizar documento</button>');
       ui_multi_update_file_progress(id, 100, 'success', false);
     },
     onUploadError: function(id, xhr, status, message){
@@ -536,7 +557,7 @@ $(function(){
       // A file was successfully uploaded
       ui_add_log('Server Response for file #' + id + ': ' + JSON.stringify(data));
       ui_add_log('Upload of file #' + id + ' COMPLETED', 'success');
-      ui_multi_update_file_status(id, 'success', '<img src="img/ico-delete.svg" alt="">');
+      ui_multi_update_file_status(id, 'success', '<button class="red btn-link delete-file-btn">Eliminar documento</button><button class="red btn-link modal-tag-btn"> <img src="img/tag-icon.svg" alt=""> Categorizar documento</button>');
       ui_multi_update_file_progress(id, 100, 'success', false);
     },
     onUploadError: function(id, xhr, status, message){
@@ -595,7 +616,7 @@ $(function(){
       // A file was successfully uploaded
       ui_add_log('Server Response for file #' + id + ': ' + JSON.stringify(data));
       ui_add_log('Upload of file #' + id + ' COMPLETED', 'success');
-      ui_multi_update_file_status(id, 'success', '<img src="img/ico-delete.svg" alt="">');
+      ui_multi_update_file_status(id, 'success', '<button class="red btn-link delete-file-btn">Eliminar documento</button><button class="red btn-link modal-tag-btn"> <img src="img/tag-icon.svg" alt=""> Categorizar documento</button>');
       ui_multi_update_file_progress(id, 100, 'success', false);
     },
     onUploadError: function(id, xhr, status, message){
@@ -641,7 +662,6 @@ function calcularAvance(percent) {
   
   $(".progress-bar").css("width", percent + "%").attr("aria-valuenow", percent);
   $(".progress-completed").text(percent + "%"); 
-  console.log(stepProgress)
 }
 
 function simulacion(){

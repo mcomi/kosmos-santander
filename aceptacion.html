@@ -51,7 +51,7 @@
 		<div class="container">
 
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<button type="button" class="navbar-toggle">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -125,16 +125,16 @@
 							</span>
 						</div>
 						<h2>
-								<img src="img/info-icon.svg" alt=""> Tu número de folio es:
-								<span>AFTSFGW</span>
-								<span class="tooltip-folio">
-									<img src="img/copy-icon.svg" alt="">
-									<span class="tooltiptext" id="myTooltip">Copiar mi folio</span>
-								</span>
-								<small>
-							</h2>
-							<span class="subtitle-info">Guárdalo, con este número puedes acceder a tu solicitud y terminarla en cualquier momento.</span>
-						</div>
+							<img src="img/info-icon.svg" alt=""> Tu número de folio es:
+							<span>AFTSFGW</span>
+							<span class="tooltip-folio">
+								<img src="img/copy-icon.svg" alt="">
+								<span class="tooltiptext" id="myTooltip">Copiar mi folio</span>
+							</span>
+							<small>
+						</h2>
+						<span class="subtitle-info">Guárdalo, con este número puedes acceder a tu solicitud y terminarla en cualquier momento.</span>
+					</div>
 
 					<div class="col-md-10 col-md-offset-1 text-center status-panel">
 						<img src="img/checked.svg" alt="">
@@ -206,339 +206,404 @@
 											</div>
 										</div>
 										<div id="cambio-oferta" class="hidden">
-												<div class="col-md-12 col-xs-12">
+											<div class="col-md-12 col-xs-12">
 
-													<h5>Para calcular la oferta da click en calcular</h5>
-													<button id="recalcular-btn" class="btn btn-red margin-16">Calcular
-														<icon class="fa fa-play"></icon>
-													</button>
-													<span id="regresar-datos-btn" class="message-small">
-														Regresar a datos iniciales
-													</span>
-												</div>
+												<h5>Para calcular la oferta da click en calcular</h5>
+												<button id="recalcular-btn" class="btn btn-red margin-16">Calcular
+													<icon class="fa fa-play"></icon>
+												</button>
+												<span id="loader-recalcula" class="col-xs-12 hidden">
+													<div class="lds-grid">
+														<div></div>
+														<div></div>
+														<div></div>
+														<div></div>
+														<div></div>
+														<div></div>
+														<div></div>
+														<div></div>
+														<div></div>
+													</div>
+													<span class="loader-text">Calculando oferta ...</span>
+												</span>
+												<span id="regresar-datos-btn" class="message-small">
+													Regresar a datos iniciales
+												</span>
+											</div>
 										</div>
 									</div>
 
 								</div>
 							</div>
 							<div class="col-md-6 col-md-offset-3 col-xs-12 hidden" id="propuesta-final">
-									<div class="propuesta-elegir">
-											<div class="text-center">
-												<img src="img/home.svg" />
-												<div>
-		
-													<h3 id="valor-vivienda-final" class="cotizador-valor-big">$1,111,123</h3>
-													<span class="cotizador-big-title">Valor de la vivienda</span>
-													<h3 id="pago-mensual-final" class="cotizador-valor-big">$10,281</h3>
-													<span class="cotizador-big-title">Pago Mensual Total</span>
-													<h3 id="monto-final" class="cotizador-valor-big">$1,000,000</h3>
-													<span class="cotizador-big-title">Monto del crédito</span>
-													<h4 id="tasa" class="cotizador-valor-md"></h4>
-													
-													<div class="col-md-4 col-xs-4">
-														<h4 id="plazo-final" class="cotizador-valor-md">20 años</h4>
-														<span class="cotizador-md-title">Plazo</span>
-													</div>
-													<div class="col-md-4 col-xs-4">
-														<h4 id="tasa-final" class="cotizador-valor-md">10.94%</h4>
-														<span class="cotizador-md-title">Tasa</span>
-													</div>
-													<div class="col-md-4 col-xs-4">
-														<h4 id="cat-final" class="cotizador-valor-md">14%</h4>
-														<span class="cotizador-md-title">CAT</span>
-													</div>
-													
-													
-													<div class="col-xs-12">
+								<div class="propuesta-elegir">
+									<div class="text-center">
+										<img src="img/home.svg" />
+										<div>
 
-														<button class="red btn-link" data-toggle="modal" data-target="#modal-tabla">Ver tabla de amortización</button>
-														<span id="editar-datos-btn" class="message-small">
-																Editar datos
-															</span>
-													</div>
-													</div>
-													
-												</div>
-												
+											<h3 id="valor-vivienda-final" class="cotizador-valor-big">$1,111,123</h3>
+											<span class="cotizador-big-title">Valor de la vivienda</span>
+											<h3 id="pago-mensual-final" class="cotizador-valor-big">$10,281</h3>
+											<span class="cotizador-big-title">Pago Mensual Total</span>
+											<h3 id="monto-final" class="cotizador-valor-big">$1,000,000</h3>
+											<span class="cotizador-big-title">Monto del crédito</span>
+											<h4 id="tasa" class="cotizador-valor-md"></h4>
+
+											<div class="col-md-4 col-xs-4">
+												<h4 id="plazo-final" class="cotizador-valor-md">20 años</h4>
+												<span class="cotizador-md-title">Plazo</span>
 											</div>
-		
+											<div class="col-md-4 col-xs-4">
+												<h4 id="tasa-final" class="cotizador-valor-md">10.94%</h4>
+												<span class="cotizador-md-title">Tasa</span>
+											</div>
+											<div class="col-md-4 col-xs-4">
+												<h4 id="cat-final" class="cotizador-valor-md">14%</h4>
+												<span class="cotizador-md-title">CAT</span>
+											</div>
+
+
+											<div class="col-xs-12">
+
+												<button class="red btn-link" data-toggle="modal" data-target="#modal-tabla">Ver tabla de amortización</button>
+												<span id="editar-datos-btn" class="message-small">
+													Editar datos
+												</span>
+											</div>
 										</div>
-							</div>
-							<div class="col-xs-12 text-center">
-								<a href="/kosmos-santander/solicitud.html#generales" class="btn btn-red">Continuar en línea
-									<icon class="fa fa-play"></icon>
-								</a>
-							</div>
 
-							<div class="col-xs-12">
-								<p class="executive">
-									Un ejecutivo te contactará para orientarte sobre los siguientes pasos y concluir tu trámite O puedes dirigirte a una sucursal
-									con tu número de folio y terminar tu solicitud.
-								</p>
-							</div>
-							<col-md-6 class="col-xs-12 text-center">
-								<a href="#" class="red pin-map">
-									<i class="fa fa-map-marker"></i> Busca una sucursal
-								</a>
-							</col-md-6>
+									</div>
 
-							<div class="col-xs-12">
-								<ul class="terminos-condiciones">
-									<li>
-										1. La información contenida en la presente precalificación es únicamente para efectos informativos y en ningún momento constituirá
-										una oferta vinculante y/o obligación a cargo de Banco Santander (México), S.A.
-									</li>
-									<li>
-										2. La aprobación final del crédito dependerá de manera enunciativa, más no limitativa, de la comprobación de los datos y
-										documentos proporcionados o que se llegue a solicitar, estado civil, aceptación de la aseguradora, y del resultado
-										de la investigación del historial crediticio del solicitante en las sociedades de información crediticia, así como
-										de la situación legal y física del inmueble a adquirir.
-									</li>
-									<li>
-										3. Banco Santander (México), S.A., se reserva el derecho de autorizar el crédito conforme a las políticas vigentes para la
-										institución al momento de presentar la solicitud de crédito.
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<div class="modal" id="modal-tabla" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog modal-tabla-amortizacion" role="document">
-				<div class="modal-content">
-
-					<div class="modal-body">
-						<div class="container">
-
-							<div class="col-xs-12 text-left">
-								<img src="img/logo.png" alt="">
-							</div>
-
-							<div class="col-md-12 text-center">
-								<h3>$535,000.00. 90% valido</h3>
-								<h3>CAT promedio 12.8% sin iva informativo</h3>
-								<p>Calculado al 24 de marzo de 2018. Para fines informativos y de comparación</p>
-							</div>
-
-							<div class="col-md-12">
-								<div class="col-md-6 text-left">
-									<a href="" class="red" data-dismiss="modal" aria-label="Close">
-										<i class="fa fa-arrow-left"></i> Regresar</a>
 								</div>
-								<div class="col-md-6 text-right margin-bottom">
-									<span class="red">1-12 de 140 </span>
-									<i class="fa fa-chevron-left"></i>
-									<i class="fa fa-chevron-right"></i>
-								</div>
-							</div>
-							<div class="table-responsive">
 
-								<table class="table table-striped">
-									<thead>
-										<tr>
-											<th>Período</th>
-											<th>Intereses</th>
-											<th>Amortización</th>
-											<th>Pago de crédito</th>
-											<th>Seguro de vida</th>
-											<th>Comisión/autorización de crédto diferida</th>
-											<th>Iva de intereses</th>
-											<th>Pago total</th>
-											<th>Saldo final</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-										<tr>
-											<th>000</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-											<th>$0,000.0</th>
-										</tr>
-									</tbody>
-								</table>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<footer id="footer">
-			<div class="footer-top">
-				<div class="container">
-					<div class="row sidebar">
-						<div class="col-xs-12 col-sm-3 col-md-3">
-							<div class="question-contact">
-								<p>¿Tienes dudas?
-									<br>llámanos</p>
-							</div>
-
+						<div class="col-xs-12 text-center">
+							<a href="/kosmos-santander/solicitud.html#generales" class="btn btn-red hidden" id="continuar-solicitud-btn">Continuar en línea
+								<icon class="fa fa-play"></icon>
+							</a>
 						</div>
-						<div class="col-xs-12 col-sm-4 col-md-4">
-							<div class="tel">
-								<span>0000-0000</span>
-								<p>CDMX y zona metropolitana</p>
-							</div>
-						</div>
-						<!-- .newsletter -->
-						<div class="col-xs-12 col-sm-5 col-md-5">
-							<div class="tel">
-								<span>00000-0000-0000</span>
-								<p>Del interior de la república y zona metropolitana</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- modal fovissste/infonavit-->
 
-			<!-- .footer-top -->
-			<div class="footer-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="copyright col-xs-12 col-sm-3 col-md-3">
-							<img src="img/logo_white.png" alt="">
+						<div class="col-xs-12">
+							<p class="executive">
+								Un ejecutivo te contactará para orientarte sobre los siguientes pasos y concluir tu trámite O puedes dirigirte a una sucursal
+								con tu número de folio y terminar tu solicitud.
+							</p>
 						</div>
-						<div class="phone-cont col-xs-12 col-sm-8 col-md-8">
+						<col-md-6 class="col-xs-12 text-center">
+							<a href="#" class="red pin-map">
+								<i class="fa fa-map-marker"></i> Busca una sucursal
+							</a>
+						</col-md-6>
 
-							<div class="text-footer-bottom">© Derechos Reservados 2017, Banco Santander (México) S.A. Institución de Banca Múñtiple, Grupo Financiero Santander</div>
-
+						<div class="col-xs-12">
+							<ul class="terminos-condiciones">
+								<li>
+									1. La información contenida en la presente precalificación es únicamente para efectos informativos y en ningún momento constituirá
+									una oferta vinculante y/o obligación a cargo de Banco Santander (México), S.A.
+								</li>
+								<li>
+									2. La aprobación final del crédito dependerá de manera enunciativa, más no limitativa, de la comprobación de los datos y
+									documentos proporcionados o que se llegue a solicitar, estado civil, aceptación de la aseguradora, y del resultado
+									de la investigación del historial crediticio del solicitante en las sociedades de información crediticia, así como
+									de la situación legal y física del inmueble a adquirir.
+								</li>
+								<li>
+									3. Banco Santander (México), S.A., se reserva el derecho de autorizar el crédito conforme a las políticas vigentes para la
+									institución al momento de presentar la solicitud de crédito.
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 	</div>
-	<!-- .footer-bottom -->
+	</section>
+
+	<div class="modal" id="modal-tabla" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-tabla-amortizacion" role="document">
+			<div class="modal-content">
+
+				<div class="modal-body">
+					<div class="container">
+
+						<div class="col-xs-12 text-left">
+							<img src="img/logo.png" alt="">
+						</div>
+
+						<div class="col-md-6 col-xs-12 text-center">
+							<table class="tabla-amortizacion">
+								<tr>
+									<td>Valor de la vivienda</td>
+									<td>$535,000.00</td>
+								</tr>
+								<tr>
+									<td>Seguro de vida</td>
+									<td>$535,000.00</td>
+								</tr>
+								<tr>
+									<td>Comisión por apertura</td>
+									<td>$535,000.00</td>
+								</tr>
+								<tr>
+									<td>Destino</td>
+									<td>Remodelación</td>
+								</tr>
+								<tr>
+									<td>Gastos notariales</td>
+									<td>$535,000.00</td>
+								</tr>
+								<tr>
+									<td>Avalúo</td>
+									<td>Remodelación</td>
+								</tr>
+							</table>
+						</div>
+						<div class="col-md-6 col-xs-12 text-center">
+								<table class="tabla-amortizacion">
+									<tr>
+										<td>Monto del crédito</td>
+										<td>$535,000.00</td>
+									</tr>
+									<tr>
+										<td>Seguro de daños</td>
+										<td>$535,000.00</td>
+									</tr>
+									<tr>
+										<td>Tasa</td>
+										<td>10%</td>
+									</tr>
+									<tr>
+										<td>Producto</td>
+										<td>Hipoteca remodelación</td>
+									</tr>
+									<tr>
+										<td>Prima única</td>
+										<td>$535,000.00</td>
+									</tr>
+									<tr>
+										<td>Desembolso inicial</td>
+										<td>$535,000.00</td>
+									</tr>
+								</table>
+							</div>
+
+						<div class="col-md-12">
+							<div class="col-md-6 text-left">
+								<a href="" class="red" data-dismiss="modal" aria-label="Close">
+									<i class="fa fa-arrow-left"></i> Regresar</a>
+							</div>
+							<div class="col-md-6 text-right margin-bottom">
+								<span class="red">1-12 de 140 </span>
+								<i class="fa fa-chevron-left"></i>
+								<i class="fa fa-chevron-right"></i>
+							</div>
+						</div>
+						<div class="table-responsive">
+
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>Período</th>
+										<th>Intereses</th>
+										<th>Amortización</th>
+										<th>Pago de crédito</th>
+										<th>Seguro de vida</th>
+										<th>Comisión/autorización de crédto diferida</th>
+										<th>Iva de intereses</th>
+										<th>Pago total</th>
+										<th>Saldo final</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>000</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+									</tr>
+									<tr>
+										<th>000</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+									</tr>
+									<tr>
+										<th>000</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+									</tr>
+									<tr>
+										<th>000</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+									</tr>
+									<tr>
+										<th>000</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+									</tr>
+									<tr>
+										<th>000</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+									</tr>
+									<tr>
+										<th>000</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+									</tr>
+									<tr>
+										<th>000</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+									</tr>
+									<tr>
+										<th>000</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+									</tr>
+									<tr>
+										<th>000</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+									</tr>
+									<tr>
+										<th>000</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+									</tr>
+									<tr>
+										<th>000</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+										<th>$0,000.0</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer id="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row sidebar">
+					<div class="col-xs-12 col-sm-3 col-md-3">
+						<div class="question-contact">
+							<p>¿Tienes dudas?
+								<br>llámanos</p>
+						</div>
+
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="tel">
+							<span>0000-0000</span>
+							<p>CDMX y zona metropolitana</p>
+						</div>
+					</div>
+					<!-- .newsletter -->
+					<div class="col-xs-12 col-sm-5 col-md-5">
+						<div class="tel">
+							<span>00000-0000-0000</span>
+							<p>Del interior de la república y zona metropolitana</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal fovissste/infonavit-->
+
+		<!-- .footer-top -->
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="copyright col-xs-12 col-sm-3 col-md-3">
+						<img src="img/logo_white.png" alt="">
+					</div>
+					<div class="phone-cont col-xs-12 col-sm-8 col-md-8">
+
+						<div class="text-footer-bottom">© Derechos Reservados 2017, Banco Santander (México) S.A. Institución de Banca Múñtiple, Grupo Financiero Santander</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- .footer-bottom -->
 	</footer>
 	</div>
 

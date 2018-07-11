@@ -13,6 +13,12 @@ function cargaDatosIniciales() {
   $('#cat').html('14%')
 }
 
+function recalculaOferta() {  // simula recalcula oferta
+  $('#pago-mensual').html('$11,435')
+  $('#tasa').html('6.94%')
+  $('#cat').html('12%')
+}
+
 cargaDatosIniciales()
 
 $('#regresar-datos-btn').click(function(){
@@ -44,12 +50,27 @@ $('#muestra-oferta-final-btn').click(function(e){
   $('#propuesta-final').removeClass('hidden')
   $('#propuesta-inicial').addClass('hidden')
   $('#tabla-modificadores').addClass('hidden')
+  $('#continuar-solicitud-btn').removeClass('hidden')
 })
 
 $('#editar-datos-btn').click(function(){
   $('#propuesta-final').addClass('hidden')
   $('#propuesta-inicial').removeClass('hidden')
   $('#tabla-modificadores').removeClass('hidden')
+  $('#continuar-solicitud-btn').addClass('hidden')
+})
+
+$('#recalcular-btn').click(function(){
+  $('#loader-recalcula').removeClass('hidden')
+  $(this).addClass('hidden')
+  setTimeout(function(){
+
+    $('#oferta-inicial').removeClass('hidden')
+    $('#cambio-oferta').addClass('hidden')
+    $('#loader-recalcula').addClass('hidden')
+    $('#recalcular-btn').removeClass('hidden')
+    recalculaOferta()
+  },4000)
 })
 
 function formatCurrencyManual(valor) {

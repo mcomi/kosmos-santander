@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="563px" height="378px" viewBox="0 0 563 378" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="credito-avance" transform="translate(9.000000, -84.000000)">
+            <g id="Group-2" transform="translate(58.000000, 0.000000)">
+                <g id="house_Icon" transform="translate(0.000000, 99.000000)">
+                    <path d="M0,0 L238,0 L238,327 C238,342.463973 225.463973,355 210,355 L28,355 C12.536027,355 1.8937905e-15,342.463973 0,327 L0,0 Z" id="Rectangle-8" fill="#137E84"></path>
+                    <path d="M237,139 L237,328.378275 C237,341.97514 226.045096,353 212.528826,353 L24.4711737,353 C10.9549042,353 0,341.97514 0,328.378275 L0,139" id="Stroke-3" stroke="#9BC3D3" stroke-width="2.698" stroke-linejoin="round"></path>
+                    <path d="M165,353 L74,353 L74,224.218433 C74,218.575623 78.5943801,214 84.2603224,214 L154.739678,214 C160.40562,214 165,218.575623 165,224.218433 L165,353 Z" id="Stroke-5" stroke="#9BC3D3" stroke-width="2.698" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <text id="Validación-Documenta" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="315.41" y="428">Validación Documental</tspan>
+                </text>
+                <text id="Documentación-del-In" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="315.725" y="376">Documentación del Inmueble</tspan>
+                </text>
+                <text id="Avaluo" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="313.36" y="323">Avaluo</tspan>
+                </text>
+                <text id="Asignación-de-Notari" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="315.04" y="271">Asignación de Notario</tspan>
+                </text>
+                <text id="Cierre-de-Cifras" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="315.97" y="218">Cierre de Cifras</tspan>
+                </text>
+                <text id="Firma-de-Contrato" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="315.915" y="166">Firma de Contrato</tspan>
+                </text>
+                <text id="Disfruta-tu-crédito" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="315.025" y="101">Disfruta tu crédito</tspan>
+                </text>
+                <rect id="Rectangle" fill="#FFFFFF" x="214.57098" y="98" width="92.1291651" height="64"></rect>
+                <path d="M312.5,421.5 L238.472978,421.5" id="Line-3" stroke="#9BC3D3" stroke-linecap="square" transform="translate(275.500000, 421.500000) scale(-1, 1) translate(-275.500000, -421.500000) "></path>
+                <path id="Line-3-decoration-1" d="M312.5,424.5 L312.5,418.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+                <path d="M312.5,369.5 L238.472978,369.5" id="Line-3-Copy" stroke="#9BC3D3" stroke-linecap="square" transform="translate(275.500000, 369.500000) scale(-1, 1) translate(-275.500000, -369.500000) "></path>
+                <path id="Line-3-Copy-decoration-1" d="M312.5,372.5 L312.5,366.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+                <path d="M312.5,317.5 L238.472978,317.5" id="Line-3-Copy-2" stroke="#9BC3D3" stroke-linecap="square" transform="translate(275.500000, 317.500000) scale(-1, 1) translate(-275.500000, -317.500000) "></path>
+                <path id="Line-3-Copy-2-decoration-1" d="M312.5,320.5 L312.5,314.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+                <path d="M312.5,265.5 L238.472978,265.5" id="Line-3-Copy-3" stroke="#9BC3D3" stroke-linecap="square" transform="translate(275.500000, 265.500000) scale(-1, 1) translate(-275.500000, -265.500000) "></path>
+                <path id="Line-3-Copy-3-decoration-1" d="M312.5,268.5 L312.5,262.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+                <path d="M312.5,97.5 L119.472978,97.5" id="Line-3-Copy-6" stroke="#9BC3D3" stroke-linecap="square" transform="translate(216.000000, 97.500000) scale(-1, 1) translate(-216.000000, -97.500000) "></path>
+                <path id="Line-3-Copy-6-decoration-1" d="M312.5,100.5 L312.5,94.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+            </g>
+            <polygon id="Triangle" fill="#FFFFFF" points="300.5 245 282 214 319 214"></polygon>
+            <polygon id="Triangle" fill="#FFFFFF" transform="translate(300.500000, 197.500000) rotate(180.000000) translate(-300.500000, -197.500000) " points="300.5 213 282 182 319 182"></polygon>
+            <polygon id="Triangle" fill="#FFFFFF" points="282.5 214 252 162 313 162"></polygon>
+            <polygon id="Triangle" fill="#FFFFFF" points="252.5 162 222 98 283 98"></polygon>
+            <polygon id="Triangle" fill="#FFFFFF" transform="translate(221.711440, 107.856770) rotate(106.000000) translate(-221.711440, -107.856770) " points="221.71144 142.85677 214.21144 72.8567702 229.21144 72.8567702"></polygon>
+            <polygon id="Triangle" fill="#FFFFFF" transform="translate(230.711440, 119.856770) rotate(132.000000) translate(-230.711440, -119.856770) " points="230.71144 154.85677 223.21144 84.8567702 238.21144 84.8567702"></polygon>
+            <polygon id="Triangle" fill="#FFFFFF" transform="translate(238.662466, 131.509169) rotate(142.000000) translate(-238.662466, -131.509169) " points="238.662466 163.509169 231.162466 99.5091691 246.162466 99.5091691"></polygon>
+            <polygon id="Triangle" fill="#FFFFFF" transform="translate(221.653135, 101.709523) rotate(96.000000) translate(-221.653135, -101.709523) " points="221.653135 136.709523 214.153135 66.7095232 229.153135 66.7095232"></polygon>
+            <polygon id="Triangle" fill="#FFFFFF" transform="translate(282.500000, 129.000000) rotate(-180.000000) translate(-282.500000, -129.000000) " points="282.5 161 252 97 313 97"></polygon>
+            <path d="M370.5,213.5 L281.472978,213.5" id="Line-3-Copy-4" stroke="#9BC3D3" stroke-linecap="square" transform="translate(326.000000, 213.500000) scale(-1, 1) translate(-326.000000, -213.500000) "></path>
+            <path id="Line-3-Copy-4-decoration-1" d="M370.5,216.5 L370.5,210.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+            <path d="M370.504201,161.5 L251.472978,161.5" id="Line-3-Copy-5" stroke="#9BC3D3" stroke-linecap="square" transform="translate(311.000000, 161.500000) scale(-1, 1) translate(-311.000000, -161.500000) "></path>
+            <path id="Line-3-Copy-5-decoration-1" d="M370.504201,164.5 L370.504201,158.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+            <rect id="Rectangle" fill="#FFFFFF" transform="translate(53.150635, 151.796461) rotate(30.000000) translate(-53.150635, -151.796461) " x="7.08605253" y="64.3115335" width="92.1291651" height="174.969854"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" transform="translate(93.893099, 147.296461) rotate(30.000000) translate(-93.893099, -147.296461) " x="79.7919303" y="84.6587179" width="28.2023369" height="125.275486"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" transform="translate(109.530842, 120.296461) rotate(38.000000) translate(-109.530842, -120.296461) " x="95.429673" y="57.6587179" width="28.2023369" height="125.275486"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" transform="translate(136.212478, 93.941195) rotate(54.000000) translate(-136.212478, -93.941195) " x="122.11131" y="31.303452" width="28.2023369" height="125.275486"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" transform="translate(141.963457, 92.225626) rotate(67.000000) translate(-141.963457, -92.225626) " x="127.862289" y="29.5878836" width="28.2023369" height="125.275486"></rect>
+            <path d="M353,337.99541 L233.136889,131.483877 C221.471739,111.38399 199.913359,99 176.578444,99 C153.257373,99 131.703608,111.37022 120.033843,131.451747 L0,338" id="Stroke-1" stroke="#9BC3D3" stroke-width="2.698" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

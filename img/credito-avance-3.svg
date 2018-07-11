@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="563px" height="378px" viewBox="0 0 563 378" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="credito-avance" transform="translate(-2.000000, -86.000000)">
+            <g id="Group-2">
+                <g id="house_Icon" transform="translate(0.000000, 99.000000)">
+                    <path d="M58,220 L296,220 L296,327 C296,342.463973 283.463973,355 268,355 L86,355 C70.536027,355 58,342.463973 58,327 L58,220 Z" id="Rectangle-8" fill="#137E84"></path>
+                    <path d="M353,238.99541 L233.136889,32.4838772 C221.471739,12.3839905 199.913359,0 176.578444,0 C153.257373,0 131.703608,12.3702203 120.033843,32.4517467 L0,239" id="Stroke-1" stroke="#9BC3D3" stroke-width="2.698" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M295,139 L295,328.378275 C295,341.97514 284.045096,353 270.528826,353 L82.4711737,353 C68.9549042,353 58,341.97514 58,328.378275 L58,139" id="Stroke-3" stroke="#9BC3D3" stroke-width="2.698" stroke-linejoin="round"></path>
+                    <path d="M223,353 L132,353 L132,224.218433 C132,218.575623 136.59438,214 142.260322,214 L212.739678,214 C218.40562,214 223,218.575623 223,224.218433 L223,353 Z" id="Stroke-5" stroke="#9BC3D3" stroke-width="2.698" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <text id="Validación-Documenta" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="373.41" y="428">Validación Documental</tspan>
+                </text>
+                <text id="Documentación-del-In" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="373.725" y="376">Documentación del Inmueble</tspan>
+                </text>
+                <text id="Avaluo" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="371.36" y="323">Avaluo</tspan>
+                </text>
+                <text id="Asignación-de-Notari" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="373.04" y="271">Asignación de Notario</tspan>
+                </text>
+                <text id="Cierre-de-Cifras" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="373.97" y="218">Cierre de Cifras</tspan>
+                </text>
+                <text id="Firma-de-Contrato" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="373.915" y="166">Firma de Contrato</tspan>
+                </text>
+                <text id="Disfruta-tu-crédito" font-family="KievitOT-Medium, KievitOT" font-size="15" font-weight="400" line-spacing="24" fill="#137E84">
+                    <tspan x="373.025" y="101">Disfruta tu crédito</tspan>
+                </text>
+                <path d="M370.5,421.5 L296.472978,421.5" id="Line-3" stroke="#9BC3D3" stroke-linecap="square" transform="translate(333.500000, 421.500000) scale(-1, 1) translate(-333.500000, -421.500000) "></path>
+                <path id="Line-3-decoration-1" d="M370.5,424.5 L370.5,418.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+                <path d="M370.5,369.5 L296.472978,369.5" id="Line-3-Copy" stroke="#9BC3D3" stroke-linecap="square" transform="translate(333.500000, 369.500000) scale(-1, 1) translate(-333.500000, -369.500000) "></path>
+                <path id="Line-3-Copy-decoration-1" d="M370.5,372.5 L370.5,366.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+                <path d="M370.5,317.5 L296.472978,317.5" id="Line-3-Copy-2" stroke="#9BC3D3" stroke-linecap="square" transform="translate(333.500000, 317.500000) scale(-1, 1) translate(-333.500000, -317.500000) "></path>
+                <path id="Line-3-Copy-2-decoration-1" d="M370.5,320.5 L370.5,314.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+                <path d="M370.5,265.5 L296.472978,265.5" id="Line-3-Copy-3" stroke="#9BC3D3" stroke-linecap="square" transform="translate(333.500000, 265.500000) scale(-1, 1) translate(-333.500000, -265.500000) "></path>
+                <path id="Line-3-Copy-3-decoration-1" d="M370.5,268.5 L370.5,262.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+                <path d="M370.5,213.5 L281.472978,213.5" id="Line-3-Copy-4" stroke="#9BC3D3" stroke-linecap="square" transform="translate(326.000000, 213.500000) scale(-1, 1) translate(-326.000000, -213.500000) "></path>
+                <path id="Line-3-Copy-4-decoration-1" d="M370.5,216.5 L370.5,210.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+                <path d="M370.504201,161.5 L251.472978,161.5" id="Line-3-Copy-5" stroke="#9BC3D3" stroke-linecap="square" transform="translate(311.000000, 161.500000) scale(-1, 1) translate(-311.000000, -161.500000) "></path>
+                <path id="Line-3-Copy-5-decoration-1" d="M370.504201,164.5 L370.504201,158.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+                <path d="M370.5,97.5 L177.472978,97.5" id="Line-3-Copy-6" stroke="#9BC3D3" stroke-linecap="square" transform="translate(274.000000, 97.500000) scale(-1, 1) translate(-274.000000, -97.500000) "></path>
+                <path id="Line-3-Copy-6-decoration-1" d="M370.5,100.5 L370.5,94.5" stroke="#9BC3D3" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
