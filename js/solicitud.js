@@ -688,10 +688,14 @@ simulacion()
 $('.nav-btn').on('click', function(e) {
   e.preventDefault()
 
-    $(this).closest('.collapse').collapse('hide')
-    console.log($(this))
-    $(this).closest('.panel').next().find('.collapse').collapse('show')
+    $(this).closest('.collapse').collapse('hide');
+    var siguientePanel = $(this).closest('.panel').next().find('.collapse');
+    siguientePanel.collapse('show');
+    console.log(siguientePanel)
+    setTimeout(function(){
 
+      $('html, body').animate({ scrollTop: siguientePanel.offset().top }, 'slow');
+    },500)
 
 })
 var icon = document.getElementById('saveAnimatedIcon');
