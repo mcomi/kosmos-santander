@@ -51,6 +51,13 @@ $('#muestra-oferta-final-btn').click(function(e){
   $('#propuesta-inicial').addClass('hidden')
   $('#tabla-modificadores').addClass('hidden')
   $('#continuar-solicitud-btn').removeClass('hidden')
+  if(isMobile){
+
+    setTimeout(function(){
+  
+      $('html, body').animate({ scrollTop: $('#propuesta-final').offset().top }, 'slow');
+    },400)
+  }
 })
 
 $('#editar-datos-btn').click(function(){
