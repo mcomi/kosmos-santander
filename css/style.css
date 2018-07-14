@@ -8,21 +8,6 @@
   font-family: 'Gotham medium';
   src: url("../fonts/gotham-medium.eot");
   src: local("☺"), url("../fonts/gotham-medium.woff") format("woff"), url("../fonts/gotham-medium.ttf") format("truetype"), url("../fonts/gotham-medium.svg#webfont") format("svg"); }
-html {
-  height: 100%;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Ubuntu', sans-serif;
-  background-color: #fff;
-  color: #121212;
-  position: relative;
-  margin: 0;
-  min-height: 100%; }
-.home {
-    padding-bottom: 22rem;
-}
 
 @font-face {
   font-family: 'kievit';
@@ -136,6 +121,9 @@ span.action {
 .red {
   color: #EB0029 !important; }
 
+.navbar-center a {
+  font-family: 'kievit-bold' !important; }
+
 li.corner-border:before {
   display: block;
   content: "";
@@ -247,8 +235,7 @@ div.corner-border span:after {
   letter-spacing: 0;
   line-height: 16px;
   text-align: left;
-  width: 205px;
-  white-space: inherit;}
+  width: 205px; }
 
 .btn-small {
   padding: 7px 10px; }
@@ -895,7 +882,7 @@ input[type=radio] {
   margin-top: 5px;
   display: block;
   color: #333;
-  font-family: 'kievit', sans-serif;
+  font-family: 'kievit-bold', sans-serif;
   font-size: 14px;
   margin-bottom: 10px; }
 
@@ -1568,7 +1555,6 @@ textarea.form-control {
   line-height: 15px;
   background-color: #4E6E82; }
 
-<<<<<<< HEAD
 body {
   font-family: 'kievit', sans-serif;
   background-color: #fff;
@@ -1578,17 +1564,6 @@ body {
   min-height: 100%; }
 
 .navbar-nav img {
-=======
-.navbar {
-  position: absolute;
-  width: 100%;
-  background-color: transparent;
-  box-shadow: none;
-  border: 0;
-  height: 80px; }
-
-.navbar-brand > img {
->>>>>>> 00673258c5dc09843b51c44c8b0319a3a23f630d
   height: 40px; }
 
 .navbar-default {
@@ -1677,10 +1652,7 @@ ul.progress-percentages > li {
 #footer {
   background: #EB0029;
   color: #ffffff;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0; }
+  bottom: 0; }
 
 .squared {
   position: relative;
@@ -2007,6 +1979,9 @@ ul.progress-percentages > li {
 h4.percentage-title {
   color: #1BB3BC; }
 
+.navbar-nav > li > a.red {
+  color: #EB0029 !important; }
+
 .img-avance {
   height: 40%; }
 
@@ -2067,8 +2042,8 @@ h4.percentage-title {
 
 .tooltip-icon-info img {
   position: absolute;
-  right: -5px;
-  bottom: 48px; }
+  right: 17px;
+  bottom: 35px; }
 
 .table-responsive {
   overflow-x: inherit; }
@@ -2156,7 +2131,6 @@ table > tbody > tr > th {
     height: 80px; } }
 
 @media (max-width: 436px) {
-<<<<<<< HEAD
   .nav-santander {
     display: -ms-grid;
     display: grid;
@@ -2165,12 +2139,6 @@ table > tbody > tr > th {
     height: 20px; }
   .navbar-right img {
     height: 16px;
-=======
-  .home {
-      padding-bottom: 0;
-  }
-  .nav > li {
->>>>>>> 00673258c5dc09843b51c44c8b0319a3a23f630d
     position: absolute;
     left: -4px;
     top: 12px; }
@@ -2433,3 +2401,5 @@ table > tbody > tr > th {
     border-bottom: 2px solid #5b56a6; }
   .scrollmenu li span {
     display: inline-block; } }
+
+/*# sourceMappingURL=style.css.map */
