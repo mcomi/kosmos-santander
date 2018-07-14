@@ -54,7 +54,7 @@
 				<ul class="nav navbar-nav navbar-left">
 					<li>
 						<a href="#">
-							<img src="img/logo.png" alt="">
+							<img src="img/santander_medium.jpg" alt="">
 						</a>
 					</li>
 				</ul>
@@ -66,7 +66,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li>
 						<img src="img/client_icon.svg" alt="">
-						<a href="#">Bienvenido Juan</a>
+						<a href="#" class="red">Bienvenido Juan</a>
 					</li>
 					<li class="save-auto">
 						<span class="fa-stack fa-lg">
@@ -403,7 +403,7 @@
 												<label for="tipo-ingresos">Selecciona tus tipos de ingresos</label>
 											</div>
 											<div class="col-md-4 col-xs-12">
-												<div class="squared">
+												<div class="squared padding-20">
 													<input type="checkbox" value="asalariada" id="asalariada" name="t-ingresos" />
 													<label for="asalariada"> </label>
 													<div class="asalariada">
@@ -996,15 +996,15 @@
 											<div class="radio-inputs-historial">
 
 												<div class="squared">
-													<input type="radio" value="no-tc" id="no-tc" name="tarjeta-credito" />
-													<label for="no-tc"> </label>
+													<input type="radio" value="si-tc" id="si-tc" name="tarjeta-credito" />
+													<label for="si-tc"> </label>
 													<div>
 														Si
 													</div>
 												</div>
 												<div class="squared">
-													<input type="radio" value="si-tc" id="si-tc" name="tarjeta-credito" />
-													<label for="si-tc"> </label>
+													<input type="radio" value="no-tc" id="no-tc" name="tarjeta-credito" />
+													<label for="no-tc"> </label>
 													<div>
 														No
 													</div>
@@ -1013,7 +1013,7 @@
 
 										</div>
 										<div class="col-md-3 col-xs-12">
-											<div class="form-group col-xs-12">
+											<div class="form-group col-xs-12 hidden" id="digitos-tc">
 												<label for="digitos-tarjeta">Digite los útimos 4 números
 													<a class="tooltip-icon-info" tabindex="0" role="button" class="tooltip-icon-info" data-toggle="popover" data-trigger="click" data-placement="top" data-content="Algunas instituciones guardan solo el número de tarjeta original, si has solicitado reposiciones de plástico puedes intentar autenticar con los últimos 4 dígitos de tu tarjeta original, esta información la podrás encontrar en tu estado de cuenta o con tu banco emisor.">
 														<img src="img/info-icon.svg" alt="">
@@ -1800,7 +1800,7 @@
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
-											<div class="form-group col-xs-12">
+											<div class="form-group col-xs-12 hidden" id="zurich-seguro">
 												<label for="seguro">Mencione su seguro</label>
 												<input type="text" class="form-control validate" id="seguro" placeholder="">
 												<span class="input-success"></span>
@@ -2616,7 +2616,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="copyright col-xs-12 col-sm-3 col-md-3">
-						<img src="img/logo_white.png" alt="">
+						<img src="img/santander_negativo_medium.jpg" alt="">
 					</div>
 					<div class="phone-cont col-xs-12 col-sm-8 col-md-8">
 

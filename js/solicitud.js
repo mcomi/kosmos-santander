@@ -6,6 +6,25 @@ $( "input[name='segunda-persona']").click(function(){
   }
 })
 
+$("input[name='tarjeta-credito']").click(function(){
+  
+  if($(this).val() == 'si-tc'){
+    $('#digitos-tc').removeClass('hidden')
+  }else{
+    $('#digitos-tc').addClass('hidden')
+  }
+})
+
+
+$("input[name='zurich']").click(function(){
+  
+  if($(this).val() == 'si-zurich'){
+    $('#zurich-seguro').removeClass('hidden')
+  }else{
+    $('#zurich-seguro').addClass('hidden')
+  }
+})
+
 $( "input[name='t-ingresos']").click(function(){
   
   if($(this).val() == 'asalariada'){
