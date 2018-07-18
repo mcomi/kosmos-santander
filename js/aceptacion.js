@@ -135,3 +135,18 @@ selectsSolicitud.each(function() {
       let optionSelected = select.find("option:selected");
       select.siblings('.input-success').html(optionSelected.text());
 })
+
+$('#copy-clipboard').click(function(){
+  var folio = $('#folio-value').html();
+  var hiddenClipboard = $('#_hiddenClipboard_');
+  $('body').append('<textarea style="position:absolute;top: -9999px;" id="_hiddenClipboard_"></textarea>');
+  hiddenClipboard = $('#_hiddenClipboard_');
+  hiddenClipboard.html(folio);
+  hiddenClipboard.select();
+  var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Folio copiado: " + folio;
+    setTimeout(function(){
+      tooltip.innerHTML = "";
+    },1000)
+  document.execCommand('copy');
+})
