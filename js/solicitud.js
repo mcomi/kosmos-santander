@@ -200,6 +200,7 @@ $("input[name='segunda-persona']").click(function() {
       $('#co-acreditado').addClass('hidden');
       $(this).closest('.panel-heading').siblings('.collapse').collapse('hide');
     }
+    $('#historial').collapse('show');
     $('#panel-domicilio-sp').addClass('hidden');
   }
 });
@@ -213,6 +214,7 @@ $("input[name='segunda-persona-domicilio']").click(function() {
       $('#domicilio-acreditado').addClass('hidden');
       $(this).closest('.panel-heading').siblings('.collapse').collapse('hide');
     }
+    $('#historial').collapse('show');
   }
 });
 
@@ -728,7 +730,7 @@ $('.nav-btn').on('click', function(e) {
     siguientePanel.collapse('show');
     console.log(siguientePanel)
     setTimeout(function(){
-      if(isMobile()){
+      if(isMobile){
         $('html, body').animate({ scrollTop: siguientePanel.offset().top }, 'slow');
       }
     },500)
