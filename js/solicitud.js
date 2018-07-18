@@ -75,25 +75,25 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
  isMobile = true;
 }
 
-const linksOptions = $('.scrollmenu a');
+const linksOptions = document.querySelectorAll('.scrollmenu a');
 linksOptions.forEach(function(option) {
-    option.addEventListener('click', toggleActive);
+  option.addEventListener('click', toggleActive);
 });
 
 function toggleActive() {
-  linksOptions.forEach(function(option) {
-    if(option.classList.contains('active')) option.classList.remove('active')
-  });
-  this.classList.add('active')
-  if(this.dataset.type == 'precalificacion') {
-    $('#datos-precalificacion').removeClass('hidden')
-    $('#generales').addClass('hidden')
-  }
-  if(this.dataset.type == 'generales') {
-    $('#datos-precalificacion').addClass('hidden')
-    $('#generales').removeClass('hidden')
+linksOptions.forEach(function(option) {
+  if(option.classList.contains('active')) option.classList.remove('active')
+});
+this.classList.add('active')
+if(this.dataset.type == 'precalificacion') {
+  $('#datos-precalificacion').removeClass('hidden')
+  $('#generales').addClass('hidden')
+}
+if(this.dataset.type == 'generales') {
+  $('#datos-precalificacion').addClass('hidden')
+  $('#generales').removeClass('hidden')
 
-  }
+}
 }
 
 // valida
