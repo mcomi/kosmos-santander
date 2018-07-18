@@ -776,6 +776,9 @@ $('#copy-clipboard').click(function(){
   hiddenClipboard.select();
   var tooltip = document.getElementById("myTooltip");
     tooltip.innerHTML = "Folio copiado: " + folio;
+    setTimeout(function(){
+      tooltip.innerHTML = "";
+    },1000)
   document.execCommand('copy');
 })
 

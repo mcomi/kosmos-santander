@@ -1064,9 +1064,9 @@ textarea.form-control {
   box-shadow: none;
   -webkit-appearance: none;
   padding: 6px 2px;
-  background: url("../img/down-icon.svg") white no-repeat 98.5% !important;
+  background: url("../img/down-icon.svg") white no-repeat 99% !important;
   /* !important used for overriding all other customisations */
-  background: url("../img/down-icon.svg") white no-repeat calc(100% - 10px) !important;
+  background: url("../img/down-icon.svg") white no-repeat calc(100% - 2px) !important;
   /* Better placement regardless of input width */
   font-size: 1.2em;
   color: #1BB3BC; }
@@ -1631,6 +1631,9 @@ select::-ms-expand {
   background-color: transparent;
   border-radius: 4px;
   box-shadow: none; }
+
+.tooltip-folio {
+  cursor: pointer; }
 
 .progress-bar-steps {
   background-color: #1BB3BC; }
