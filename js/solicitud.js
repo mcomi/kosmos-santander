@@ -265,6 +265,7 @@ if(window.location.href.indexOf("#generales") > -1) {
   $('#generales').removeClass('hidden')
   $('#link_precalificacion').removeClass('active');
   $('#link_generales').addClass('active');
+  $('html, body').animate({ scrollTop: 0 }, 'fast');
     }
 
   $('#btnPasaDatosClinicos').click(function(){
@@ -730,9 +731,9 @@ $('.nav-btn').on('click', function(e) {
     siguientePanel.collapse('show');
     console.log(siguientePanel)
     setTimeout(function(){
-      if(isMobile){
-        $('html, body').animate({ scrollTop: siguientePanel.offset().top }, 'slow');
-      }
+     
+        $('html, body').animate({ scrollTop: siguientePanel.offset().top-50 }, 'slow');
+      
     },500)
 
 })
