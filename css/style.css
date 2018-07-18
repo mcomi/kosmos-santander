@@ -1619,6 +1619,9 @@ body {
 .progress-bar {
   background-color: #9BC3D3; }
 
+select::-ms-expand {
+  display: none; }
+
 .progress-steps {
   height: 3px;
   margin-bottom: 20px;
