@@ -150,3 +150,19 @@ $('#copy-clipboard').click(function(){
     },1000)
   document.execCommand('copy');
 })
+
+//simular paginacion
+var pagina = 1;
+$('.fa-chevron-right').click(function(){
+  if(pagina<140){
+
+    pagina++;
+    $('#pagina').text(pagina)
+  }
+})
+$('.fa-chevron-left').click(function(){
+  if(pagina>0){
+    pagina--
+    $('#pagina').text(pagina)
+  }
+})
