@@ -60,6 +60,12 @@ $('#muestra-oferta-final-btn').click(function(e){
   }
 })
 
+$(function () {
+  $('[data-toggle="popover"]').popover({
+    container: 'body'
+  })
+})
+
 $('#editar-datos-btn').click(function(){
   $('#propuesta-final').addClass('hidden')
   $('#propuesta-inicial').removeClass('hidden')

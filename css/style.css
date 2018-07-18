@@ -291,6 +291,9 @@ div.corner-border span:after {
   text-decoration: none;
   color: #121212; }
 
+.navbar {
+  margin-bottom: 10px; }
+
 .header-calculate-options:hover a:before {
   display: block;
   content: "";
@@ -765,7 +768,7 @@ input[type=radio] {
   letter-spacing: 0;
   padding: 15px 0 0 0;
   width: 100%;
-  min-height: 327px; }
+  min-height: 355px; }
 
 .propuesta-elegir h3,
 .propuesta-elegir h4 {
@@ -1059,6 +1062,7 @@ textarea.form-control {
   border-bottom: 1px solid #666666;
   box-shadow: none;
   -webkit-appearance: none;
+  padding: 6px 2px;
   background: url("../img/down-icon.svg") white no-repeat 98.5% !important;
   /* !important used for overriding all other customisations */
   background: url("../img/down-icon.svg") white no-repeat calc(100% - 10px) !important;
@@ -1469,6 +1473,16 @@ textarea.form-control {
   -webkit-animation: lds-grid 1.2s linear infinite;
           animation: lds-grid 1.2s linear infinite; }
 
+.preview-img {
+  width: 64px;
+  height: 64px; }
+
+.mr-3, .mx-3 {
+  margin-right: 1rem !important; }
+
+.mb-2, .my-2 {
+  margin-bottom: 0.5rem !important; }
+
 .lds-grid div:nth-child(1) {
   top: 6px;
   left: 6px;
@@ -1607,8 +1621,8 @@ body {
 
 .progress-steps {
   height: 3px;
-  margin-bottom: 35px;
-  margin-top: -10px;
+  margin-bottom: 20px;
+  margin-top: -13px;
   overflow: hidden;
   background-color: transparent;
   border-radius: 4px;
@@ -1621,7 +1635,7 @@ body {
   color: #1BB3BC;
   position: absolute;
   left: 15px;
-  padding-top: 8px; }
+  bottom: 65px; }
 
 ul.progress-percentages {
   list-style: none;
@@ -1877,7 +1891,7 @@ ul.progress-percentages > li {
 
 .solicitud-container .form-control {
   width: 100%;
-  margin-bottom: 35px; }
+  margin-bottom: 23px; }
 
 .historial-crediticio img {
   padding-bottom: 15px; }
@@ -2086,8 +2100,8 @@ h4.percentage-title {
   margin-left: 10px; }
 
 .status-panel {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .status-panel h2 {
   font-size: 25px;

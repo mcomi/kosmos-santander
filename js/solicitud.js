@@ -436,8 +436,18 @@ $(function(){
     },
     onNewFile: function(id, file){
       // When a new file is added using the file selector or the DnD area
+      
       ui_add_log('New file added #' + id);
       ui_multi_add_file_comprobante(id, file);
+      if (typeof FileReader !== "undefined"){
+        var reader = new FileReader();
+        var img = $('#uploaderFile' + id).find('.preview-img');
+        
+        reader.onload = function (e) {
+          img.attr('src', e.target.result);
+        }
+        reader.readAsDataURL(file);
+      }
     },
     onBeforeUpload: function(id){
       // about tho start uploading a file
@@ -712,8 +722,9 @@ $('.nav-btn').on('click', function(e) {
     siguientePanel.collapse('show');
     console.log(siguientePanel)
     setTimeout(function(){
-
-      $('html, body').animate({ scrollTop: siguientePanel.offset().top }, 'slow');
+      if(isMobile()){
+        $('html, body').animate({ scrollTop: siguientePanel.offset().top }, 'slow');
+      }
     },500)
 
 })
