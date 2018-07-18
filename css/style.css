@@ -76,19 +76,24 @@ span.action {
   border-bottom: 1px solid #EB0029; }
 
 .cotizador-big-title {
-  font-size: 13px;
+  font-family: 'kievit-bold';
+  font-size: 14px;
   color: #121212;
   letter-spacing: 0;
-  line-height: 30px; }
+  line-height: 20px;
+  text-align: left; }
 
 .cotizador-valor-md {
   font-family: 'kievit';
   font-size: 18px;
   color: #EB0029; }
 
-.cotizador-results p {
-  color: #EB0029;
-  padding: 10px 0; }
+.cotizador-valor-big {
+  color: #6F7779;
+  font-size: 22px;
+  font-family: 'kievit';
+  text-align: right;
+  line-height: 21px; }
 
 .cotizador-results .radio-year-label {
   color: #121212 !important; }
@@ -319,8 +324,6 @@ div.corner-border span:after {
 
 .cotizador-input {
   font-family: 'kievit', sans-serif;
-  background: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   min-height: 360px;
   text-align: center;
   padding: 0 25px; }
@@ -334,9 +337,10 @@ div.corner-border span:after {
 .cotizador-input h2 {
   font-family: 'Gotham';
   font-size: 24px;
-  color: #4E6E82;
+  color: #137E84;
   letter-spacing: 0;
-  line-height: 28px; }
+  line-height: 28px;
+  text-align: left; }
 
 .cotizador-input .form-input {
   width: 85%;
@@ -356,12 +360,12 @@ div.corner-border span:after {
   border-radius: 0;
   box-shadow: none; }
 
+.panel-cotizador .form-control {
+  margin-bottom: 15px; }
+
 .cotizador-input span {
-  color: #EB0029;
-  font-size: 12px;
-  display: block;
-  padding-top: 10px;
-  text-align: left; }
+  top: 55px;
+  left: 18px; }
 
 .cotizador-input .fa {
   border: 1px solid #EB0029;
@@ -394,31 +398,12 @@ div.corner-border span:after {
   border-top: 1px solid #EB0029;
   border-right: 1px solid #EB0029; }
 
-.cotizador-results:before {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  bottom: 0;
-  left: 15px;
-  border-bottom: 1px solid #EB0029;
-  border-left: 1px solid #EB0029; }
-
-.cotizador-results:after {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  bottom: 0;
-  right: 15px;
-  border-bottom: 1px solid #EB0029;
-  border-right: 1px solid #EB0029; }
+.results-panel {
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); }
 
 .cotizador-results {
-  background: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
   min-height: 545px;
   text-align: center; }
 
@@ -486,16 +471,39 @@ input[type=radio] {
   border-right: 1px solid #EB0029; }
 
 .list-options {
-  padding-right: 0; }
+  padding: 0;
+  min-height: 499px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 12px 0px -15px; }
 
 .option-calc .fa {
   float: left;
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
+          transform: rotate(180deg);
+  margin: 7px 0; }
 
 .option-calc.active {
   background: #ffffff;
   color: #121212; }
+
+.code-submit {
+  text-align: center; }
+
+.code-input {
+  outline: none;
+  background: transparent;
+  border: 1px solid #9BC3D3;
+  font-size: 14px;
+  text-align: center;
+  width: 50px;
+  height: 30px;
+  margin: 0 5px; }
 
 .option-calc.active .fa {
   color: #EB0029;
@@ -503,18 +511,30 @@ input[type=radio] {
           transform: rotate(0deg); }
 
 .option-calc {
-  background: #F8F8F8;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  display: block;
-  height: 90px;
-  text-align: right;
-  padding: 35px 16px;
-  width: 100%;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+  margin: 5px 0;
+  /* El monto que necesit: */
+  font-family: 'kievit';
   font-size: 14px;
-  color: #4E6E82;
+  color: #137E84;
   letter-spacing: 0;
+  text-align: right;
   line-height: 20px;
-  cursor: pointer; }
+  /* Triangle_gray_: */
+  background: #DEEDF2;
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 40px 16px;
+  width: 100%;
+  cursor: pointer;
+  /* Rectangle 10 Copy: */ }
+
+.panel-cotizador {
+  background: #FFFFFF;
+  min-height: 534px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); }
 
 .cotizador-panels {
   padding: 75px 30px 10px 30px; }
@@ -1623,6 +1643,13 @@ body {
 select::-ms-expand {
   display: none; }
 
+.navbar-right-index li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  line-height: 79px;
+  font-family: 'kievit-bold'; }
+
 .progress-steps {
   height: 3px;
   margin-bottom: 20px;
@@ -1631,6 +1658,19 @@ select::-ms-expand {
   background-color: transparent;
   border-radius: 4px;
   box-shadow: none; }
+
+.navbar-home {
+  position: absolute; }
+
+.bg-home {
+  background: url("../img/bg-landing.jpg");
+  background-size: cover; }
+
+.panel-datos-solicitud {
+  background: #FFFFFF;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  margin: 28px;
+  padding: 35px; }
 
 .tooltip-folio {
   cursor: pointer; }
@@ -1674,6 +1714,13 @@ ul.progress-percentages > li {
   background: #EB0029;
   color: #ffffff;
   bottom: 0; }
+
+.code-submit-form {
+  margin: 10px 0; }
+
+.btn-no-margin {
+  margin: 6px 0;
+  text-align: center; }
 
 .squared {
   position: relative;
@@ -2160,12 +2207,25 @@ table > tbody > tr > th {
     height: 80px; } }
 
 @media (max-width: 436px) {
+  .navbar-right-index li {
+    left: 23px;
+    display: -webkit-box;
+    top: 60px;
+    position: absolute;
+    line-height: 40px;
+    font-family: 'kievit-bold'; }
+  .panel-datos-solicitud {
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    margin: -15px -5px;
+    padding: 10px; }
   .nav-santander {
     display: -ms-grid;
     display: grid;
     grid-auto-flow: column; }
   .navbar-left img {
-    height: 20px; }
+    height: 32px;
+    padding-right: 65px; }
   .navbar-right img {
     height: 16px;
     position: absolute;
@@ -2231,7 +2291,9 @@ table > tbody > tr > th {
   .tabla-amortizacion td:first-child {
     width: 180px; }
   .cotizador-panels {
-    padding: 40px 10px; }
+    padding: 12px 4px; }
+  .list-options {
+    min-height: 216px; }
   .modal-dialog {
     width: 100%;
     margin: 60px auto; }

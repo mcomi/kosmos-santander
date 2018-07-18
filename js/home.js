@@ -1,8 +1,8 @@
 var headerOptions = document.querySelectorAll('.header-calculate-options');
 var cotizadorOptions = document.querySelectorAll('.option-calc');
 
-headerOptions.forEach(option => option.addEventListener('click', function(){
-  var id = option.dataset.option;
+cotizadorOptions.forEach(option => option.addEventListener('click', function(){
+  var id = option.getAttribute('id');
   // me muevo hacia el cotizador
   $('html, body').animate({ scrollTop: $('#cotizador').offset().top }, 'slow');
   // remuevo la clase active
@@ -56,4 +56,23 @@ olvideFolioLink.addEventListener('click', function(){
   tituloModal.innerHTML = 'Olvide mi folio';
   document.getElementById('ingresa-folio').classList.add('hidden');
   document.getElementById('olvide-folio').classList.remove('hidden');
+})
+
+
+const selectsSolicitud = $("select")
+selectsSolicitud.each(function() {
+  let select = $(this)
+  select.change(function() {
+    if (select.val() !== '') {
+      select.addClass('valid')
+      let optionSelected = select.find("option:selected");
+      select.siblings('.input-success').html(optionSelected.text());
+    }
+  })
+})
+
+selectsSolicitud.each(function() {
+  let select = $(this)
+      let optionSelected = select.find("option:selected");
+      select.siblings('.input-success').html(optionSelected.text());
 })
