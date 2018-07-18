@@ -75,11 +75,13 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
  isMobile = true;
 }
 
-const linksOptions = document.querySelectorAll('.scrollmenu a');
-linksOptions.forEach(option => option.addEventListener('click', toggleActive));
+const linksOptions = $('.scrollmenu a');
+linksOptions.forEach(function(option) {
+    option.addEventListener('click', toggleActive);
+});
 
 function toggleActive() {
-  linksOptions.forEach(option => {
+  linksOptions.forEach(function(option) {
     if(option.classList.contains('active')) option.classList.remove('active')
   });
   this.classList.add('active')
