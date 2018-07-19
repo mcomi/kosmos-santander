@@ -59,13 +59,13 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-center">
 					<li>
-						<a href="#">Hipoteca personal</a>
+						<a href="#">Hipoteca online</a>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right-index">
 					<li>
 						Ya iniciaste tu solicitud
-						<a href="#" class="red">Continua aquí tu proceso</a>
+						<a href="#" class="red" data-toggle="modal" data-target="#modalConsultaFolio">Continua aquí tu proceso</a>
 					</li>
 
 				</ul>
@@ -133,8 +133,16 @@
 									<span class="input-success"></span>
 									<span class="input-error"></span>
 								</div>
-								<button class="btn btn-red btn-no-margin">Calcular
+								<button class="btn btn-red btn-no-margin" onclick="calculaOferta()">Calcular
 								</button>
+								<div id="calcula-loader" class="hidden">
+										<div class="spinner">
+												<div class="bounce1"></div>
+												<div class="bounce2"></div>
+												<div class="bounce3"></div>
+											  </div>
+											<p>Calculando oferta</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -143,147 +151,147 @@
 
 							<div class="cotizador-results">
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Valor del inmueble:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">$1,111,111.00</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="valor-inmueble">$1,111,111.00</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Plazo:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">20 años</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="plazo">20 años</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Monto del crédito:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">$911,111.00</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="monto-credito">$911,111.00</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Ingreso neto requerido:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">$31,111.00</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="ingreso-neto">$31,111.00</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Financiamiento:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">20%</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="financiamiento">20%</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Tasa:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">2.22%</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="tasa">2.22%</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Mensualidad sin accesorios:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">2.22%</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="mens-accesorios">2.22%</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Pago mensual total:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">$20,111.00</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="pago-mensual-total">$20,111.00</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Comisión mensual:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">$1,200.00</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="comision-mensual">$1,200.00</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Seguro de vida mensual:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">$1,911.00</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="seguro-mensual">$1,911.00</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Seguro de daños:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">$1,911.00</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="seguro-danios">$1,911.00</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Desembolso incial:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">$13,911.00</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="desembolso">$13,911.00</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Enganche:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">$21.00</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="enganche">$21.00</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Comisión por apertura:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">$13,911.00</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="apertura">$13,911.00</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Gastos notariales:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">$13,911.00</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="notariales">$13,911.00</p>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<p class="cotizador-big-title">Avaluo:</p>
 
 									</div>
-									<div class="col-md-6 col-xs-12">
-										<p class="cotizador-valor-big">$13,911.00</p>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<p class="cotizador-valor-big" id="avaluo">$13,911.00</p>
 									</div>
 								</div>
 
@@ -309,8 +317,8 @@
 						<span class="input-error"></span>
 					</div>
 					<div class="form-group col-xs-12 col-md-4">
-						<label for="nombre-solicitud">Ingresa tu celular</label>
-						<input type="tel" class="form-control validate" id="nombre-solicitud" placeholder="Celular">
+						<label for="celular-solicitud">Ingresa tu celular</label>
+						<input type="tel" class="form-control validate" id="celular-solicitud" placeholder="Celular">
 						<span class="input-success"></span>
 						<span class="input-error"></span>
 					</div>
@@ -326,14 +334,14 @@
 					</div>
 					<div class="col-xs-12">
 						<div class="col-md-5 col-xs-12">
-								<button class="btn btn-red btn-no-margin">Solicitar código SMS
+								<button class="btn btn-red btn-no-margin" id="btnSolicitarSMS">Solicitar código SMS
 										
 									</button>
+									<div id="countdown" class="clock hidden" style="margin:1em;"></div>					
 						</div>
 						<div class="col-md-7 col-xs-12">
-
-					
-									<div class="code-submit-form">
+								
+									<div class="code-submit-form hidden">
 										<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
 										<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
 										<input type="tel" class="code-input" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
@@ -343,12 +351,13 @@
 								
 						</div>
 						<div class="col-xs-12">
-							<p>Si no recibiste el código en 10 segundos, revisa que tu número esté correcto y vuelve a solicitarlo</p>
+								<p class="sms-message hidden" id="before-sms">Estamos enviando un mensaje SMS a su teléfono.</p>
+							<p class="sms-message hidden" id="after-sms">Si no recibiste el código en 10 segundos, revisa que tu número esté correcto y vuelve a solicitarlo</p>
 						</div>
 						<div class="col-xs-12 text-center">
-								<button class="btn btn-red">Solicitar
+								<a href="/kosmos-santander/solicitud.html" class="btn btn-red hidden" id="btnGeneraSolicitud">Solicitar
 										<icon class="fa fa-play"></icon>
-									</button>
+								</a>
 						</div>
 					</div>
 				</div>
@@ -513,11 +522,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="copyright col-xs-12 col-sm-3 col-md-3">
-						<img src="img/logo_white.png" alt="">
+						<img src="img/santander_negativo_medium.jpg" alt="">
 					</div>
 					<div class="phone-cont col-xs-12 col-sm-8 col-md-8">
 
-						<div class="text-footer-bottom">© Derechos Reservados 2017, Banco Santander (México) S.A. Institución de Banca Múñtiple, Grupo Financiero Santander</div>
+						<div class="text-footer-bottom">© Derechos Reservados 2017, Banco Santander (México) S.A. Institución de Banca Múltiple, Grupo Financiero Santander</div>
 
 					</div>
 				</div>
@@ -536,15 +545,10 @@
 	<script src="libs/bootstrap-datepicker.min.js"></script>
 	<script src="libs/bootstrap-datepicker.es.min.js"></script>
 	<script src="libs/bootstrap-editable.min.js"></script>
-	<script src="libs/bootstrap-slider.js"></script>
+	<script src="libs/flipclock.js"></script>
 	<script src="libs/cleave.min.js"></script>
 	<script src="libs/cleave-phone.mx.js"></script>
 	<script src="libs/swiper.min.js"></script>
-	<script src="libs/dropzone.min.js"></script>
-	<script src="libs/typed.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/es.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
 	<script src="js/index.js"></script>
 	<script src="js/home.js"></script>
