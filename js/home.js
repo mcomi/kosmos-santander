@@ -71,6 +71,10 @@ selectsSolicitud.each(function() {
   })
 })
 
+$.fn.exists = function() {
+  return this.length > 0;
+}
+
 selectsSolicitud.each(function() {
   let select = $(this)
       let optionSelected = select.find("option:selected");
@@ -146,10 +150,12 @@ inputsSolicitud.each(function() {
   })
 })
 
-let cleave = new Cleave('#celular-solicitud', {
-  phone: true,
-  phoneRegionCode: 'MX'
-});
+if ($('#celular-solicitud').exists()) {
+  let cleave = new Cleave('#celular-solicitud', {
+    phone: true,
+    phoneRegionCode: 'MX'
+  });
+}
 
 var valorVivienda = $('#valor-inmueble')
 var plazo = $('#plazo')
