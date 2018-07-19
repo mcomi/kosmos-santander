@@ -273,6 +273,7 @@ if(window.location.href.indexOf("#generales") > -1) {
     $('#clinicos').removeClass('hidden')
     $('#link_generales').removeClass('active');
     $('#link_clinicos').addClass('active');
+    $('html, body').animate({ scrollTop: 0 }, 'fast');
   })
 
   $('#btnPasaCargaDocumentos').click(function(){
@@ -280,6 +281,7 @@ if(window.location.href.indexOf("#generales") > -1) {
     $('#documentos').removeClass('hidden')
     $('#link_clinicos').removeClass('active');
     $('#link_documentos').addClass('active');
+    $('html, body').animate({ scrollTop: 0 }, 'fast');
   })
 
   $('#btnTerminaSolicitud').click(function() {
@@ -845,3 +847,4 @@ if (!Array.prototype.forEach) {
     // 8. return undefined
   };
 }
+

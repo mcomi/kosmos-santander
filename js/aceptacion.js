@@ -166,3 +166,32 @@ $('.fa-chevron-left').click(function(){
     $('#pagina').text(pagina)
   }
 })
+
+// animacion de guardado automatico
+function animateSaveIcon() {
+  icon.classList.remove('fa-check');
+  icon.classList.add('fa-refresh', 'fa-spin', 'fa-fw');
+  setTimeout(function () {
+    icon.classList.remove('fa-refresh', 'fa-spin', 'fa-fw');
+    icon.classList.add('fa-check', 'faa-vertical', 'animated');
+    setTimeout(function () {
+      icon.classList.remove('faa-vertical', 'animated');
+    }, 2000);
+  }, 3000);
+  setTimeout(function () {
+
+    if (!timeUp) animateSaveIcon();
+  }, 8000);
+}
+var timeUp = false;
+function simularTiempo() {
+
+  animateSaveIcon();
+  setTimeout(function () {
+    return timeUp = true;
+  }, 40000);
+}
+
+setTimeout(function () {
+  return simularTiempo();
+}, 3000);
