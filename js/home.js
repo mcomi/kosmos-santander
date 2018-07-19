@@ -1,21 +1,23 @@
 var headerOptions = document.querySelectorAll('.header-calculate-options');
 var cotizadorOptions = document.querySelectorAll('.option-calc');
 
-cotizadorOptions.forEach(option => option.addEventListener('click', function(){
-  var id = option.getAttribute('id');
-  // me muevo hacia el cotizador
-  $('html, body').animate({ scrollTop: $('#cotizador').offset().top }, 'slow');
-  // remuevo la clase active
-  cotizadorOptions.forEach(opcion => {
-    if(opcion.classList.contains('active')) {
-      if(opcion.id != id)
-        opcion.classList.remove('active');
-    }
-    if(opcion.id == id) opcion.classList.add('active');
-  })
-  // selecciono la opcion para el cotizador
-  changeValuesForOption (id);
-}));
+cotizadorOptions.forEach(function(option){
+  option.addEventListener('click', function(){
+    var id = option.getAttribute('id');
+    // me muevo hacia el cotizador
+    $('html, body').animate({ scrollTop: $('#cotizador').offset().top }, 'slow');
+    // remuevo la clase active
+    cotizadorOptions.forEach(opcion => {
+      if(opcion.classList.contains('active')) {
+        if(opcion.id != id)
+          opcion.classList.remove('active');
+      }
+      if(opcion.id == id) opcion.classList.add('active');
+    })
+    // selecciono la opcion para el cotizador
+    changeValuesForOption (id);
+  });
+}) 
 
 var tituloPregunta = document.getElementById('question-option');
 
@@ -40,10 +42,12 @@ function changeValuesForOption (option) {
 
 // modal infonavit/fovissste
 const linksOptions = document.querySelectorAll('.scrollmenu a');
-linksOptions.forEach(option => option.addEventListener('click', toggleActive));
+linksOptions.forEach(function(option){
+  option.addEventListener('click', toggleActive)
+});
 
 function toggleActive() {
-  linksOptions.forEach(option => {
+  linksOptions.forEach(function(option){
     if(option.classList.contains('active')) option.classList.remove('active')
   });
   this.classList.add('active')

@@ -1,12 +1,19 @@
+if (typeof NodeList !== "undefined" && NodeList.prototype && !NodeList.prototype.forEach) {
+  // Yes, there's really no need for `Object.defineProperty` here
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
 $(function() {
   $.fn.editable.defaults.mode = 'inline';
 });
 var inputsText = document.querySelectorAll('input')
 
-inputsText.forEach(input => input.addEventListener('change', function() {
-  if (this.value !== '')
-    this.classList.add('valid')
-}))
+inputsText.forEach(function(input){
+  input.addEventListener('change', function() {
+    if (this.value !== '')
+      this.classList.add('valid')
+  })
+})
 
 $('#btn-solicita-credito-fixed').click(function(){
   $('html, body').animate({ scrollTop: $('#cotizador').offset().top }, 'slow');
@@ -24,23 +31,6 @@ $('.open-menu i').on('click', function(e) {
 $('#nav-close').on('click', function(e) {
   e.preventDefault();
   $('body').removeClass('nav-expanded');
-});
-
-// Initialize navgoco with default options
-$(".main-menu").navgoco({
-  caret: '<span class="caret"></span>',
-  accordion: false,
-  openClass: 'open',
-  save: true,
-  cookie: {
-    name: 'navgoco',
-    expires: false,
-    path: '/'
-  },
-  slide: {
-    duration: 300,
-    easing: 'swing'
-  }
 });
 
 $(function() {
