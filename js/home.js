@@ -7,13 +7,14 @@ cotizadorOptions.forEach(function(option){
     // me muevo hacia el cotizador
     $('html, body').animate({ scrollTop: $('#cotizador').offset().top }, 'slow');
     // remuevo la clase active
-    cotizadorOptions.forEach(opcion => {
+    cotizadorOptions.forEach(function(opcion){
+      
       if(opcion.classList.contains('active')) {
         if(opcion.id != id)
           opcion.classList.remove('active');
       }
       if(opcion.id == id) opcion.classList.add('active');
-    })
+    }) 
     // selecciono la opcion para el cotizador
     changeValuesForOption (id);
   });
