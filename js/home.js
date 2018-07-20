@@ -102,8 +102,8 @@ $('#btnSolicitarSMS').click(function(){
   if(!$('#btnGeneraSolicitud').hasClass('hidden')){
     $('#btnGeneraSolicitud').addClass('hidden')
   }
-  if(!$('.code-submit-form').hasClass('hidden')){
-    $('.code-submit-form').addClass('hidden')
+  if($('.code-submit-form').hasClass('hidden')){
+    $('.code-submit-form').removeClass('hidden')
   }
   if(!$('#after-sms').hasClass('hidden')){
     $('#after-sms').addClass('hidden')
@@ -120,7 +120,6 @@ $('#btnSolicitarSMS').click(function(){
         $('#after-sms').removeClass('hidden')
         $('#countdown').addClass('hidden')
         $('#btnGeneraSolicitud').removeClass('hidden')
-        $('.code-submit-form').removeClass('hidden')
       }
     }
   });

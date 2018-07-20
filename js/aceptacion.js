@@ -5,12 +5,34 @@ function formatCurrency() {
 var valorVivienda = 1111000; // para pasar el valor de la vivienda
 var montoCredito = 1000000;  // para pasar el valor del monto del credito
 
+const inputsSolicitud = $('input')
+inputsSolicitud.each(function() {
+  let input = $(this)
+  input.change(function() {
+    if (input.val() !== '') {
+      
+        $('#oferta-inicial').addClass('hidden')
+        input.addClass('valid')
+        input.siblings('.input-success').html(input.val());
+        $('#cambio-oferta').removeClass('hidden')
+    }
+  })
+})
+
+
+
 function cargaDatosIniciales() {
   $('#valor-vivienda').val(formatCurrencyManual(valorVivienda));
   $('#monto-credito').val(formatCurrencyManual(montoCredito));
   $('#pago-mensual').html('$10,281')
   $('#tasa').html('10.94%')
   $('#cat').html('14%')
+  inputsSolicitud.each(function() {
+    let input = $(this)
+    input.addClass('valid')
+    input.siblings('.input-success').html(input.val());
+        
+  })
 }
 
 function recalculaOferta() {  // simula recalcula oferta
@@ -20,6 +42,13 @@ function recalculaOferta() {  // simula recalcula oferta
 }
 
 cargaDatosIniciales()
+
+inputsSolicitud.each(function() {
+  let input = $(this)
+  input.addClass('valid')
+  input.siblings('.input-success').html(input.val());
+      
+})
 
 $('#regresar-datos-btn').click(function(){
   cargaDatosIniciales()
@@ -97,26 +126,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
  isMobile = true;
 }
 
-const inputsSolicitud = $('input')
-inputsSolicitud.each(function() {
-  let input = $(this)
-  input.change(function() {
-    if (input.val() !== '') {
-      
-        $('#oferta-inicial').addClass('hidden')
-        input.addClass('valid')
-        input.siblings('.input-success').html(input.val());
-        $('#cambio-oferta').removeClass('hidden')
-    }
-  })
-})
 
-inputsSolicitud.each(function() {
-  let input = $(this)
-  input.addClass('valid')
-  input.siblings('.input-success').html(input.val());
-      
-})
 
 const selectsSolicitud = $("select")
 selectsSolicitud.each(function() {
