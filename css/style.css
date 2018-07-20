@@ -132,105 +132,6 @@ span.action {
 .navbar-center a {
   font-family: 'kievit-bold' !important; }
 
-li.corner-border:before {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 14px;
-  left: -10px;
-  border-top: 2px solid #EB0029;
-  border-left: 2px solid #EB0029; }
-
-li.corner-border:after {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 14px;
-  right: 0px;
-  border-top: 2px solid #EB0029;
-  border-right: 2px solid #EB0029; }
-
-li.corner-border a:before {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  bottom: 15px;
-  left: -10px;
-  border-bottom: 2px solid #EB0029;
-  border-left: 2px solid #EB0029; }
-
-li.corner-border a:after {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  bottom: 15px;
-  right: 0px;
-  border-bottom: 2px solid #EB0029;
-  border-right: 2px solid #EB0029; }
-
-div.corner-border {
-  position: relative;
-  width: 200px;
-  height: 30px;
-  margin: 0 auto;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 14px;
-  color: #121212;
-  letter-spacing: 0;
-  line-height: 28px; }
-
-div.corner-border:before {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: -10px;
-  left: 0px;
-  border-top: 2px solid #EB0029;
-  border-left: 2px solid #EB0029; }
-
-div.corner-border:after {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: -10px;
-  right: 0px;
-  border-top: 2px solid #EB0029;
-  border-right: 2px solid #EB0029; }
-
-div.corner-border span:before {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  bottom: -10px;
-  left: 0px;
-  border-bottom: 2px solid #EB0029;
-  border-left: 2px solid #EB0029; }
-
-div.corner-border span:after {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  bottom: -10px;
-  right: 0px;
-  border-bottom: 2px solid #EB0029;
-  border-right: 2px solid #EB0029; }
-
 .btn-red {
   background: #EB0029;
   border-radius: 4px;
@@ -1216,6 +1117,9 @@ textarea.form-control {
   height: 30px;
   margin-bottom: 18px; }
 
+.modal-body .form-group {
+  padding: 0; }
+
 .sk-folding-cube {
   margin: 20px auto;
   width: 40px;
@@ -2022,6 +1926,9 @@ ul.progress-percentages {
   -moz-padding-start: 0px;
   -webkit-padding-start: 0px; }
 
+.input-error {
+  color: #EB0029; }
+
 ul.progress-percentages > li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2030,20 +1937,23 @@ ul.progress-percentages > li {
   line-height: 28px;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
 
+.form-control {
+  padding: 6px 5px; }
+
 .form-control::-webkit-input-placeholder, .form-control::-webkit-input-placeholder {
   color: #9BC3D3;
   font-family: 'kievit';
-  font-size: 1.1em; }
+  font-size: 1em; }
 
 .form-control::-webkit-input-placeholder, .form-control::placeholder {
   color: #9BC3D3;
   font-family: 'kievit';
-  font-size: 1.1em; }
+  font-size: 1em; }
 
 .form-control::-moz-placeholder {
   color: #9BC3D3;
   font-family: 'kievit';
-  font-size: 1.1em; }
+  font-size: 1em; }
 
 #footer {
   background: #EB0029;
@@ -2742,6 +2652,10 @@ table > tbody > tr > th {
     margin-bottom: 0; }
   .footer-top .tel span {
     font-size: 18px; }
+  .dm-uploader img, .dm-uploader h3 {
+    display: none; }
+  .text-success {
+    display: block; }
   .copyright {
     text-align: center; }
   .footer-top {
