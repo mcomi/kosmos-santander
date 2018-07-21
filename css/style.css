@@ -2163,7 +2163,8 @@ h3#modal-folio-titulo {
   padding: 15px; }
 
 .footer-bottom img {
-  height: 50px; }
+  height: 23px;
+  margin: 16px 0 0 0; }
 
 .footer-bottom .text-footer-bottom {
   font-family: 'Gotham';
