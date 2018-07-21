@@ -127,6 +127,33 @@ $('#btnSolicitarSMS').click(function () {
   });
 })
 
+$('#btn-solicita-sms').click(function () {
+  if (!$('#btn-verifica-sms').hasClass('hidden')) {
+    $('#btn-verifica-sms').addClass('hidden')
+  }
+  if ($('#input-sms-code').hasClass('hidden')) {
+    $('#input-sms-code').removeClass('hidden')
+  }
+  if (!$('#after-sms-modal').hasClass('hidden')) {
+    $('#after-sms-modal').addClass('hidden')
+  }
+  $('#countdown-modal').removeClass('hidden')
+  $('#before-sms-modal').removeClass('hidden')
+  clock = new FlipClock($('.clock-modal'), 15, {
+    clockFace: 'Counter',
+    autoStart: true,
+    countdown: true,
+    callbacks: {
+      stop: function () {
+        $('#before-sms-modal').addClass('hidden')
+        $('#after-sms-modal').removeClass('hidden')
+        $('#countdown-modal').addClass('hidden')
+        $('#btn-verifica-sms').removeClass('hidden')
+      }
+    }
+  });
+})
+
 const inputsSolicitud = $('input')
 inputsSolicitud.each(function () {
   let input = $(this)

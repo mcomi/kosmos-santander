@@ -119,7 +119,7 @@
 							</span>
 						</div>
 						<h2>
-								<a tabindex="0" role="button" data-toggle="popover" data-trigger="click" data-placement="top" data-content="Guárdalo, con este número puedes acceder a tu solicitud y terminarla en cualquier momento">
+								<a tabindex="0" role="button" data-toggle="popover" data-trigger="click" data-placement="top" data-timeout="2000" data-content="Guárdalo, con este número puedes acceder a tu solicitud y terminarla en cualquier momento">
 										<img src="img/info-icon.svg" alt="">
 									</a> Tu número de folio es:
 							<span id="folio-value">AFTSFGW</span>
@@ -939,7 +939,7 @@
 										<div class="col-md-3 col-xs-12">
 											<img src="img/car.svg" />
 											<p>Tiene un crédito automotriz desde hace 2 años
-												<a tabindex="0" role="button" class="tooltip-icon-info" data-toggle="popover" data-trigger="click" data-placement="top" data-content="Responde 'SI' si el crédito lo recibiste antes de 27/06/16, no importa si sigue vigente o si ya está liquidado.">
+												<a tabindex="0" role="button" class="tooltip-icon-info" data-toggle="popover" data-timeout="2000" data-trigger="click" data-placement="top" data-content="Responde 'SI' si el crédito lo recibiste antes de 27/06/16, no importa si sigue vigente o si ya está liquidado.">
 													<img src="img/info-icon.svg" class="icon-search" alt="">
 												</a>
 											</p>
@@ -965,7 +965,7 @@
 										<div class="col-md-3 col-xs-12">
 											<img src="img/home.svg" />
 											<p>Tiene un crédito hipotecario desde hace 2 años
-												<a class="tooltip-icon-info" tabindex="0" role="button" class="tooltip-icon-info" data-toggle="popover" data-trigger="click" data-placement="top" data-content="Responde 'SI' si el crédito lo recibiste antes de 27/06/16, no importa si sigue vigente o si ya está liquidado.">
+												<a class="tooltip-icon-info" tabindex="0" role="button" class="tooltip-icon-info" data-toggle="popover" data-timeout="2000" data-trigger="click" data-placement="top" data-content="Responde 'SI' si el crédito lo recibiste antes de 27/06/16, no importa si sigue vigente o si ya está liquidado.">
 													<img src="img/info-icon.svg" alt="">
 												</a>
 											</p>
@@ -991,7 +991,7 @@
 										<div class="col-md-3 col-xs-12">
 											<img src="img/Credit_card.svg" />
 											<p>¿Tiene o tuvo una tarjeta de crédito en los últimos 2 años?
-												<a class="tooltip-icon-info" tabindex="0" role="button" class="tooltip-icon-info" data-toggle="popover" data-trigger="click" data-placement="top" data-content="Si tu TDC es de servicios o departamental entonces responde NO">
+												<a class="tooltip-icon-info" tabindex="0" role="button" class="tooltip-icon-info" data-toggle="popover" data-trigger="click" data-timeout="2000" data-placement="top" data-content="Si tu TDC es de servicios o departamental entonces responde NO">
 													<img src="img/info-icon.svg" alt="">
 												</a>
 											</p>
@@ -1017,7 +1017,7 @@
 										<div class="col-md-3 col-xs-12">
 											<div class="form-group col-xs-12 hidden" id="digitos-tc">
 												<label for="digitos-tarjeta">Digite los útimos 4 números
-													<a class="tooltip-icon-info" tabindex="0" role="button" class="tooltip-icon-info" data-toggle="popover" data-trigger="click" data-placement="top" data-content="Algunas instituciones guardan solo el número de tarjeta original, si has solicitado reposiciones de plástico puedes intentar autenticar con los últimos 4 dígitos de tu tarjeta original, esta información la podrás encontrar en tu estado de cuenta o con tu banco emisor.">
+													<a class="tooltip-icon-info" tabindex="0" role="button" class="tooltip-icon-info" data-toggle="popover" data-trigger="click" data-timeout="2000" data-placement="top" data-content="Algunas instituciones guardan solo el número de tarjeta original, si has solicitado reposiciones de plástico puedes intentar autenticar con los últimos 4 dígitos de tu tarjeta original, esta información la podrás encontrar en tu estado de cuenta o con tu banco emisor.">
 														<img src="img/info-icon.svg" alt="">
 													</a>
 												</label>
@@ -1068,23 +1068,26 @@
 
 								<div class="panel-body">
 									<div class="col-md-12">
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<img src="img/home.svg" />
 											<p>¿Ya sabes que inmueble vas a comprar?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-se" value="no-se" name="inmueble-comprar">
-												<label for="no-se">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-se" value="si-se" name="inmueble-comprar">
-												<label for="si-se">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+												
+												<div class="squared">
+													<input type="radio" id="no-se" value="no-se" name="inmueble-comprar">
+													<label for="no-se">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-se" value="si-se" name="inmueble-comprar">
+													<label for="si-se">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="lugar-inmueble">¿Dónde buscas tu inmueble?</label>
 												<select class="form-control validate" id="lugar-inmueble" placeholder="">
@@ -1094,7 +1097,7 @@
 												</select>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="cuando-comprar">¿Cuándo planeas comprarlo?</label>
 												<select class="form-control validate" id="cuando-comprar" placeholder="">
@@ -1128,7 +1131,7 @@
 
 								<div class="panel-body">
 									<div class="row">
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="escolaridad">Escolaridad</label>
 												<select class="form-control validate" id="escolaridad" placeholder="">
@@ -1138,7 +1141,7 @@
 												</select>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="tipo-vivienda">Vives en</label>
 												<select class="form-control validate" id="tipo-vivienda" placeholder="">
@@ -1148,7 +1151,7 @@
 												</select>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="tiempo-vivienda">¿Cuánto tiempo tienes de vivir ahí?</label>
 												<input type="text" class="form-control validate" id="tiempo-vivienda" placeholder="">
@@ -1156,17 +1159,18 @@
 												<span class="input-error"></span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
-											<div class="form-group col-xs-12">
-												<label for="valor-vivienda">Valor de la vivienda actual</label>
-												<input type="text" class="form-control validate" id="valor-vivienda" placeholder="">
-												<span class="input-success"></span>
-												<span class="input-error"></span>
-											</div>
-										</div>
+										
 									</div>
 									<div class="row">
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="valor-vivienda">Valor de la vivienda actual</label>
+													<input type="text" class="form-control validate" id="valor-vivienda" placeholder="">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
+										</div>
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="valor-otras-viviendas">Valor de otros inmuebles tuyos</label>
 												<input type="text" class="form-control validate" id="valor-otras-viviendas" placeholder="">
@@ -1174,7 +1178,7 @@
 												<span class="input-error"></span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="valor-autos">Valor de tus automóviles</label>
 												<input type="text" class="form-control validate" id="valor-autos" placeholder="">
@@ -1182,22 +1186,25 @@
 												<span class="input-error"></span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
-											<div class="form-group col-xs-12">
-												<label for="valor-otros-inmuebles">Valor de otros bienes inmuebles</label>
-												<input type="text" class="form-control validate" id="valor-otros-inmuebles" placeholder="">
-												<span class="input-success"></span>
-												<span class="input-error"></span>
+										<div class="row">
+
+											<div class="col-md-4 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="valor-otros-inmuebles">Valor de otros bienes inmuebles</label>
+													<input type="text" class="form-control validate" id="valor-otros-inmuebles" placeholder="">
+													<span class="input-success"></span>
+													<span class="input-error"></span>
+												</div>
 											</div>
-										</div>
-										<div class="col-md-3 col-xs-12">
-											<div class="form-group col-xs-12">
-												<label for="lugar-atencion">¿Te gustaría ser atendido cerca de?</label>
-												<select class="form-control validate" id="lugar-atencion" placeholder="">
-													<option value="" selected>Trabajo</option>
-													<option value="opcion2">Opcion 2</option>
-													<option value="opcion3">Opcion 3</option>
-												</select>
+											<div class="col-md-4 col-xs-12">
+												<div class="form-group col-xs-12">
+													<label for="lugar-atencion">¿Te gustaría ser atendido cerca de?</label>
+													<select class="form-control validate" id="lugar-atencion" placeholder="">
+														<option value="" selected>Trabajo</option>
+														<option value="opcion2">Opcion 2</option>
+														<option value="opcion3">Opcion 3</option>
+													</select>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -1226,7 +1233,7 @@
 								<div class="panel-body">
 									<div class="row">
 
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="calle-trabajo">Calle</label>
 												<input type="text" class="form-control validate" id="calle-trabajo" placeholder="">
@@ -1234,7 +1241,7 @@
 												<span class="input-error"></span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="num-ext-trabajo">Número exterior</label>
 												<input type="text" class="form-control validate" id="num-ext-trabajo" placeholder="">
@@ -1242,7 +1249,7 @@
 												<span class="input-error"></span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="num-int-trabajo">Múmero interior</label>
 												<input type="text" class="form-control validate" id="num-int-trabajo" placeholder="">
@@ -1250,17 +1257,18 @@
 												<span class="input-error"></span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
-											<div class="form-group col-xs-12">
-												<label for="cp-trabajo">Código postal</label>
-												<input type="text" class="form-control validate" id="cp-trabajo" placeholder="">
-												<span class="input-success"></span>
-												<span class="input-error"></span>
-											</div>
-										</div>
+										
 									</div>
 									<div class="row">
-										<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
+													<div class="form-group col-xs-12">
+														<label for="cp-trabajo">Código postal</label>
+														<input type="text" class="form-control validate" id="cp-trabajo" placeholder="">
+														<span class="input-success"></span>
+														<span class="input-error"></span>
+													</div>
+												</div>
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="colonia-trabajo">Colonia</label>
 												<input type="text" class="form-control validate" id="colonia-trabajo" placeholder="">
@@ -1268,7 +1276,7 @@
 												<span class="input-error"></span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="delegacion-trabajo">Delgación/municipio</label>
 												<input type="text" class="form-control validate" id="delegacion-trabajo" placeholder="">
@@ -1276,28 +1284,28 @@
 												<span class="input-error"></span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
-											<div class="form-group col-xs-12">
-												<label for="estado-trabajo">Estado</label>
-												<input type="text" class="form-control validate" id="estado-trabajo" placeholder="">
-												<span class="input-success"></span>
-												<span class="input-error"></span>
-											</div>
-										</div>
-										<div class="col-md-3 col-xs-12">
-											<div class="form-group col-xs-12">
-												<label for="giro-empresa">Giro de la empresa</label>
-												<select class="form-control validate" id="giro-empresa" placeholder="">
-													<option value="" selected>Bancario</option>
-													<option value="opcion2">Opcion 2</option>
-													<option value="opcion3">Opcion 3</option>
-												</select>
-											</div>
-										</div>
+										
 									</div>
 									<div class="row">
-
-										<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
+													<div class="form-group col-xs-12">
+														<label for="estado-trabajo">Estado</label>
+														<input type="text" class="form-control validate" id="estado-trabajo" placeholder="">
+														<span class="input-success"></span>
+														<span class="input-error"></span>
+													</div>
+												</div>
+												<div class="col-md-4 col-xs-12">
+													<div class="form-group col-xs-12">
+														<label for="giro-empresa">Giro de la empresa</label>
+														<select class="form-control validate" id="giro-empresa" placeholder="">
+															<option value="" selected>Bancario</option>
+															<option value="opcion2">Opcion 2</option>
+															<option value="opcion3">Opcion 3</option>
+														</select>
+													</div>
+												</div>
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="departamento">Departamento</label>
 												<input type="text" class="form-control validate" id="departamento" placeholder="">
@@ -1305,55 +1313,58 @@
 												<span class="input-error"></span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
-											<div class="form-group col-xs-12">
-												<label for="Puesto">Puesto</label>
-												<input type="text" class="form-control validate" id="Puesto" placeholder="">
-												<span class="input-success"></span>
-												<span class="input-error"></span>
-											</div>
-										</div>
-										<div class="col-md-3 col-xs-12">
-											<div class="col-xs-12">
-												<span class="date-title">Fecha de ingreso</span>
-											</div>
-											<div class="form-group col-xs-4">
-												<select class="form-control validate" id="dia-nac" placeholder="">
-													<option value="" selected>Día</option>
-													<option value="opcion2">2</option>
-													<option value="opcion3">3</option>
-												</select>
-												<span class="input-success"></span>
-												<span class="input-error"></span>
-											</div>
-											<div class="form-group col-xs-4">
-												<select class="form-control validate" id="mes-nac" placeholder="">
-													<option value="" selected>Mes</option>
-													<option value="opcion2">2</option>
-													<option value="opcion3">3</option>
-												</select>
-												<span class="input-success"></span>
-												<span class="input-error"></span>
-											</div>
-											<div class="form-group col-xs-4">
-												<select class="form-control validate" id="anio-nac" placeholder="">
-													<option value="" selected>Año</option>
-													<option value="opcion2">2</option>
-													<option value="opcion3">3</option>
-												</select>
-												<span class="input-success"></span>
-												<span class="input-error"></span>
-											</div>
-										</div>
-										<div class="col-md-3 col-xs-12">
-											<div class="form-group col-xs-12">
-												<label for="telefono-trabajo">Teléfono</label>
-												<input type="text" class="form-control validate" id="telefono-trabajo" placeholder="">
-												<span class="input-success"></span>
-												<span class="input-error"></span>
-											</div>
-										</div>
+										
 
+									</div>
+									<div class="row">
+											<div class="col-md-4 col-xs-12">
+													<div class="form-group col-xs-12">
+														<label for="Puesto">Puesto</label>
+														<input type="text" class="form-control validate" id="Puesto" placeholder="">
+														<span class="input-success"></span>
+														<span class="input-error"></span>
+													</div>
+												</div>
+												<div class="col-md-4 col-xs-12">
+													<div class="col-xs-12">
+														<span class="date-title">Fecha de ingreso</span>
+													</div>
+													<div class="form-group col-xs-4">
+														<select class="form-control validate" id="dia-nac" placeholder="">
+															<option value="" selected>Día</option>
+															<option value="opcion2">2</option>
+															<option value="opcion3">3</option>
+														</select>
+														<span class="input-success"></span>
+														<span class="input-error"></span>
+													</div>
+													<div class="form-group col-xs-4">
+														<select class="form-control validate" id="mes-nac" placeholder="">
+															<option value="" selected>Mes</option>
+															<option value="opcion2">2</option>
+															<option value="opcion3">3</option>
+														</select>
+														<span class="input-success"></span>
+														<span class="input-error"></span>
+													</div>
+													<div class="form-group col-xs-4">
+														<select class="form-control validate" id="anio-nac" placeholder="">
+															<option value="" selected>Año</option>
+															<option value="opcion2">2</option>
+															<option value="opcion3">3</option>
+														</select>
+														<span class="input-success"></span>
+														<span class="input-error"></span>
+													</div>
+												</div>
+												<div class="col-md-4 col-xs-12">
+													<div class="form-group col-xs-12">
+														<label for="telefono-trabajo">Teléfono</label>
+														<input type="text" class="form-control validate" id="telefono-trabajo" placeholder="">
+														<span class="input-success"></span>
+														<span class="input-error"></span>
+													</div>
+												</div>
 									</div>
 									<div class="row">
 										<div class="col-md-12">
@@ -1364,7 +1375,7 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<div class="form-group col-xs-12">
 												<label for="empleo-anterior">Empleo anterior</label>
 												<input type="text" class="form-control validate" id="empleo-anterior" placeholder="">
@@ -1372,7 +1383,7 @@
 												<span class="input-error"></span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<div class="col-xs-12">
 												<span class="date-title">Fecha de ingreso</span>
 											</div>
@@ -1404,7 +1415,7 @@
 												<span class="input-error"></span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12">
+										<div class="col-md-4 col-xs-12">
 											<div class="col-xs-12">
 												<span class="date-title">Fecha de baja</span>
 											</div>
@@ -1469,7 +1480,7 @@
 								<div class="panel-body">
 									<div class="col-md-12">
 										<div class="row">
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="saldo-cheques">Saldo en cheques en otros bancos</label>
 													<input type="text" class="form-control validate" id="saldo-cheques" placeholder="">
@@ -1477,7 +1488,7 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="saldo-cheques-santander">Saldo en cheques Santander</label>
 													<input type="text" class="form-control validate" id="saldo-cheques-santander" placeholder="">
@@ -1485,7 +1496,7 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="saldo-inversiones">Saldo en inversiones Santander</label>
 													<input type="text" class="form-control validate" id="saldo-inversiones" placeholder="">
@@ -1519,7 +1530,7 @@
 								<div class="panel-body">
 									<div class="col-md-12">
 										<div class="row">
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="nombre-r1">Nombre</label>
 													<input type="text" class="form-control validate" id="nombre-r1" placeholder="">
@@ -1527,7 +1538,7 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="ap-paterno-r1">Apellido paterno</label>
 													<input type="text" class="form-control validate" id="ap-paterno-r1" placeholder="">
@@ -1535,7 +1546,7 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="ap-materno-r1">Apellido materno</label>
 													<input type="text" class="form-control validate" id="ap-materno-r1" placeholder="">
@@ -1543,17 +1554,18 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
-												<div class="form-group col-xs-12">
-													<label for="correo-r1">Correo electrónico</label>
-													<input type="text" class="form-control validate" id="correo-r1" placeholder="">
-													<span class="input-success"></span>
-													<span class="input-error"></span>
-												</div>
-											</div>
+											
 										</div>
 										<div class="row">
-											<div class="col-md-3 col-xs-12">
+												<div class="col-md-4 col-xs-12">
+														<div class="form-group col-xs-12">
+															<label for="correo-r1">Correo electrónico</label>
+															<input type="text" class="form-control validate" id="correo-r1" placeholder="">
+															<span class="input-success"></span>
+															<span class="input-error"></span>
+														</div>
+													</div>
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="tel-r1">Teléfono</label>
 													<input type="text" class="form-control validate" id="tel-r1" placeholder="">
@@ -1561,7 +1573,7 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="cel-r1">Celular</label>
 													<input type="text" class="form-control validate" id="cel-r1" placeholder="">
@@ -1569,14 +1581,16 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
-												<div class="form-group col-xs-12">
-													<label for="parentezco-r1">Parentezco</label>
-													<input type="text" class="form-control validate" id="parentezco-r1" placeholder="">
-													<span class="input-success"></span>
-													<span class="input-error"></span>
-												</div>
-											</div>
+										</div>
+										<div class="row">
+												<div class="col-md-4 col-xs-12">
+														<div class="form-group col-xs-12">
+															<label for="parentezco-r1">Parentezco</label>
+															<input type="text" class="form-control validate" id="parentezco-r1" placeholder="">
+															<span class="input-success"></span>
+															<span class="input-error"></span>
+														</div>
+													</div>
 										</div>
 									</div>
 									<div class="text-center">
@@ -1603,7 +1617,7 @@
 								<div class="panel-body">
 									<div class="col-md-12">
 										<div class="row">
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="nombre-r2">Nombre</label>
 													<input type="text" class="form-control validate" id="nombre-r2" placeholder="">
@@ -1611,7 +1625,7 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="ap-paterno-r2">Apellido paterno</label>
 													<input type="text" class="form-control validate" id="ap-paterno-r2" placeholder="">
@@ -1619,7 +1633,7 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="ap-materno-r2">Apellido materno</label>
 													<input type="text" class="form-control validate" id="ap-materno-r2" placeholder="">
@@ -1627,17 +1641,18 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
-												<div class="form-group col-xs-12">
-													<label for="correo-r2">Correo electrónico</label>
-													<input type="text" class="form-control validate" id="correo-r2" placeholder="">
-													<span class="input-success"></span>
-													<span class="input-error"></span>
-												</div>
-											</div>
+											
 										</div>
 										<div class="row">
-											<div class="col-md-3 col-xs-12">
+												<div class="col-md-4 col-xs-12">
+														<div class="form-group col-xs-12">
+															<label for="correo-r2">Correo electrónico</label>
+															<input type="text" class="form-control validate" id="correo-r2" placeholder="">
+															<span class="input-success"></span>
+															<span class="input-error"></span>
+														</div>
+													</div>
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="tel-r2">Teléfono</label>
 													<input type="text" class="form-control validate" id="tel-r2" placeholder="">
@@ -1645,7 +1660,7 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="cel-r2">Celular</label>
 													<input type="text" class="form-control validate" id="cel-r2" placeholder="">
@@ -1653,14 +1668,17 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
-												<div class="form-group col-xs-12">
-													<label for="parentezco-r2">Parentezco</label>
-													<input type="text" class="form-control validate" id="parentezco-r2" placeholder="">
-													<span class="input-success"></span>
-													<span class="input-error"></span>
-												</div>
-											</div>
+											
+										</div>
+										<div class="row">
+												<div class="col-md-4 col-xs-12">
+														<div class="form-group col-xs-12">
+															<label for="parentezco-r2">Parentezco</label>
+															<input type="text" class="form-control validate" id="parentezco-r2" placeholder="">
+															<span class="input-success"></span>
+															<span class="input-error"></span>
+														</div>
+													</div>
 										</div>
 									</div>
 									<div class="text-center">
@@ -1687,7 +1705,7 @@
 								<div class="panel-body">
 									<div class="col-md-12">
 										<div class="row">
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="institucion">Institución o entidad</label>
 													<input type="text" class="form-control validate" id="institucion" placeholder="">
@@ -1695,7 +1713,7 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="tipo-producto">Tipo de producto</label>
 													<select class="form-control validate" id="tipo-producto" placeholder="">
@@ -1705,7 +1723,7 @@
 													</select>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="num-cuenta">Número de cuenta</label>
 													<input type="text" class="form-control validate" id="num-cuenta" placeholder="">
@@ -1713,17 +1731,18 @@
 													<span class="input-error"></span>
 												</div>
 											</div>
-											<div class="col-md-3 col-xs-12">
-												<div class="form-group col-xs-12">
-													<label for="saldo-cuenta">Saldo actual en cuenta</label>
-													<input type="text" class="form-control validate" id="saldo-cuenta" placeholder="">
-													<span class="input-success"></span>
-													<span class="input-error"></span>
-												</div>
-											</div>
+											
 										</div>
 										<div class="row">
-											<div class="col-md-3 col-xs-12">
+												<div class="col-md-4 col-xs-12">
+														<div class="form-group col-xs-12">
+															<label for="saldo-cuenta">Saldo actual en cuenta</label>
+															<input type="text" class="form-control validate" id="saldo-cuenta" placeholder="">
+															<span class="input-success"></span>
+															<span class="input-error"></span>
+														</div>
+													</div>
+											<div class="col-md-4 col-xs-12">
 												<div class="form-group col-xs-12">
 													<label for="mensualidad">Mensualidad</label>
 													<input type="text" class="form-control validate" id="mensualidad" placeholder="">
@@ -1769,39 +1788,45 @@
 
 								<div class="panel-body">
 									<div class="col-md-12">
-										<div class="col-md-3 col-xs-12 margin-form-mobile">
+										<div class="col-md-4 col-xs-12 margin-form-mobile">
 											<img src="img/Santander_doc.svg" />
 											<p>¿Contará con seguro de vida Santander?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-seguro-santander" value="no-seguro-santander" name="seguro-santander">
-												<label for="no-seguro-santander">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-seguro-santander" value="si-seguro-santander" name="seguro-santander">
-												<label for="si-seguro-santander">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-seguro-santander" value="no-seguro-santander" name="seguro-santander">
+													<label for="no-seguro-santander">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-seguro-santander" value="si-seguro-santander" name="seguro-santander">
+													<label for="si-seguro-santander">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12 margin-form-mobile">
+										<div class="col-md-4 col-xs-12 margin-form-mobile">
 											<img src="img/zurich_doc.svg" />
 											<p>¿Tiene seguro de vida con Zurich Santander?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-zurich" value="no-zurich" name="zurich">
-												<label for="no-zurich">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-zurich" value="si-zurich" name="zurich">
-												<label for="si-zurich">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-zurich" value="no-zurich" name="zurich">
+													<label for="no-zurich">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-zurich" value="si-zurich" name="zurich">
+													<label for="si-zurich">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12 margin-form-mobile">
+										<div class="col-md-4 col-xs-12 margin-form-mobile">
 											<div class="form-group col-xs-12 hidden" id="zurich-seguro">
 												<label for="seguro">Mencione su seguro</label>
 												<input type="text" class="form-control validate" id="seguro" placeholder="">
@@ -1833,7 +1858,7 @@
 
 								<div class="panel-body">
 									<div class="col-md-12">
-										<div class="col-md-3 col-xs-12 margin-form-mobile">
+										<div class="col-md-4 col-xs-12 margin-form-mobile">
 											<div class="form-group">
 												<label for="peso">Peso</label>
 												<input type="text" class="form-control validate" id="peso" placeholder="">
@@ -1841,7 +1866,7 @@
 												<span class="input-error"></span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-12 margin-form-mobile">
+										<div class="col-md-4 col-xs-12 margin-form-mobile">
 											<div class="form-group">
 												<label for="estatura">Estatura</label>
 												<input type="text" class="form-control validate" id="estatura" placeholder="">
@@ -1859,17 +1884,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/beer.svg" />
 											<p>Intoxicado por exceso de alcohol</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-alcohol" value="no-alcohol" name="alcohol">
-												<label for="no-alcohol">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-alcohol" value="si-alcohol" name="alcohol">
-												<label for="si-alcohol">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-alcohol" value="no-alcohol" name="alcohol">
+													<label for="no-alcohol">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-alcohol" value="si-alcohol" name="alcohol">
+													<label for="si-alcohol">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -1883,17 +1911,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/antibiotic.svg" />
 											<p>Intoxicado por exceso de drogas sin prescripción médica</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-drogas" value="no-drogas" name="drogas">
-												<label for="no-drogas">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-drogas" value="si-drogas" name="drogas">
-												<label for="si-drogas">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-drogas" value="no-drogas" name="drogas">
+													<label for="no-drogas">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-drogas" value="si-drogas" name="drogas">
+													<label for="si-drogas">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -1909,17 +1940,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/hospital.svg" />
 											<p>internado en un hospital u otra institución de salud</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-internado" value="no-internado" name="internado">
-												<label for="no-internado">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-internado" value="si-internado" name="internado">
-												<label for="si-internado">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-internado" value="no-internado" name="internado">
+													<label for="no-internado">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-internado" value="si-internado" name="internado">
+													<label for="si-internado">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -1933,17 +1967,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/hospital-bed.svg" />
 											<p>Incapacitado para realizar sus actividades laborales</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-incapacitado" value="no-incapacitado" name="incapacitado">
-												<label for="no-incapacitado">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-incapacitado" value="si-incapacitado" name="incapacitado">
-												<label for="si-incapacitado">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-incapacitado" value="no-incapacitado" name="incapacitado">
+													<label for="no-incapacitado">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-incapacitado" value="si-incapacitado" name="incapacitado">
+													<label for="si-incapacitado">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -1959,17 +1996,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/cigarette.svg" />
 											<p>¿Tiende a fumar tabaco?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-tabaco" value="no-tabaco" name="tabaco">
-												<label for="no-tabaco">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-tabaco" value="si-tabaco" name="tabaco">
-												<label for="si-tabaco">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-tabaco" value="no-tabaco" name="tabaco">
+													<label for="no-tabaco">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-tabaco" value="si-tabaco" name="tabaco">
+													<label for="si-tabaco">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -1983,17 +2023,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/airplane.svg" />
 											<p>¿Viaja en aeronaves que no sean de lineas comerciales?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-aerolineas" value="no-aerolineas" name="aerolineas">
-												<label for="no-aerolineas">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-aerolineas" value="si-aerolineas" name="aerolineas">
-												<label for="si-aerolineas">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+												
+												<div class="squared">
+													<input type="radio" id="no-aerolineas" value="no-aerolineas" name="aerolineas">
+													<label for="no-aerolineas">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-aerolineas" value="si-aerolineas" name="aerolineas">
+													<label for="si-aerolineas">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -2032,17 +2075,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/blood-transfusion.svg" />
 											<p>¿Tiene problemas cardiovasculares?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-cardio" value="no-cardio" name="cardio">
-												<label for="no-cardio">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-cardio" value="si-cardio" name="cardio">
-												<label for="si-cardio">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-cardio" value="no-cardio" name="cardio">
+													<label for="no-cardio">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-cardio" value="si-cardio" name="cardio">
+													<label for="si-cardio">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -2056,17 +2102,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/ribbon.svg" />
 											<p>¿Padeces algún tipo de cancer? </p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-cancer" value="no-cancer" name="cancer">
-												<label for="no-cancer">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-cancer" value="si-cancer" name="cancer">
-												<label for="si-cancer">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-cancer" value="no-cancer" name="cancer">
+													<label for="no-cancer">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-cancer" value="si-cancer" name="cancer">
+													<label for="si-cancer">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -2082,17 +2131,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/pain.svg" />
 											<p>¿Tiene alguna clase de tumor?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-tumor" value="no-tumor" name="tumor">
-												<label for="no-tumor">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-tumor" value="si-tumor" name="tumor">
-												<label for="si-tumor">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-tumor" value="no-tumor" name="tumor">
+													<label for="no-tumor">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-tumor" value="si-tumor" name="tumor">
+													<label for="si-tumor">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -2106,17 +2158,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/blind.svg" />
 											<p>¿Tiene parálisis ceguera o sordera total?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-paralisis" value="no-paralisis" name="paralisis">
-												<label for="no-paralisis">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-paralisis" value="si-paralisis" name="paralisis">
-												<label for="si-paralisis">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-paralisis" value="no-paralisis" name="paralisis">
+													<label for="no-paralisis">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-paralisis" value="si-paralisis" name="paralisis">
+													<label for="si-paralisis">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -2132,17 +2187,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/brain.svg" />
 											<p>¿Tiene enfermedades neurológicas?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-neuro" value="no-neuro" name="neuro">
-												<label for="no-neuro">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-neuro" value="si-neuro" name="neuro">
-												<label for="si-neuro">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-neuro" value="no-neuro" name="neuro">
+													<label for="no-neuro">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-neuro" value="si-neuro" name="neuro">
+													<label for="si-neuro">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -2156,17 +2214,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/ribbon.svg" />
 											<p>¿Tiene sida o es portador de VIH?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-sida" value="no-sida" name="sida">
-												<label for="no-sida">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-sida" value="si-sida" name="sida">
-												<label for="si-sida">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-sida" value="no-sida" name="sida">
+													<label for="no-sida">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-sida" value="si-sida" name="sida">
+													<label for="si-sida">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -2182,17 +2243,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/cardiogram.svg" />
 											<p>¿Tiene problemas relacionados con el corazon?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-corazon" value="no-corazon" name="corazon">
-												<label for="no-corazon">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-corazon" value="si-corazon" name="corazon">
-												<label for="si-corazon">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-corazon" value="no-corazon" name="corazon">
+													<label for="no-corazon">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-corazon" value="si-corazon" name="corazon">
+													<label for="si-corazon">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -2206,17 +2270,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/diabetes.svg" />
 											<p>¿Tiene padecimientos de las glandulas, diabetes?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-diabetes" value="no-diabetes" name="diabetes">
-												<label for="no-diabetes">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-diabetes" value="si-diabetes" name="diabetes">
-												<label for="si-diabetes">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-diabetes" value="no-diabetes" name="diabetes">
+													<label for="no-diabetes">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-diabetes" value="si-diabetes" name="diabetes">
+													<label for="si-diabetes">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -2232,17 +2299,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/otorhinolaryngology.svg" />
 											<p>¿Tiene alteraciones de la vista u oidos?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-vista" value="no-vista" name="vista">
-												<label for="no-vista">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-vista" value="si-vista" name="vista">
-												<label for="si-vista">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-vista" value="no-vista" name="vista">
+													<label for="no-vista">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-vista" value="si-vista" name="vista">
+													<label for="si-vista">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -2256,17 +2326,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/lungs.svg" />
 											<p>¿Padece enfermedades en pulmon hígado o páncreas?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-pulmones" value="no-pulmones" name="pulmones">
-												<label for="no-pulmones">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-pulmones" value="si-pulmones" name="pulmones">
-												<label for="si-pulmones">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-pulmones" value="no-pulmones" name="pulmones">
+													<label for="no-pulmones">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-pulmones" value="si-pulmones" name="pulmones">
+													<label for="si-pulmones">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
@@ -2282,17 +2355,20 @@
 										<div class="col-md-3 col-xs-12 margin-form-mobile">
 											<img src="img/stomach.svg" />
 											<p>¿Padece enfermedades en el aparato digestivo?</p>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="no-digestivo" value="no-digestivo" name="digestivo">
-												<label for="no-digestivo">
-													<span>No </span>
-												</label>
-											</div>
-											<div class="radio-input-solicitud">
-												<input type="radio" id="si-digestivo" value="si-digestivo" name="digestivo">
-												<label for="si-digestivo">
-													<span>Si </span>
-												</label>
+											<div class="radio-inputs-solicitud">
+
+												<div class="squared">
+													<input type="radio" id="no-digestivo" value="no-digestivo" name="digestivo">
+													<label for="no-digestivo">
+													</label>
+													<div>No </div>
+												</div>
+												<div class="squared">
+													<input type="radio" id="si-digestivo" value="si-digestivo" name="digestivo">
+													<label for="si-digestivo">
+													</label>
+													<div>Si </div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-3 col-xs-12 margin-form-mobile">

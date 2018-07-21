@@ -787,7 +787,17 @@ $('#copy-clipboard').click(function(){
 $(function () {
   $('[data-toggle="popover"]').popover({
     container: 'body'
-  })
+  });
+
+  $('[data-toggle="popover"][data-timeout]').on('shown.bs.popover', function() {
+    this_popover = $(this);
+    setTimeout(function () {
+        this_popover.popover('hide');
+      }, $(this).data("timeout"));
+          setTimeout(function () {
+            this_popover.popover();
+     }, $(this).data("timeout")+200);
+});
 })
 
 // Production steps of ECMA-262, Edition 5, 15.4.4.18

@@ -856,7 +856,8 @@ input[type=radio] {
   .squaredThree a {
     display: inline !important;
     color: #EB0029;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: 'kievit-bold'; }
   .squaredThree div {
     display: inline;
     padding-left: 20px;
@@ -1012,7 +1013,7 @@ textarea.form-control {
   color: #EB0029;
   letter-spacing: 0;
   line-height: 16px;
-  float: left;
+  padding-bottom: 20px;
   padding-top: 10px;
   text-decoration: none;
   cursor: pointer; }
@@ -1032,19 +1033,18 @@ textarea.form-control {
   width: 100%; }
 
 .modal-folio img {
-  padding-top: 30px;
-  height: 100px; }
+  margin: 20px 0;
+  height: 30px; }
 
 #olvide-folio p {
   font-family: 'kievit', sans-serif;
-  padding-top: 30px;
   font-size: 14px;
   color: #121212; }
 
 #input-sms-code p {
-  font-family: 'kievit', sans-serif;
-  padding-top: 10px;
-  font-size: 14px;
+  font-family: 'kievit-bold', sans-serif;
+  /* padding-top: 10px; */
+  font-size: 12px;
   color: #121212; }
 
 .modal-folio .code-submit {
@@ -1059,10 +1059,6 @@ textarea.form-control {
   width: 50px;
   height: 30px;
   margin: 0 5px; }
-
-.modal-folio-width img {
-  padding-bottom: 20px;
-  height: 100px; }
 
 #input-sms-code {
   margin: 35px 0px;
@@ -1900,7 +1896,8 @@ select::-ms-expand {
   cursor: pointer; }
 
 .sms-message {
-  font-family: 'kievit-bold'; }
+  font-family: 'kievit-bold';
+  padding-top: 20px; }
 
 .progress-bar-steps {
   background-color: #1BB3BC; }
@@ -1949,6 +1946,11 @@ ul.progress-percentages > li {
   color: #9BC3D3;
   font-family: 'kievit';
   font-size: 1em; }
+
+h3#modal-folio-titulo {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: 'kievit-bold'; }
 
 .form-control::-moz-placeholder {
   color: #9BC3D3;
@@ -2007,6 +2009,9 @@ ul.progress-percentages > li {
   padding-left: 20px;
   position: absolute;
   margin-bottom: 20px; }
+
+.squared input[name=t-ingresos]:checked ~ div {
+  color: #3A8340; }
 
 .squared div.asalariada:after {
   content: '';
@@ -2241,7 +2246,7 @@ ul.progress-percentages > li {
   font-size: 18px;
   padding: 10px 0; }
 
-.radio-inputs-historial {
+.radio-inputs-historial, .radio-inputs-solicitud {
   padding: 10px 0; }
 
 .fa-chevron-left, .fa-chevron-right {
@@ -2265,6 +2270,26 @@ ul.progress-percentages > li {
   padding-left: 10px; }
 
 .radio-inputs-historial .squared label {
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border: 1px solid #1BB3BC; }
+
+.radio-inputs-solicitud .squared {
+  position: relative;
+  text-align: left;
+  color: #4E4044;
+  font-family: 'kievit', sans-serif;
+  width: 54px;
+  font-size: 14px;
+  display: inline-block; }
+
+.radio-inputs-solicitud .squared div {
+  padding-left: 10px; }
+
+.radio-inputs-solicitud .squared label {
   cursor: pointer;
   position: relative;
   top: 0;
@@ -2510,10 +2535,9 @@ table > tbody > tr > th {
     line-height: 40px;
     font-family: 'kievit-bold'; }
   .panel-datos-solicitud {
-    background: #FFFFFF;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    margin: -1px -1px;
-    padding: 10px; }
+    margin: 0;
+    width: 100%;
+    padding: 3px; }
   .progress-for-step {
     bottom: 107px; }
   .solicitud-container h2 {
@@ -2711,10 +2735,6 @@ table > tbody > tr > th {
     line-height: 43px; }
   .navbar-right-index li {
     left: 5px; }
-  .panel-datos-solicitud {
-    margin: 0;
-    width: 100%;
-    padding: 3px; }
   li.corner-border:before {
     top: 0;
     left: 0; }
